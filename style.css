@@ -212,8 +212,12 @@ section {
     margin-top: 10px;
     cursor: pointer;
     height: 2rem;
-    /* make the color #5f714b */
-    filter: invert(1) sepia(1) saturate(3) hue-rotate(100deg) brightness(0.45);
+    /* make the color of the black .png icon #5f714b */
+    filter: invert(1) sepia(1) saturate(6) hue-rotate(20deg) brightness(0.45);
+}
+
+.education-icon {
+    filter: invert(1) sepia(1) saturate(1.5) hue-rotate(20deg) brightness(0.45);
 }
 
 /* BUTTONS */
@@ -351,12 +355,18 @@ color: #e9e6d1;
 article {
     display: flex;
     width: 10rem;
-    justify-content: space-around;
+    justify-content: left;
     gap: 0.5rem;
+    align-items: center;
 }
 
 article .icon {
     cursor: default;
+}
+
+article .ticon {
+    cursor: default;
+    
 }
 
 /* PROJECTS SECTION */
@@ -390,6 +400,11 @@ article .icon {
 .project-btn {
     color: #536342;
     border-color: #536342;
+}
+
+.proj-text {
+    text-align: center;
+padding-bottom: 1rem;
 }
 
 /* CONTACT SECTION */
