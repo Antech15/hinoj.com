@@ -313,6 +313,17 @@ color: #e9e6d1;
     text-align: center;
 }
 
+.job-containers {
+    padding: 1.5rem;
+    background: #e9e6d1;
+    border-radius: 2rem;
+    border: #536342 0.1rem solid;
+    border-color: #536342;
+    text-align: left;
+    align-items: right;
+
+}
+
 .section-container {
     gap: 4rem;
     height: 80%;
