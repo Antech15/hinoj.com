@@ -16,6 +16,7 @@
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -32,6 +33,7 @@
             <div class="menu-links">
                 <li><a href="#about onclick=" toggleMenu()">About</a></li>
                 <li><a href="#experience onclick=" toggleMenu()">Experience</a></li>
+                <li><a href="#skills onclick=" toggleMenu()">Skills</a></li>
                 <li><a href="#projects onclick=" toggleMenu()">Projects</a></li>
                 <li><a href="#contact onclick=" toggleMenu()">Contact</a></li>
             </div>
@@ -70,13 +72,14 @@
             </div>
             <div class="about-details-container">
                 <div class="about-containers">
-                    <div class="details-containers">
-                        <img src="./assets/education.png" alt="education icon" class="icon education-icon" onclick="location.href='https://www.csusm.edu'"/>
+                    <div class="details-containers educ">
+                        <img src="./assets/education.png" alt="education icon" class="icon education-icon"
+                            onclick="location.href='https://www.csusm.edu'" />
                         <h3>Education</h3>
                         <p>Bachelor of Science in Computer Science<br />California State University, San Marcos</p>
                     </div>
                 </div>
-                <div class="text-container">
+                <div class="text-container lol">
                     <p>
                         I’m a passionate Computer Science student at California State University San Marcos, graduating
                         in May 2024. <br />
@@ -90,65 +93,37 @@
         </div>
         <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#experience'">
     </section>
+
+    <!-- Work experience section-->
     <section id="experience">
         <p class="section_text_p1">Explore my</p>
         <h1 class="title">Experience</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="job-containers">
-                    <h2 class="experience-sub-title">Languages/Frameworks</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
-                            <div>
-                                <h3>C++</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
-                            <div>
-                                <h3>Python</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
-                            <div>
-                                <h3>HTML/CSS</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
-                            <div>
-                                <h3>C#</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
-                            <div>
-                                <h3>Kotlin</h3>
-                                <p>Beginner</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
-                            <div>
-                                <h3>Flask</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
+        <div class="details-containers">
+            <div class="section-container">
+                <div class="about-details-container man">
+                    <img src="./assets/education.png" alt="education icon" class="icon education-icon2"
+                        onclick="location.href='https://www.csusm.edu'" />
+                </div>
+                <div class="about-details-container">
+                    <div class="text-container lol">
+                        <h3 style="text-align: left;">LAEP Student Trainee | California State University, San Marcos</h3>
+                        <p class="job-details" style="text-align: left;">
+                            <strong>Location:</strong> San Marcos, CA<br>
+                            <strong>Date:</strong> November 2023 - Present<br>
+                        </p>
+                        <ul class="job-bullet-points" style="text-align: left; margin-left: 50px;" >
+                            <br><li>Currently working on a research project where I classify between benign and malicious traffic in IoT devices.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-        <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#projects'">
+        <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#skills'">
     </section>
-    <section id="experience">
-        <p class="section_text_p1">Explore my</p>
-        <h1 class="title">Experience</h1>
+
+    </section>
+    <section id="skills">
+        <h1 class="title">Skills</h1>
         <div class="experience-details-container">
             <div class="about-containers">
                 <div class="details-containers">
@@ -253,7 +228,8 @@
                         <img src="./assets/project-1.png" alt="project 1" class="project-img">
                     </div>
                     <h2 class="experience-sub-title project-title">Hot Brain</h2>
-                    <p class="proj-text">Full Stack brainwave-driven matchmaking application, utilizing Flask (Python) and integrating the BrainBit SDK</p>
+                    <p class="proj-text">Full Stack brainwave-driven matchmaking application, utilizing Flask (Python)
+                        and integrating the BrainBit SDK</p>
                     <div class="btn-container">
                         <button class="btn btn-color-2 project-btn"
                             onclick="location.href='https://github.com/efelicidario/hot_Brain'">
@@ -322,6 +298,7 @@
                 <ul class="nav-links">
                     <li><a href="#about">About</a></li>
                     <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>

@@ -218,6 +218,14 @@ section {
 
 .education-icon {
     filter: invert(1) sepia(1) saturate(1.5) hue-rotate(20deg) brightness(0.45);
+    scale: 1.5;
+    padding-bottom: 1rem;
+}
+
+.education-icon2 {
+    filter: invert(1) sepia(1) saturate(1.5) hue-rotate(20deg) brightness(0.45);
+    scale: .75;
+    padding-bottom: 1rem;
 }
 
 /* BUTTONS */
@@ -284,9 +292,25 @@ color: #e9e6d1;
     margin-top: 2rem;
 }
 
+.hmm {
+    gap: 10rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.job-containers {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
 .about-details-container {
     justify-content: center;
     flex-direction: column;
+}
+
+.man {
+    flex-direction:row;
 }
 
 .about-containers, .about-details-container {
@@ -311,6 +335,10 @@ color: #e9e6d1;
     border: #536342 0.1rem solid;
     border-color: #536342;
     text-align: center;
+}
+
+.educ {
+    border: none;
 }
 
 .job-containers {
@@ -351,7 +379,6 @@ color: #e9e6d1;
 .experience-details-container {
     display: flex;
     justify-content: center;
-    flex-direction: column;
 }
 
 .article-container {
@@ -468,4 +495,12 @@ footer {
 
 footer p {
     text-align: center;
+}
+
+.lol {
+    font-size: larger;
+}
+
+#skills {
+    position: relative;
 }
