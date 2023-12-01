@@ -59,6 +59,12 @@ a:hover {
     text-underline-offset: 0.5rem;
     text-decoration-color: black;
 }
+.joblink:hover {
+    color:#536342;
+    text-decoration:underline;
+    text-underline-offset: 0.25rem;
+    text-decoration-color: #536342;
+}
 
 .logo {
     font-size: 2rem;
