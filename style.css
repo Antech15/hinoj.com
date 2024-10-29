@@ -333,12 +333,6 @@ color: #e9e6d1;
     bottom: 2.5rem;
 }
 
-.arrow2 {
-    position: relative;
-    right: -103.5%;
-    bottom: -62%;
-}
-
 .details-containers {
     padding: 1.5rem;
     flex: 1;
@@ -514,5 +508,9 @@ footer p {
 }
 
 #skills {
+    position: relative;
+}
+
+#research {
     position: relative;
 }
