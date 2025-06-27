@@ -420,6 +420,12 @@ article .ticon {
     position: relative;
 }
 
+/* PROJECTS SECTION */
+
+#projects {
+    position: relative;
+}
+
 .color-container {
     border-color: #536342;
     background: #e9e6d1;
