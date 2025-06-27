@@ -373,6 +373,9 @@ color: #e9e6d1;
 
 #experience {
     position: relative;
+    max-width: 100vw;
+    max-height: 100vh;
+    overflow: hidden;
 }
 
 .experience-sub-title {
@@ -385,6 +388,22 @@ color: #e9e6d1;
 .experience-details-container {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Ensure experience text stays within the box */
+#experience .text-container {
+    font-size: clamp(0.65rem, 0.9vw, 0.95rem);
+    line-height: 1.2;
+    overflow-wrap: anywhere;
+}
+
+#experience .job-bullet-points {
+    font-size: clamp(0.6rem, 0.8vw, 0.9rem);
+    line-height: 1.2;
+    list-style-position: outside;
+    padding-left: 1rem;
+    margin: 0;
 }
 
 /* Ensure experience text stays within the box */
