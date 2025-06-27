@@ -334,7 +334,7 @@ color: #e9e6d1;
 }
 
 .details-containers {
-    padding: 1.5rem;
+    padding: 3rem;
     flex: 1;
     background: #e9e6d1;
     border-radius: 2rem;
@@ -360,6 +360,11 @@ color: #e9e6d1;
 
 .section-container {
     gap: 4rem;
+    height: 80%;
+}
+
+.section-container-experience {
+    gap: 2rem;
     height: 80%;
 }
 
@@ -394,15 +399,15 @@ color: #e9e6d1;
 /* Ensure experience text stays within the box */
 #experience .text-container {
     font-size: clamp(0.65rem, 0.9vw, 0.95rem);
-    line-height: 1.2;
+    line-height: 1;
     overflow-wrap: anywhere;
 }
 
 #experience .job-bullet-points {
     font-size: clamp(0.6rem, 0.8vw, 0.9rem);
-    line-height: 1.2;
+    line-height: 1;
     list-style-position: outside;
-    padding-left: 1rem;
+    padding-left: .5rem;
     margin: 0;
 }
 
