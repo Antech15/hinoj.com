@@ -406,6 +406,12 @@ color: #e9e6d1;
     margin: 0;
 }
 
+/* Ensure experience text stays within the box */
+#experience .text-container {
+    font-size: clamp(0.9rem, 1.2vw, 1rem);
+    overflow-wrap: anywhere;
+}
+
 .article-container {
     display: flex;
     text-align: initial;
