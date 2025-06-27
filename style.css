@@ -270,7 +270,7 @@ section {
 
 .education-icon2 {
     filter: invert(1) sepia(1) saturate(1.5) hue-rotate(20deg) brightness(0.45);
-    scale: .75;
+    scale: 1;
     padding-bottom: 1rem;
 }
 
@@ -371,6 +371,10 @@ color: #e9e6d1;
     position: absolute;
     right: -5rem;
     bottom: 2.5rem;
+    z-index: 100; /* Ensure high stacking order */
+    visibility: visible !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
 }
 
 .details-containers {
@@ -418,9 +422,11 @@ color: #e9e6d1;
 
 #experience {
     position: relative;
-    max-width: 100vw;
-    max-height: 100vh;
-    overflow: hidden;
+    height: auto !important; /* Override the fixed height */
+    min-height: 96vh;
+    max-height: none !important; /* Remove max-height restriction */
+    overflow: visible !important; /* Ensure content isn't cut off */
+    padding-bottom: 6rem; /* Extra space for the arrow */
 }
 
 .experience-sub-title {
@@ -603,4 +609,12 @@ footer p {
 #about .text-container.lol {
     margin-top: 1rem;
     padding-right: 1rem; /* Add some right padding for balance */
+}
+
+/* Custom styling for the NYL logo to make it bigger */
+img[src*="nyl.png"] {
+    height: 3.5rem;
+    width: auto;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
 }
