@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andres Hinojosa - Blog</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Blog</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="../">Home</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Blog</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="../" onclick="toggleMenu()">Home</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="blog">
+        <h1 class="title">Blog</h1>
+        <div class="section-container">
+            <ul class="blog-list">
+                <li><a href="blog1.html">Blog 1 - 01/01/2025</a></li>
+                <li><a href="blog2.html">Blog 2 - 01/02/2025</a></li>
+            </ul>
+        </div>
+    </section>
+    <script src="../script.js"></script>
+</body>
+</html>
