@@ -6,6 +6,8 @@
     <title>Blog 1 - Andres Hinojosa</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../mediaqueries.css">
+    <!-- Marked.js for markdown parsing -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
     <nav id="desktop-nav">
@@ -32,11 +34,30 @@
         </div>
     </nav>
     <section id="blog-post">
-        <h1 class="title">Blog 1</h1>
-        <div class="section-container">
-            <p>This is a placeholder for the first blog post.</p>
+        <div class="blog-container">
+            <div id="blog-content">
+                <!-- Markdown content will be loaded here -->
+                <p>Loading blog post...</p>
+            </div>
         </div>
     </section>
+    <script>
+        // Function to load and render markdown
+        async function loadMarkdown() {
+            try {
+                const response = await fetch('./blog1.md');
+                const markdownText = await response.text();
+                const htmlContent = marked.parse(markdownText);
+                document.getElementById('blog-content').innerHTML = htmlContent;
+            } catch (error) {
+                console.error('Error loading markdown:', error);
+                document.getElementById('blog-content').innerHTML = '<p>Error loading blog post content.</p>';
+            }
+        }
+
+        // Load markdown when page loads
+        document.addEventListener('DOMContentLoaded', loadMarkdown);
+    </script>
     <script src="../script.js"></script>
 </body>
 </html>
