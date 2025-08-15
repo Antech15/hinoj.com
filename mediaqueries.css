@@ -1,3 +1,27 @@
+/* DARK MODE RESPONSIVE ADJUSTMENTS */
+
+@media screen and (max-width: 1200px) {
+  [data-theme="dark"] .menu-links {
+    background-color: var(--nav-bg);
+    border: 1px solid var(--border-color);
+  }
+  
+  [data-theme="dark"] .hamburger-icon span {
+    background-color: var(--accent-color);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .theme-toggle.mobile {
+    border: 2px solid var(--accent-color);
+    background: var(--primary-bg);
+  }
+  
+  [data-theme="dark"] .theme-toggle.mobile {
+    border-color: var(--accent-color);
+  }
+}
+
 @media screen and (max-width: 1400px) {
   #profile {
     height: 83vh;
