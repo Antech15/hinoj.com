@@ -52,6 +52,10 @@
   #profile {
     height: 83vh;
     margin-bottom: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   article {
     font-size: 1rem;
@@ -94,6 +98,17 @@
     width: auto;
     height: 46vw;
     justify-content: center;
+    margin: 0 auto;
+  }
+  #profile .section_pic-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 2rem;
+    width: 46vw;
+    height: 46vw;
+    max-width: 275px;
+    max-height: 275px;
   }
   .section_texts-p2 {
     font-size: 1.25rem;
@@ -106,5 +121,55 @@
   }
   .lol {
     font-size: 1.25rem;
+  }
+  .details-containers.educ {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .education-icon {
+    scale: 1.2;
+    margin: 0 auto;
+  }
+  .details-containers.educ h3,
+  .details-containers.educ p {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #about .section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #about .about-details-container {
+    width: 100%;
+    align-items: center;
+  }
+  #about .about-containers {
+    justify-content: center;
+    width: 100%;
+  }
+  #about .section_pic-container {
+    width: 60vw;
+    height: 60vw;
+    max-width: 250px;
+    max-height: 250px;
+    margin: 0 auto 0;
+  }
+  #about .about-details-container {
+    width: 100%;
+    align-items: center;
+    margin-top: 0;
+    padding-top: 0;
+  }
+  #about .about-containers {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .details-containers.educ {
+    padding: 0.1rem;
   }
 }
