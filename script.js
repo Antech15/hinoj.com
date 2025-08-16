@@ -24,23 +24,11 @@ function toggleTheme() {
 // Initialize theme on page load
 document.addEventListener('DOMContentLoaded', function() {
   const savedTheme = localStorage.getItem('theme');
-  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
   
-  // Apply saved theme or system preference
-  if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+  // Only apply dark theme if explicitly saved, ignore system preference
+  if (savedTheme === 'dark') {
     document.body.setAttribute('data-theme', 'dark');
   } else {
     document.body.removeAttribute('data-theme');
   }
-  
-  // Listen for system theme changes
-  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
-    if (!localStorage.getItem('theme')) {
-      if (e.matches) {
-        document.body.setAttribute('data-theme', 'dark');
-      } else {
-        document.body.removeAttribute('data-theme');
-      }
-    }
-  });
 });
