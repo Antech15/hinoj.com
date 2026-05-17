@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Running — Andres Hinojosa</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../mediaqueries.css">
+  <style>
+    #run-hero { padding-top: 6rem; border-bottom: 1px solid var(--border-color); }
+
+    .run-list { display: flex; flex-direction: column; }
+
+    .run-item {
+      display: grid;
+      grid-template-columns: 90px 1fr;
+      gap: 2.5rem;
+      padding: 2.5rem 0;
+      border-bottom: 1px solid var(--border-color);
+    }
+    .run-item:first-child { padding-top: 0; }
+    .run-item:last-child { border-bottom: none; }
+
+    .run-dist { padding-top: 2px; }
+    .run-dist-num {
+      display: block;
+      font-size: 2.25rem;
+      font-weight: 300;
+      color: var(--border-color);
+      line-height: 1;
+      font-variant-numeric: tabular-nums;
+    }
+    .run-dist-unit {
+      display: block;
+      font-size: 0.6rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent-muted);
+      margin-top: 3px;
+    }
+    .run-date {
+      display: block;
+      font-size: 0.65rem;
+      letter-spacing: 0.05em;
+      color: var(--accent-muted);
+      margin-top: 0.6rem;
+    }
+    .run-name {
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--primary-text);
+      margin-bottom: 0.35rem;
+      line-height: 1.3;
+    }
+    .run-meta {
+      font-size: 0.8rem;
+      color: var(--secondary-text);
+      margin-bottom: 0.75rem;
+      letter-spacing: 0.01em;
+    }
+
+    .totals-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+    }
+    .totals-group-title {
+      font-size: 0.7rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent-muted);
+      padding-bottom: 0.6rem;
+      border-bottom: 1px solid var(--border-color);
+      margin-bottom: 0;
+    }
+    .totals-facts { border-top: none; }
+
+    .run-empty {
+      font-size: 0.85rem;
+      color: var(--accent-muted);
+      padding: 3rem 0;
+    }
+    .strava-credit { font-size: 0.68rem; color: var(--accent-muted); letter-spacing: 0.04em; }
+    .strava-credit a { color: var(--accent-muted); text-decoration: underline; text-underline-offset: 3px; }
+
+    @media screen and (max-width: 1200px) {
+      .run-item { grid-template-columns: 1fr; gap: 0.4rem; }
+      .run-dist { display: flex; align-items: baseline; gap: 0.4rem; flex-wrap: wrap; }
+      .run-dist-num { font-size: 1.5rem; }
+      .run-dist-unit { margin-top: 0; }
+      .run-date { margin-top: 0; margin-left: auto; }
+    }
+    @media screen and (max-width: 600px) {
+      .totals-grid { grid-template-columns: 1fr; gap: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- DESKTOP NAV -->
+<nav id="desktop-nav">
+  <a class="logo" href="/" style="text-decoration:none;cursor:pointer;">Andres Hinojosa</a>
+  <ul class="nav-links">
+    <li><a href="/#about">About</a></li>
+    <li><a href="/#experience">Experience</a></li>
+    <li><a href="/#research">Research</a></li>
+    <li><a href="/#projects">Projects</a></li>
+    <li><a href="/running/" style="color:var(--primary-text);font-weight:500;border-bottom:1px solid var(--primary-text);padding-bottom:1px;">Running</a></li>
+    <li><a href="/#contact">Contact</a></li>
+    <li>
+      <button id="theme-toggle" class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
+        <svg class="theme-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path class="moon-icon" d="M21.0672 11.8568L20.4253 11.469L21.0672 11.8568ZM12.1432 2.93276L11.531 2.54487V2.54487L12.1432 2.93276ZM21.25 12C21.25 17.1086 17.1086 21.25 12 21.25V22.75C17.9371 22.75 22.75 17.9371 22.75 12H21.25ZM12 21.25C6.89137 21.25 2.75 17.1086 2.75 12H1.25C1.25 17.9371 6.06294 22.75 12 22.75V21.25ZM2.75 12C2.75 6.89137 6.89137 2.75 12 2.75V1.25C6.06294 1.25 1.25 6.06294 1.25 12H2.75ZM15.5 14.25C12.3244 14.25 9.75 11.6756 9.75 8.5H8.25C8.25 12.5041 11.4959 15.75 15.5 15.75V14.25ZM20.4253 11.469C19.4172 13.1373 17.5882 14.25 15.5 14.25V15.75C18.1349 15.75 20.4407 14.3439 21.7092 12.2447L20.4253 11.469ZM9.75 8.5C9.75 6.41182 10.8627 4.58281 12.531 3.57471L11.531 2.54487C9.43569 3.81301 8.25 6.10969 8.25 8.5H9.75ZM12 2.75C11.9115 2.75 11.8077 2.71008 11.531 2.54487L12.531 3.57471C12.7969 3.75 12.75 3.75 12 2.75Z" fill="currentColor"/>
+          <path class="sun-icon" d="M12 2V4M12 20V22M4 12H2M6.31412 6.31412L4.8999 4.8999M17.6859 6.31412L19.1001 4.8999M6.31412 17.69L4.8999 19.1042M17.6859 17.69L19.1001 19.1042M22 12H20M17 12C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12C7 9.23858 9.23858 7 12 7C14.7614 7 17 9.23858 17 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </li>
+  </ul>
+</nav>
+
+<!-- HAMBURGER NAV -->
+<nav id="hamburger-nav">
+  <a class="logo" href="/" style="text-decoration:none;">Andres Hinojosa</a>
+  <div class="hamburger-menu">
+    <div class="hamburger-icon" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+    <div class="menu-links">
+      <li><a href="/#about" onclick="toggleMenu()">About</a></li>
+      <li><a href="/#experience" onclick="toggleMenu()">Experience</a></li>
+      <li><a href="/#research" onclick="toggleMenu()">Research</a></li>
+      <li><a href="/#projects" onclick="toggleMenu()">Projects</a></li>
+      <li><a href="/running/" onclick="toggleMenu()" style="font-weight:500;">Running</a></li>
+      <li><a href="/#contact" onclick="toggleMenu()">Contact</a></li>
+      <li>
+        <button id="mobile-theme-toggle" class="theme-toggle mobile" onclick="toggleTheme()" aria-label="Toggle dark mode">
+          <svg class="theme-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="moon-icon" d="M21.0672 11.8568L20.4253 11.469L21.0672 11.8568ZM12.1432 2.93276L11.531 2.54487V2.54487L12.1432 2.93276ZM21.25 12C21.25 17.1086 17.1086 21.25 12 21.25V22.75C17.9371 22.75 22.75 17.9371 22.75 12H21.25ZM12 21.25C6.89137 21.25 2.75 17.1086 2.75 12H1.25C1.25 17.9371 6.06294 22.75 12 22.75V21.25ZM2.75 12C2.75 6.89137 6.89137 2.75 12 2.75V1.25C6.06294 1.25 1.25 6.06294 1.25 12H2.75ZM15.5 14.25C12.3244 14.25 9.75 11.6756 9.75 8.5H8.25C8.25 12.5041 11.4959 15.75 15.5 15.75V14.25ZM20.4253 11.469C19.4172 13.1373 17.5882 14.25 15.5 14.25V15.75C18.1349 15.75 20.4407 14.3439 21.7092 12.2447L20.4253 11.469ZM9.75 8.5C9.75 6.41182 10.8627 4.58281 12.531 3.57471L11.531 2.54487C9.43569 3.81301 8.25 6.10969 8.25 8.5H9.75ZM12 2.75C11.9115 2.75 11.8077 2.71008 11.531 2.54487L12.531 3.57471C12.7969 3.75 12.75 3.75 12 2.75Z" fill="currentColor"/>
+            <path class="sun-icon" d="M12 2V4M12 20V22M4 12H2M6.31412 6.31412L4.8999 4.8999M17.6859 6.31412L19.1001 4.8999M6.31412 17.69L4.8999 19.1042M17.6859 17.69L19.1001 19.1042M22 12H20M17 12C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12C7 9.23858 9.23858 7 12 7C14.7614 7 17 9.23858 17 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </li>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="run-hero">
+  <p class="section-label">Athletics</p>
+  <h1 class="title" style="margin-bottom:0.75rem;">Running</h1>
+  <p class="hero-desc" style="max-width:480px;margin-bottom:2rem;">
+    Running is how I decompress. No headphones, no shortcuts — just miles logged one at a time. Every run tracked on Strava since I started taking it seriously.
+  </p>
+  <div class="hero-stats" id="hero-stats" style="margin-bottom:2rem;">
+    <div class="hero-stat">
+      <div class="hero-stat-num" style="color:var(--accent-muted);">—</div>
+      <div class="hero-stat-label">Total Miles</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-num" style="color:var(--accent-muted);">—</div>
+      <div class="hero-stat-label">Total Runs</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-num" style="color:var(--accent-muted);">—</div>
+      <div class="hero-stat-label">Vert Feet</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-num" style="color:var(--accent-muted);">—</div>
+      <div class="hero-stat-label">YTD Miles</div>
+    </div>
+  </div>
+  <div class="btn-container">
+    <a id="strava-btn" href="https://www.strava.com" target="_blank" class="btn btn-color-1">View on Strava</a>
+    <a href="/" class="btn btn-color-2">← Portfolio</a>
+  </div>
+</section>
+
+<!-- RECENT RUNS -->
+<section id="recent-runs">
+  <p class="section-label">Activity</p>
+  <h1 class="title">Recent Runs</h1>
+  <div class="run-list" id="run-list">
+    <p class="run-empty">Loading...</p>
+  </div>
+</section>
+
+<!-- ALL-TIME STATS -->
+<section id="run-totals" style="border-top:1px solid var(--border-color);">
+  <p class="section-label">Career</p>
+  <h1 class="title">All-Time Stats</h1>
+  <div class="totals-grid" id="run-totals-grid">
+  </div>
+  <p style="margin-top:3rem;" class="strava-credit">
+    Data synced via <a href="https://developers.strava.com" target="_blank">Strava API</a> · Updated every 6 hours ·
+    Last synced: <span id="last-updated">—</span>
+  </p>
+</section>
+
+<footer>
+  <ul class="footer-nav">
+    <li><a href="/#about">About</a></li>
+    <li><a href="/#experience">Experience</a></li>
+    <li><a href="/#research">Research</a></li>
+    <li><a href="/#projects">Projects</a></li>
+    <li><a href="/running/">Running</a></li>
+    <li><a href="/#contact">Contact</a></li>
+  </ul>
+  <p>© 2026 Andres Hinojosa</p>
+</footer>
+
+<script src="../script.js"></script>
+<script>
+  // ── Helpers ──────────────────────────────────────────────────────────────────
+  const m2mi  = m => m * 0.000621371;
+  const m2ft  = m => Math.round(m * 3.28084);
+  const fmtMi = m => m2mi(m).toFixed(1);
+  const fmtNum = n => Math.round(n).toLocaleString();
+  const fmtTime = s => {
+    const h = Math.floor(s / 3600);
+    const m = Math.floor((s % 3600) / 60);
+    return h > 0 ? `${h}h ${m}m` : `${m}m`;
+  };
+  const pace = (secs, meters) => {
+    const mpm = (secs / 60) / m2mi(meters);
+    const min = Math.floor(mpm);
+    const sec = Math.round((mpm - min) * 60);
+    return `${min}:${String(sec).padStart(2, '0')}/mi`;
+  };
+  const fmtDate = iso => new Date(iso).toLocaleDateString('en-US', {
+    month: 'short', day: 'numeric', year: 'numeric'
+  });
+  const fmtDateShort = iso => new Date(iso).toLocaleDateString('en-US', {
+    month: 'short', day: 'numeric'
+  });
+
+  // ── Renderers ────────────────────────────────────────────────────────────────
+  function renderHeroStats(data) {
+    const s = data.stats;
+    const stats = [
+      { num: fmtNum(Math.round(m2mi(s.all_run_totals.distance))), label: 'Total Miles' },
+      { num: fmtNum(s.all_run_totals.count),                       label: 'Total Runs'  },
+      { num: fmtNum(m2ft(s.all_run_totals.elevation_gain)),        label: 'Vert Feet'   },
+      { num: fmtNum(Math.round(m2mi(s.ytd_run_totals.distance))), label: 'YTD Miles'   },
+    ];
+    document.getElementById('hero-stats').innerHTML = stats.map(s => `
+      <div class="hero-stat">
+        <div class="hero-stat-num">${s.num}</div>
+        <div class="hero-stat-label">${s.label}</div>
+      </div>
+    `).join('');
+  }
+
+  function renderRecentRuns(data) {
+    const list = document.getElementById('run-list');
+    if (!data.recent_runs || data.recent_runs.length === 0) {
+      list.innerHTML = '<p class="run-empty">No recent runs found. Try triggering the workflow manually.</p>';
+      return;
+    }
+    list.innerHTML = data.recent_runs.map(run => {
+      const dist = m2mi(run.distance);
+      const tags = [];
+      if (run.workout_type === 1) tags.push('Race');
+      else if (run.workout_type === 2 || dist >= 13.1) tags.push('Long Run');
+      else if (run.workout_type === 3) tags.push('Workout');
+
+      const elevPart = run.total_elevation_gain > 0
+        ? ` · ${fmtNum(m2ft(run.total_elevation_gain))} ft gain`
+        : '';
+
+      return `
+        <div class="run-item reveal">
+          <div class="run-dist">
+            <span class="run-dist-num">${dist.toFixed(1)}</span>
+            <span class="run-dist-unit">mi</span>
+            <span class="run-date">${fmtDateShort(run.start_date_local)}</span>
+          </div>
+          <div>
+            <div class="run-name">${run.name}</div>
+            <div class="run-meta">${pace(run.moving_time, run.distance)} · ${fmtTime(run.moving_time)}${elevPart}</div>
+            ${tags.length ? `<div class="exp-tags">${tags.map(t => `<span class="tag">${t}</span>`).join('')}</div>` : ''}
+          </div>
+        </div>`;
+    }).join('');
+
+    document.querySelectorAll('.run-item.reveal').forEach(el => revealObserver.observe(el));
+  }
+
+  function renderTotals(data) {
+    const s = data.stats;
+    const makeRows = totals => [
+      ['Runs',      fmtNum(totals.count)],
+      ['Distance',  `${fmtNum(Math.round(m2mi(totals.distance)))} mi`],
+      ['Time',      fmtTime(totals.moving_time)],
+      ['Elevation', `${fmtNum(m2ft(totals.elevation_gain))} ft`],
+    ].map(([label, val]) => `
+      <div class="fact-row">
+        <span class="fact-label">${label}</span>
+        <span class="fact-val">${val}</span>
+      </div>`).join('');
+
+    document.getElementById('run-totals-grid').innerHTML = `
+      <div>
+        <div class="totals-group-title">All Time</div>
+        <div class="about-facts totals-facts">${makeRows(s.all_run_totals)}</div>
+      </div>
+      <div>
+        <div class="totals-group-title">This Year</div>
+        <div class="about-facts totals-facts">${makeRows(s.ytd_run_totals)}</div>
+      </div>`;
+  }
+
+  function showEmpty(msg) {
+    document.getElementById('run-list').innerHTML = `<p class="run-empty">${msg}</p>`;
+  }
+
+  // ── Main ─────────────────────────────────────────────────────────────────────
+  async function loadRunningData() {
+    try {
+      const res = await fetch('../assets/running-data.json');
+      if (!res.ok) throw new Error('fetch failed');
+      const data = await res.json();
+
+      if (!data.stats) {
+        showEmpty('Data not yet available. Push to GitHub and trigger the workflow in the Actions tab.');
+        return;
+      }
+
+      renderHeroStats(data);
+      renderRecentRuns(data);
+      renderTotals(data);
+
+      if (data.athlete && data.athlete.id) {
+        document.getElementById('strava-btn').href =
+          `https://www.strava.com/athletes/${data.athlete.id}`;
+      }
+      if (data.updated_at) {
+        document.getElementById('last-updated').textContent =
+          fmtDate(data.updated_at);
+      }
+    } catch {
+      showEmpty('Could not load running data.');
+    }
+  }
+
+  // ── Reveal animations ────────────────────────────────────────────────────────
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        setTimeout(() => e.target.classList.add('visible'), i * 60);
+        revealObserver.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08 });
+
+  document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+  loadRunningData();
+</script>
+</body>
+</html>
