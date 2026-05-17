@@ -1,0 +1,82 @@
+.blog-post-wrap {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 5rem clamp(2rem, 8%, 10rem) 6rem;
+}
+.blog-post-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-muted);
+  text-decoration: none;
+  margin-bottom: 3rem;
+  transition: color 0.2s;
+}
+.blog-post-back:hover { color: var(--primary-text); text-decoration: none; }
+.blog-post-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent-muted);
+  margin-bottom: 0.5rem;
+}
+.blog-post-title {
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  font-weight: 500;
+  color: var(--primary-text);
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  margin-bottom: 1rem;
+}
+.blog-post-date {
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  color: var(--border-color);
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border-color);
+}
+.blog-post-body {
+  font-size: 0.95rem;
+  color: var(--secondary-text);
+  line-height: 1.9;
+}
+.blog-post-body p { margin-bottom: 1.5rem; }
+.blog-post-body h2 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--primary-text);
+  margin: 2.5rem 0 0.75rem;
+  letter-spacing: -0.01em;
+}
+.blog-post-body hr {
+  border: none;
+  border-top: 1px solid var(--border-color);
+  margin: 2.5rem 0;
+}
+.blog-post-body img {
+  max-width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  display: block;
+  margin: 2rem auto;
+}
+.blog-post-body strong { color: var(--primary-text); font-weight: 500; }
+.blog-post-body em { font-style: italic; }
+.blog-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border-color);
+}
+.blog-nav a {
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent-muted);
+}
+.blog-nav a:hover { color: var(--primary-text); text-decoration: none; }

@@ -1,420 +1,423 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andres Hinojosa</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andres Hinojosa</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaqueries.css">
 </head>
-
 <body>
-    <nav id="desktop-nav">
-        <div class="logo">Andres Hinojosa</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#research">Research</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <!-- <li><a href="blog/">Blog</a></li> -->
-                <li>
-                    <button id="theme-toggle" class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
-                        <svg class="theme-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path class="moon-icon" d="M21.0672 11.8568L20.4253 11.469L21.0672 11.8568ZM12.1432 2.93276L11.531 2.54487V2.54487L12.1432 2.93276ZM21.25 12C21.25 17.1086 17.1086 21.25 12 21.25V22.75C17.9371 22.75 22.75 17.9371 22.75 12H21.25ZM12 21.25C6.89137 21.25 2.75 17.1086 2.75 12H1.25C1.25 17.9371 6.06294 22.75 12 22.75V21.25ZM2.75 12C2.75 6.89137 6.89137 2.75 12 2.75V1.25C6.06294 1.25 1.25 6.06294 1.25 12H2.75ZM15.5 14.25C12.3244 14.25 9.75 11.6756 9.75 8.5H8.25C8.25 12.5041 11.4959 15.75 15.5 15.75V14.25ZM20.4253 11.469C19.4172 13.1373 17.5882 14.25 15.5 14.25V15.75C18.1349 15.75 20.4407 14.3439 21.7092 12.2447L20.4253 11.469ZM9.75 8.5C9.75 6.41182 10.8627 4.58281 12.531 3.57471L11.531 2.54487C9.43569 3.81301 8.25 6.10969 8.25 8.5H9.75ZM12 2.75C11.9115 2.75 11.8077 2.71008 11.531 2.54487L12.531 3.57471C12.7969 3.75 12.75 3.75 12 2.75Z" fill="currentColor"/>
-                            <path class="sun-icon" d="M12 2V4M12 20V22M4 12H2M6.31412 6.31412L4.8999 4.8999M17.6859 6.31412L19.1001 4.8999M6.31412 17.69L4.8999 19.1042M17.6859 17.69L19.1001 19.1042M22 12H20M17 12C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12C7 9.23858 9.23858 7 12 7C14.7614 7 17 9.23858 17 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </button>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <nav id="hamburger-nav">
-        <div class="logo">Andres Hinojosa</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick=" toggleMenu()">Experience</a></li>
-                <li><a href="#skills" onclick=" toggleMenu()">Skills</a></li>
-                <li><a href="#research" onclick=" toggleMenu()">Research</a></li>
-                <li><a href="#projects" onclick=" toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick=" toggleMenu()">Contact</a></li>
-                <li><a href="blog/" onclick="toggleMenu()">Blog</a></li>
-                <li>
-                    <button id="mobile-theme-toggle" class="theme-toggle mobile" onclick="toggleTheme()" aria-label="Toggle dark mode">
-                        <svg class="theme-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path class="moon-icon" d="M21.0672 11.8568L20.4253 11.469L21.0672 11.8568ZM12.1432 2.93276L11.531 2.54487V2.54487L12.1432 2.93276ZM21.25 12C21.25 17.1086 17.1086 21.25 12 21.25V22.75C17.9371 22.75 22.75 17.9371 22.75 12H21.25ZM12 21.25C6.89137 21.25 2.75 17.1086 2.75 12H1.25C1.25 17.9371 6.06294 22.75 12 22.75V21.25ZM2.75 12C2.75 6.89137 6.89137 2.75 12 2.75V1.25C6.06294 1.25 1.25 6.06294 1.25 12H2.75ZM15.5 14.25C12.3244 14.25 9.75 11.6756 9.75 8.5H8.25C8.25 12.5041 11.4959 15.75 15.5 15.75V14.25ZM20.4253 11.469C19.4172 13.1373 17.5882 14.25 15.5 14.25V15.75C18.1349 15.75 20.4407 14.3439 21.7092 12.2447L20.4253 11.469ZM9.75 8.5C9.75 6.41182 10.8627 4.58281 12.531 3.57471L11.531 2.54487C9.43569 3.81301 8.25 6.10969 8.25 8.5H9.75ZM12 2.75C11.9115 2.75 11.8077 2.71008 11.531 2.54487L12.531 3.57471C12.7969 3.75 12.75 3.75 12 2.75Z" fill="currentColor"/>
-                            <path class="sun-icon" d="M12 2V4M12 20V22M4 12H2M6.31412 6.31412L4.8999 4.8999M17.6859 6.31412L19.1001 4.8999M6.31412 17.69L4.8999 19.1042M17.6859 17.69L19.1001 19.1042M22 12H20M17 12C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12C7 9.23858 9.23858 7 12 7C14.7614 7 17 9.23858 17 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </button>
-                </li>
-            </div>
-        </div>
-    </nav>
-    <section id="profile">
-        <div class="section_pic-container">
-            <img src="./assets/profile-pic.png" alt="Andres Hinojosa pfp">
-        </div>
-        <div class="section_text">
-            <p class="section_text_p1">Hello, I'm</p>
-            <h1 class="title">Andres Hinojosa</h1>
-            <p class="section_text_p2">Masters Student</p>
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/Hinojosa, Andres - Resume.pdf')">
-                    Download CV
-                </button>
-                <button class="btn btn-color-1" onclick="location.href='./#contact'">
-                    Contact Info
-                </button>
-            </div>
-            <div id="social-container">
-                <img src="./assets/linkedin.png" alt="linkedin profile" class="icon"
-                    onclick="location.href='https://www.linkedin.com/in/ahinoj/'" />
-                <img src="./assets/github.png" alt="github profile" class="icon"
-                    onclick="location.href='https://github.com/Antech15'" />
-                <img src="./assets/gscholar.svg" alt="google scholar profile" class="icon"
-                    onclick="location.href='https://scholar.google.com/citations?hl=en&user=CSpBjUMAAAAJ'" />
-            </div>
-        </div>
-    </section>
-    <section id="about">
-        <p class="section_text_p1">Get to Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-            <div class="section_pic-container">
-                <img src="./assets/about-pic2.jpg" alt="Andres Hinojosa abt pfp" class="" />
-            </div>
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-containers educ">
-                        <img src="./assets/education.png" alt="education icon" class="icon education-icon"
-                            onclick="location.href='https://www.csusm.edu'" />
-                        <h3>Education</h3>
-                        <p>Bachelor of Science in Computer Science<br />California State University, San Marcos</p>
-                    </div>
-                </div>
-                <div class="text-container lol">
-                    <p>
-                        Hello! I'm Andres Hinojosa, a Computer Science student at California State University San Marcos, graduating
-                        in May 2026. <br />
-                        One of the things I enjoy the most in computer science is that there is always something to learn. I enjoy learning new technologies and using them to solve real problems.<br>
-                        I’m currently open to exciting opportunities related to Computer Science, and have explored research and development so far.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#experience'">
-    </section>
 
-    <!-- Work experience section-->
-    <section id="experience">
-        <p class="section_text_p1">Explore my</p>
-        <h1 class="title" style="padding: 1rem;">Experience</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-containers">
-                    <div class="section-container-experience">
-                        <div class="about-details-container man">
-                            <img src="./assets/education.png" alt="CSUSM logo" class="icon education-icon2"
-                                onclick="location.href='https://www.csusm.edu'" />
-                        </div>
-                        <div class="about-details-container">
-                            <div class="text-container lol">
-                                <h3 style="text-align: left;"><a href="/templates/laep.html" class="joblink">Intructional Student Assistant</a></h3>
-                                <p class="job-details" style="text-align: left;">
-                                    California State University, San Marcos<br>
-                                    <strong>Location:</strong> San Marcos, CA<br>
-                                    <strong>Date:</strong> February 2024 - Present<br>
-                                </p>
-                                <ul class="job-bullet-points" style="text-align: left;">
+<!-- DESKTOP NAV -->
+<nav id="desktop-nav">
+  <div class="logo">Andres Hinojosa</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#research">Research</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <!-- <li><a href="blog/">Blog</a></li> -->
+    <li>
+      <button id="theme-toggle" class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
+        <svg class="theme-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path class="moon-icon" d="M21.0672 11.8568L20.4253 11.469L21.0672 11.8568ZM12.1432 2.93276L11.531 2.54487V2.54487L12.1432 2.93276ZM21.25 12C21.25 17.1086 17.1086 21.25 12 21.25V22.75C17.9371 22.75 22.75 17.9371 22.75 12H21.25ZM12 21.25C6.89137 21.25 2.75 17.1086 2.75 12H1.25C1.25 17.9371 6.06294 22.75 12 22.75V21.25ZM2.75 12C2.75 6.89137 6.89137 2.75 12 2.75V1.25C6.06294 1.25 1.25 6.06294 1.25 12H2.75ZM15.5 14.25C12.3244 14.25 9.75 11.6756 9.75 8.5H8.25C8.25 12.5041 11.4959 15.75 15.5 15.75V14.25ZM20.4253 11.469C19.4172 13.1373 17.5882 14.25 15.5 14.25V15.75C18.1349 15.75 20.4407 14.3439 21.7092 12.2447L20.4253 11.469ZM9.75 8.5C9.75 6.41182 10.8627 4.58281 12.531 3.57471L11.531 2.54487C9.43569 3.81301 8.25 6.10969 8.25 8.5H9.75ZM12 2.75C11.9115 2.75 11.8077 2.71008 11.531 2.54487L12.531 3.57471C12.7969 3.75 12.75 3.75 12 2.75Z" fill="currentColor"/>
+          <path class="sun-icon" d="M12 2V4M12 20V22M4 12H2M6.31412 6.31412L4.8999 4.8999M17.6859 6.31412L19.1001 4.8999M6.31412 17.69L4.8999 19.1042M17.6859 17.69L19.1001 19.1042M22 12H20M17 12C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12C7 9.23858 9.23858 7 12 7C14.7614 7 17 9.23858 17 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </li>
+  </ul>
+</nav>
 
-                                    <br><li>Assist the professor of CS436: Introduction to Networking in grading classwork across two sections for a total of 60 students.</li>
-                                </ul>
-                                <h3 style="text-align: left; padding-top: 1rem;"><a href="/templates/laep.html" class="joblink">Blockchain Research Assistant</a></h3>
-                                <p class="job-details" style="text-align: left;">
-                                    California State University, San Marcos<br>
-                                    <strong>Location:</strong> San Marcos, CA<br>
-                                    <strong>Date:</strong> June 2024 - August 2024<br>
-                                </p>
-                                <ul class="job-bullet-points" style="text-align: left;">
-                                    <br><li>Developed optimized patterns in Move smart contracts for the Sui blockchain to reduce transaction costs.</li>
-                                    <br><li>Analyzed performance of Sui Move's object models.</li>
-                                    <br><li>Funded by the U.S. Department of Education.</li>
-                                </ul>
-                                
-                                <h3 style="text-align: left; padding-top: 2rem;"><a href="/templates/laep.html" class="joblink">Deep Learning Research Assistant</a></h3>
-                                <p class="job-details" style="text-align: left;">
-                                    California State University, San Marcos<br>
-                                    <strong>Location:</strong> San Marcos, CA<br>
-                                    <strong>Date:</strong> November 2023 - May 2024<br>
-                                </p>
-                                <ul class="job-bullet-points" style="text-align: left;">
-                                    <br><li>Developed deep learning models for network intrusion detection in IoT using edge computing.</li>
-                                    <br><li>Implemented CNN-based and BiLSTM-CNN models on an imbalanced dataset, achieving a 24% improvement in F1-Score compared to the state-of-the-art.</li>
-                                    <br><li>Funded by the Learning-Aligned Employment Program (LAEP).</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="details-containers">
-                    <div class="section-container-experience">
-                        <div class="about-details-container man">
-                            <img src="./assets/nyl.png" alt="New York Life placeholder logo" class="icon education-icon2"
-                            onclick="location.href='https://www.newyorklife.com/'" />
-                        </div>
-                        <div class="about-details-container">
-                            <div class="text-container lol">
-                                <h3 style="text-align: left;">Software Engineer Intern</h3>
-                                <p class="job-details" style="text-align: left;">
-                                    New York Life Insurance Company<br>
-                                    <strong>Location:</strong> New York, NY (Hybrid)<br>
-                                    <strong>Date:</strong> May 2025 - August 2025<br>
-                                    <strong>Team:</strong> Corporate Technology - Enterprise & Employee Engagement Team<br>
-                                </p>
-                                <ul class="job-bullet-points" style="text-align: left;">
-                                    <br><li>Designed and implemented secure SAP CPI iFlows to transform SuccessFactors reports into automated data pipelines using Groovy scripts.</li>
-                                    <br><li>Co-developed an internal decision-tree application in PowerApps using Dataverse and Power Automate. Extracted and documented 30+ logic paths from a POC and implemented dynamic workflows.</li>
-                                    <br><li>Collaborated with fellow interns to create a generative AI chatbot to enhance customer experience during peak and off-hours through QA and front-end development using React and AWS services.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#skills'">
-    </section>
-    <section id="skills">
-        <h1 class="title">Skills</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-containers">
-                    <h2 class="experience-sub-title">Languages/Frameworks</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
-                            <div>
-                                <h3>C++</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
-                            <div>
-                                <h3>Python</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
-                            <div>
-                                <h3>HTML/CSS</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
-                            <div>
-                                <h3>C#</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
-                            <div>
-                                <h3>Kotlin</h3>
-                                <p>Beginner</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
-                            <div>
-                                <h3>Flask</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-                <div class="details-containers">
-                    <h2 class="experience-sub-title">Tools</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon ticon" />
-                            <div>
-                                <h3>Git/GitHub</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon ticon" />
-                            <div>
-                                <h3>VS Code</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon ticon" />
-                            <div>
-                                <h3>Visual Studio</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon ticon" />
-                            <div>
-                                <h3>PyCharm</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon ticon" />
-                            <div>
-                                <h3>Jira</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon ticon" />
-                            <div>
-                                <h3>Unity</h3>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#research'">
-    </section>
+<!-- HAMBURGER NAV -->
+<nav id="hamburger-nav">
+  <div class="logo">Andres Hinojosa</div>
+  <div class="hamburger-menu">
+    <div class="hamburger-icon" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+    <div class="menu-links">
+      <li><a href="#about" onclick="toggleMenu()">About</a></li>
+      <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+      <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+      <li><a href="#research" onclick="toggleMenu()">Research</a></li>
+      <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+      <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      <!-- <li><a href="blog/" onclick="toggleMenu()">Blog</a></li> -->
+      <li>
+        <button id="mobile-theme-toggle" class="theme-toggle mobile" onclick="toggleTheme()" aria-label="Toggle dark mode">
+          <svg class="theme-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="moon-icon" d="M21.0672 11.8568L20.4253 11.469L21.0672 11.8568ZM12.1432 2.93276L11.531 2.54487V2.54487L12.1432 2.93276ZM21.25 12C21.25 17.1086 17.1086 21.25 12 21.25V22.75C17.9371 22.75 22.75 17.9371 22.75 12H21.25ZM12 21.25C6.89137 21.25 2.75 17.1086 2.75 12H1.25C1.25 17.9371 6.06294 22.75 12 22.75V21.25ZM2.75 12C2.75 6.89137 6.89137 2.75 12 2.75V1.25C6.06294 1.25 1.25 6.06294 1.25 12H2.75ZM15.5 14.25C12.3244 14.25 9.75 11.6756 9.75 8.5H8.25C8.25 12.5041 11.4959 15.75 15.5 15.75V14.25ZM20.4253 11.469C19.4172 13.1373 17.5882 14.25 15.5 14.25V15.75C18.1349 15.75 20.4407 14.3439 21.7092 12.2447L20.4253 11.469ZM9.75 8.5C9.75 6.41182 10.8627 4.58281 12.531 3.57471L11.531 2.54487C9.43569 3.81301 8.25 6.10969 8.25 8.5H9.75ZM12 2.75C11.9115 2.75 11.8077 2.71008 11.531 2.54487L12.531 3.57471C12.7969 3.75 12.75 3.75 12 2.75Z" fill="currentColor"/>
+            <path class="sun-icon" d="M12 2V4M12 20V22M4 12H2M6.31412 6.31412L4.8999 4.8999M17.6859 6.31412L19.1001 4.8999M6.31412 17.69L4.8999 19.1042M17.6859 17.69L19.1001 19.1042M22 12H20M17 12C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12C7 9.23858 9.23858 7 12 7C14.7614 7 17 9.23858 17 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </li>
+    </div>
+  </div>
+</nav>
 
-    <!-- Research section-->
-    <section id="research">
-        <p class="section_text_p1">Explore my</p>
-        <h1 class="title" style="padding: 1rem;">Research</h1>
-        <div class="details-containers">
-            <div class="section-container">
-                <div class="about-details-container man">
-                    <img src="./assets/education.png" alt="education icon" class="icon education-icon2"
-                        onclick="location.href='https://www.csusm.edu'" />
-                </div>
-                <div class="about-details-container">
-                    <div class="text-container lol">
-                        <h3 style="text-align: left;"><a href="https://doi.org/10.1109/ICBC64466.2025.11114512" class="joblink">"An Analytical Performance Evaluation on Sui Move Object-Centric Models"</a></h3>
-                        <p class="job-details" style="text-align: left;">
-                            N. E. Majd, <strong>A. Hinojosa</strong>, C. Fisher, F. Landeros, F. Baldimtsi<br>
-                            <strong>ICBC, </strong>2025<br>
-                        </p>
-                        
-                        <h3 style="text-align: left; margin-top: 2rem;"><a href="https://doi.org/10.1109/WETSEB66605.2025.00008" class="joblink">"A Study on Gas Optimization and Performance Evaluation of Sui and Aptos Blockchains"</a></h3>
-                        <p class="job-details" style="text-align: left;">
-                            N. E. Majd, <strong>A. Hinojosa</strong>, C. Fisher, F. Landeros, F. Baldimtsi<br>
-                            <strong>ICSE, </strong>2025<br>
-                        </p>
-                        
-                        <h3 style="text-align: left; margin-top: 2rem;"><a href="https://ieeexplore.ieee.org/document/10637611" class="joblink">"Edge Computing Network Intrusion Detection in IoT Using Deep Learning"</a></h3>
-                        <p class="job-details" style="text-align: left;">
-                            <strong>A. Hinojosa</strong>, N. Majd<br>
-                            <strong>ICCCN, </strong>2024<br>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <img src="./assets/arrow.png" alt="arrow icon" class="arrow icon" onclick="location.href='./#projects'">
-    </section>
+<!-- HERO -->
+<section id="profile">
+  <div class="profile-pic-wrap">
+    <img src="./assets/profile-pic.png" alt="Andres Hinojosa">
+  </div>
+  <div class="section_text">
+    <p class="hero-eyebrow">MS Computer Science · CSUSM · Graduated 2026</p>
+    <h1 class="hero-name">Andres<br>Hinojosa</h1>
+    <p class="hero-role">Researcher & Software Engineer</p>
+    <p class="hero-desc">Blockchain security researcher and first-gen CS grad. I build smart contract systems, publish research, and bridge the gap between academia and industry.</p>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="hero-stat-num">4</div>
+        <div class="hero-stat-label">Publications</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">3.60</div>
+        <div class="hero-stat-label">MS GPA</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">3.73</div>
+        <div class="hero-stat-label">BS GPA</div>
+      </div>
+    </div>
+    <div class="btn-container">
+      <button class="btn btn-color-1" onclick="window.open('./assets/Hinojosa, Andres - Resume.pdf')">Download CV</button>
+      <button class="btn btn-color-2" onclick="location.href='#contact'">Contact</button>
+    </div>
+    <div id="social-container">
+      <img src="./assets/linkedin.png" alt="LinkedIn" class="social-icon" onclick="location.href='https://www.linkedin.com/in/ahinoj/'">
+      <img src="./assets/github.png" alt="GitHub" class="social-icon" onclick="location.href='https://github.com/Antech15'">
+      <img src="./assets/gscholar.svg" alt="Google Scholar" class="social-icon" onclick="location.href='https://scholar.google.com/citations?hl=en&user=CSpBjUMAAAAJ'">
+    </div>
+  </div>
+</section>
 
-    <section id="projects">
-        <p class="section_text_p1"></p>
-        <h1 class="title">Projects</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-containers color-container">
-                    <div class="article-container">
-                        <img src="./assets/project-1.png" alt="project 1" class="project-img">
-                    </div>
-                    <h2 class="experience-sub-title project-title">Hot Brain</h2>
-                    <p class="proj-text">Full Stack brainwave-driven matchmaking application, utilizing Flask (Python)
-                        and integrating the BrainBit SDK</p>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://github.com/efelicidario/hot_Brain'">
-                            GitHub
-                        </button>
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://www.youtube.com/watch?v=yWRcSVN79s0'">
-                            Live Demo
-                        </button>
-                    </div>
-                </div>
-                <div class="details-containers color-container">
-                    <div class="article-container">
-                        <img src="./assets/project-2.png" alt="project 2" class="project-img">
-                    </div>
-                    <h2 class="experience-sub-title project-title">Project Two</h2>
-                    <p class="proj-text">Work in Progress</p>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://github.com/efelicidario/hot_Brain'">
-                            GitHub
-                        </button>
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://github.com/efelicidario/hot_Brain'">
-                            Live Demo
-                        </button>
-                    </div>
-                </div>
-                <div class="details-containers color-container">
-                    <div class="article-container">
-                        <img src="./assets/project-3.png" alt="project 3" class="project-img">
-                    </div>
-                    <h2 class="experience-sub-title project-title">Project Three</h2>
-                    <p class="proj-text">Work in Progress</p>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://github.com/efelicidario/hot_Brain'">
-                            GitHub
-                        </button>
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://github.com/efelicidario/hot_Brain'">
-                            Live Demo
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#contact'">
-    </section>
-    <section id="contact">
-        <p class="section_text_p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
-                <p><a href="mailto:hinoj030@csusm.edu">hinoj030@csusm.edu</a></p>
-            </div>
-            <div class="contact-info-container">
-                <img src="./assets/linkedin.png" alt="linkedin icon" class="icon contact-icon" />
-                <p><a href="https://www.linkedin.com/in/ahinoj/">LinkedIn</a></p>
-            </div>
+<!-- ABOUT -->
+<section id="about">
+  <p class="section-label">Background</p>
+  <h1 class="title">About Me</h1>
+  <div class="about-grid reveal">
+    <div class="about-pic-container">
+      <img src="./assets/about-pic2.jpg" alt="Andres Hinojosa">
+    </div>
+    <div class="about-text">
+      <p>I'm a first-generation college student from Escondido, California. I was raised on curiosity and a lot of figuring things out on my own. A single AP Computer Science class in high school changed my entire trajectory.</p>
+      <p>I went to CSUSM for my BS, graduated Magna Cum Laude with a 3.73 GPA, and kept going. I completed my MS in Computer Science in May 2026, working under Dr. Nahid Ebrahimi Majd on a thesis about delegating cyber threat intelligence on the Sui blockchain.</p>
+      <p>My research has been funded by DHS, the U.S. Department of Education, and CSUSM's LAEP program. I've presented in Hawaii, published four papers, and I'm eager to learn and contribute more.</p>
+      <div class="about-facts">
+        <div class="fact-row">
+          <span class="fact-label">Location</span>
+          <span class="fact-val">San Diego, CA</span>
         </div>
-    </section>
-    <footer>
-        <nav>
-            <div class="nav links-container">
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-        <p>Copyright &#169; 2023 Andres Hinojosa. All Rights Reserved.</p>
-    </footer>
-    <script src="script.js"></script>
+        <div class="fact-row">
+          <span class="fact-label">Degree</span>
+          <span class="fact-val">MS Computer Science, CSUSM (May 2026)</span>
+        </div>
+        <div class="fact-row">
+          <span class="fact-label">Thesis</span>
+          <span class="fact-val">CTI Delegation Framework on the Sui Blockchain</span>
+        </div>
+        <div class="fact-row">
+          <span class="fact-label">Advisor</span>
+          <span class="fact-val">Dr. Nahid Ebrahimi Majd</span>
+        </div>
+        <div class="fact-row">
+          <span class="fact-label">Email</span>
+          <span class="fact-val"><a href="mailto:andres@hinoj.com">andres@hinoj.com</a></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <p class="section-label">Work History</p>
+  <h1 class="title">Experience</h1>
+  <div class="exp-list">
+
+    <div class="exp-item reveal">
+      <div class="exp-meta">
+        <img src="./assets/nyl.png" alt="New York Life" class="exp-logo exp-logo-nyl">
+        <div class="exp-date">May 2025 – Aug 2025</div>
+        <div class="exp-org">New York Life</div>
+      </div>
+      <div>
+        <div class="exp-title">Software Engineer Intern — Corporate Technology</div>
+        <div class="exp-body">
+          <ul>
+            <li>Designed and implemented SAP CPI iFlows to transform SuccessFactors reports into automated data pipelines using Groovy scripts.</li>
+            <li>Co-developed an internal PowerApps decision-tree application using Dataverse and Power Automate, extracting and documenting 30+ logic paths from a POC.</li>
+            <li>Built a generative AI chatbot side project using AWS Bedrock, Lambda, API Gateway, S3, and React to enhance customer experience during peak hours.</li>
+          </ul>
+        </div>
+        <div class="exp-tags">
+          <span class="tag">SAP CPI</span>
+          <span class="tag">Groovy</span>
+          <span class="tag">PowerApps</span>
+          <span class="tag">AWS Bedrock</span>
+          <span class="tag">React</span>
+          <span class="tag">Power Automate</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="exp-item reveal">
+      <div class="exp-meta">
+        <img src="./assets/education.png" alt="CSUSM" class="exp-logo exp-logo-csusm">
+        <div class="exp-date">Feb 2024 – Dec 2025</div>
+        <div class="exp-org">CSUSM</div>
+      </div>
+      <div>
+        <div class="exp-title">Instructional Student Assistant — CS436 Networking</div>
+        <div class="exp-body">
+          <ul>
+            <li>Assist professor with grading across two sections totaling 60+ students for Introduction to Networking.</li>
+          </ul>
+        </div>
+        <div class="exp-tags">
+          <span class="tag">Networking</span>
+          <span class="tag">Grading</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="exp-item reveal">
+      <div class="exp-meta">
+        <img src="./assets/education.png" alt="CSUSM" class="exp-logo exp-logo-csusm">
+        <div class="exp-date">Jun 2024 – Aug 2024</div>
+        <div class="exp-org">CSUSM / DHS</div>
+      </div>
+      <div>
+        <div class="exp-title">Blockchain Research Assistant</div>
+        <div class="exp-body">
+          <ul>
+            <li>Developed optimized gas patterns in Move smart contracts for Sui and Aptos blockchains.</li>
+            <li>Analyzed performance of Sui Move's object-centric models, resulting in two publications.</li>
+            <li>Funded by the U.S. Department of Education and the U.S. Department of Homeland Security.</li>
+          </ul>
+        </div>
+        <div class="exp-tags">
+          <span class="tag">Sui Move</span>
+          <span class="tag">Aptos</span>
+          <span class="tag">Gas Optimization</span>
+          <span class="tag">DoE Funded</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="exp-item reveal">
+      <div class="exp-meta">
+        <img src="./assets/education.png" alt="CSUSM" class="exp-logo exp-logo-csusm">
+        <div class="exp-date">Nov 2023 – May 2024</div>
+        <div class="exp-org">CSUSM</div>
+      </div>
+      <div>
+        <div class="exp-title">Deep Learning Research Assistant</div>
+        <div class="exp-body">
+          <ul>
+            <li>Built CNN-based and BiLSTM-CNN models for IoT network intrusion detection, achieving 93.8% F1-score — a 24% improvement over state-of-the-art on the CICIoT2023 dataset.</li>
+            <li>Presented findings at ICCCN 2024 in Honolulu, Hawaii.</li>
+            <li>Funded by CSUSM's Learning-Aligned Employment Program (LAEP).</li>
+          </ul>
+        </div>
+        <div class="exp-tags">
+          <span class="tag">Deep Learning</span>
+          <span class="tag">1D-CNN</span>
+          <span class="tag">Python</span>
+          <span class="tag">LAEP Funded</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <p class="section-label">Technical</p>
+  <h1 class="title">Skills</h1>
+  <div class="skills-grid reveal">
+    <div>
+      <div class="skill-group-title">Languages</div>
+      <ul class="skill-list">
+        <li>Python</li>
+        <li>C++</li>
+        <li>Sui Move</li>
+        <li>JavaScript / React</li>
+        <li>HTML / CSS</li>
+        <li>Groovy</li>
+        <li>C#</li>
+        <li>Kotlin</li>
+      </ul>
+    </div>
+    <div>
+      <div class="skill-group-title">Tools & Cloud</div>
+      <ul class="skill-list">
+        <li>AWS (Bedrock, Lambda, S3)</li>
+        <li>SAP CPI / SuccessFactors</li>
+        <li>PowerApps / Power Automate</li>
+        <li>Git / GitHub</li>
+        <li>Flask</li>
+        <li>VS Code / PyCharm</li>
+        <li>LaTeX / Overleaf</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- RESEARCH -->
+<section id="research">
+  <p class="section-label">Publications</p>
+  <h1 class="title">Research</h1>
+  <div class="pub-list">
+
+    <div class="pub-item reveal">
+      <div class="pub-num">01</div>
+      <div>
+        <div class="pub-venue">SERA 2025 · May 31, 2025</div>
+        <div class="pub-title">
+          <a href="#research">"A Study on The Performances of Sui Move Object-Centric Models"</a>
+        </div>
+        <div class="pub-authors">N. E. Majd, <strong>A. Hinojosa</strong>, C. Fisher, F. Landeros, F. Baldimtsi</div>
+      </div>
+    </div>
+
+    <div class="pub-item reveal">
+      <div class="pub-num">02</div>
+      <div>
+        <div class="pub-venue">IEEE ICBC 2025 · Poster</div>
+        <div class="pub-title">
+          <a href="https://doi.org/10.1109/ICBC64466.2025.11114512" target="_blank">"An Analytical Performance Evaluation on Sui Move Object-Centric Models"</a>
+        </div>
+        <div class="pub-authors">N. E. Majd, <strong>A. Hinojosa</strong>, C. Fisher, F. Landeros, F. Baldimtsi</div>
+      </div>
+    </div>
+
+    <div class="pub-item reveal">
+      <div class="pub-num">03</div>
+      <div>
+        <div class="pub-venue">WETSEB @ ICSE 2025</div>
+        <div class="pub-title">
+          <a href="https://doi.org/10.1109/WETSEB66605.2025.00008" target="_blank">"A Study on Gas Optimization and Performance Evaluation of Sui and Aptos Blockchains"</a>
+        </div>
+        <div class="pub-authors">N. E. Majd, <strong>A. Hinojosa</strong>, C. Fisher, F. Landeros, F. Baldimtsi</div>
+      </div>
+    </div>
+
+    <div class="pub-item reveal">
+      <div class="pub-num">04</div>
+      <div>
+        <div class="pub-venue">BDMLN @ ICCCN 2024 · July 31, 2024</div>
+        <div class="pub-title">
+          <a href="https://ieeexplore.ieee.org/document/10637611" target="_blank">"Edge Computing Network Intrusion Detection in IoT Using Deep Learning"</a>
+        </div>
+        <div class="pub-authors"><strong>A. Hinojosa</strong>, N. E. Majd</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <p class="section-label">Work</p>
+  <h1 class="title">Projects</h1>
+  <div class="projects-grid">
+
+    <div class="project-card reveal">
+      <img src="./assets/project-1.png" alt="Hot Brain" class="project-img">
+      <div class="project-label">Full Stack · Flask · BrainBit SDK</div>
+      <div class="project-title">Hot Brain</div>
+      <div class="project-desc">Brainwave-driven matchmaking app. Users are matched based on real-time EEG data captured through the BrainBit headset, processed with a Flask backend.</div>
+      <div class="project-links">
+        <button class="proj-btn" onclick="location.href='https://github.com/efelicidario/hot_Brain'">GitHub</button>
+        <button class="proj-btn" onclick="location.href='https://www.youtube.com/watch?v=yWRcSVN79s0'">Live Demo</button>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div style="height:160px;display:flex;align-items:center;justify-content:center;border:1px solid var(--border-color);border-radius:6px;margin-bottom:1.25rem;color:var(--accent-muted);font-size:0.78rem;letter-spacing:0.06em;">CTI DELEGATION FRAMEWORK</div>
+      <div class="project-label">Thesis · Sui Move · Python · IPFS</div>
+      <div class="project-title">CTI Delegation on Sui Blockchain</div>
+      <div class="project-desc">13-step cyber threat intelligence delegation protocol implemented as a Move smart contract with RSA-2048 encryption, SHA-256 hashing, and concurrent delegate threading.</div>
+      <div class="project-links">
+        <button class="proj-btn" onclick="location.href='https://github.com/Antech15'">GitHub</button>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div style="height:160px;display:flex;align-items:center;justify-content:center;border:1px solid var(--border-color);border-radius:6px;margin-bottom:1.25rem;color:var(--accent-muted);font-size:0.78rem;letter-spacing:0.06em;">GENERATIVE AI CHATBOT</div>
+      <div class="project-label">AWS Bedrock · Lambda · React</div>
+      <div class="project-title">NYL Generative AI Chatbot</div>
+      <div class="project-desc">Internship side project — a generative agent chatbot built with AWS Bedrock for LLM inference, Lambda and API Gateway for serverless routing, S3 for storage, and React frontend.</div>
+      <div class="project-links">
+        <button class="proj-btn" onclick="location.href='#projects'">Private</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <p class="section-label">Get in Touch</p>
+  <h1 class="title">Contact</h1>
+  <div class="contact-grid reveal">
+    <div>
+      <p class="contact-tagline">Open to software engineering roles and research collaborations.</p>
+    </div>
+    <div class="contact-links">
+      <a href="mailto:andres@hinoj.com" class="contact-link">
+        <span class="contact-link-label">Email</span>
+        <span class="contact-link-val">andres@hinoj.com</span>
+        <span class="contact-link-arrow">↗</span>
+      </a>
+      <a href="https://www.linkedin.com/in/ahinoj/" target="_blank" class="contact-link">
+        <span class="contact-link-label">LinkedIn</span>
+        <span class="contact-link-val">linkedin.com/in/ahinoj</span>
+        <span class="contact-link-arrow">↗</span>
+      </a>
+      <a href="https://github.com/Antech15" target="_blank" class="contact-link">
+        <span class="contact-link-label">GitHub</span>
+        <span class="contact-link-val">github.com/Antech15</span>
+        <span class="contact-link-arrow">↗</span>
+      </a>
+      <a href="https://scholar.google.com/citations?hl=en&user=CSpBjUMAAAAJ" target="_blank" class="contact-link">
+        <span class="contact-link-label">Google Scholar</span>
+        <span class="contact-link-val">Andres Hinojosa</span>
+        <span class="contact-link-arrow">↗</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <ul class="footer-nav">
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#research">Research</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <p>© 2026 Andres Hinojosa</p>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        setTimeout(() => e.target.classList.add('visible'), i * 60);
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08 });
+  reveals.forEach(el => observer.observe(el));
+</script>
 </body>
-
 </html>
