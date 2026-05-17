@@ -59,21 +59,35 @@
       letter-spacing: 0.01em;
     }
 
-    .totals-grid {
+    .highlights-strip {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 4rem;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5px;
+      background: var(--border-color);
+      border: 1.5px solid var(--border-color);
+      border-radius: 8px;
+      overflow: hidden;
     }
-    .totals-group-title {
-      font-size: 0.7rem;
-      letter-spacing: 0.1em;
+    .highlight-item {
+      padding: 2rem 1.5rem;
+      background: var(--primary-bg);
+      transition: background 0.2s;
+    }
+    .highlight-item:hover { background: var(--section-bg); }
+    .highlight-num {
+      font-size: 1.9rem;
+      font-weight: 300;
+      color: var(--primary-text);
+      line-height: 1;
+      font-variant-numeric: tabular-nums;
+      margin-bottom: 0.4rem;
+    }
+    .highlight-label {
+      font-size: 0.65rem;
+      letter-spacing: 0.08em;
       text-transform: uppercase;
       color: var(--accent-muted);
-      padding-bottom: 0.6rem;
-      border-bottom: 1px solid var(--border-color);
-      margin-bottom: 0;
     }
-    .totals-facts { border-top: none; }
 
     .run-empty {
       font-size: 0.85rem;
@@ -89,9 +103,10 @@
       .run-dist-num { font-size: 1.5rem; }
       .run-dist-unit { margin-top: 0; }
       .run-date { margin-top: 0; margin-left: auto; }
+      .highlights-strip { grid-template-columns: repeat(2, 1fr); }
     }
     @media screen and (max-width: 600px) {
-      .totals-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .highlights-strip { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -149,7 +164,7 @@
   <p class="section-label">Athletics</p>
   <h1 class="title" style="margin-bottom:0.75rem;">Running</h1>
   <p class="hero-desc" style="max-width:480px;margin-bottom:2rem;">
-    Running is how I decompress. No headphones, no shortcuts — just miles logged one at a time. Every run tracked on Strava since I started taking it seriously.
+    In my free time, I enjoy running as a way to stay fit while clearing my mind.
   </p>
   <div class="hero-stats" id="hero-stats" style="margin-bottom:2rem;">
     <div class="hero-stat">
@@ -171,29 +186,47 @@
   </div>
   <div class="btn-container">
     <a id="strava-btn" href="https://www.strava.com" target="_blank" class="btn btn-color-1">View on Strava</a>
-    <a href="/" class="btn btn-color-2">← Portfolio</a>
+  </div>
+</section>
+
+<!-- HIGHLIGHTS -->
+<section id="highlights" style="border-top:1px solid var(--border-color);">
+  <p class="section-label">Averages</p>
+  <h1 class="title">By the Numbers</h1>
+  <div class="highlights-strip reveal" id="highlights-strip">
+    <div class="highlight-item">
+      <div class="highlight-num" style="color:var(--accent-muted);">—</div>
+      <div class="highlight-label">Avg Pace</div>
+    </div>
+    <div class="highlight-item">
+      <div class="highlight-num" style="color:var(--accent-muted);">—</div>
+      <div class="highlight-label">Avg Run</div>
+    </div>
+    <div class="highlight-item">
+      <div class="highlight-num" style="color:var(--accent-muted);">—</div>
+      <div class="highlight-label">Miles / Week (YTD)</div>
+    </div>
+    <div class="highlight-item">
+      <div class="highlight-num" style="color:var(--accent-muted);">—</div>
+      <div class="highlight-label">Longest Recent Run</div>
+    </div>
   </div>
 </section>
 
 <!-- RECENT RUNS -->
-<section id="recent-runs">
+<section id="recent-runs" style="border-top:1px solid var(--border-color);">
   <p class="section-label">Activity</p>
   <h1 class="title">Recent Runs</h1>
   <div class="run-list" id="run-list">
     <p class="run-empty">Loading...</p>
   </div>
-</section>
-
-<!-- ALL-TIME STATS -->
-<section id="run-totals" style="border-top:1px solid var(--border-color);">
-  <p class="section-label">Career</p>
-  <h1 class="title">All-Time Stats</h1>
-  <div class="totals-grid" id="run-totals-grid">
+  <div style="margin-top:2.5rem;padding-top:1.5rem;border-top:1px solid var(--border-color);">
+    <a id="strava-all-link" href="https://www.strava.com" target="_blank"
+       style="font-size:0.78rem;letter-spacing:0.04em;color:var(--accent-muted);text-decoration:none;transition:color 0.2s;"
+       onmouseover="this.style.color='var(--primary-text)'" onmouseout="this.style.color='var(--accent-muted)'">
+      View all runs on Strava ↗
+    </a>
   </div>
-  <p style="margin-top:3rem;" class="strava-credit">
-    Data synced via <a href="https://developers.strava.com" target="_blank">Strava API</a> · Updated every 6 hours ·
-    Last synced: <span id="last-updated">—</span>
-  </p>
 </section>
 
 <footer>
@@ -205,15 +238,16 @@
     <li><a href="/running/">Running</a></li>
     <li><a href="/#contact">Contact</a></li>
   </ul>
-  <p>© 2026 Andres Hinojosa</p>
+  <p class="strava-credit">
+    Data via <a href="https://developers.strava.com" target="_blank">Strava API</a> · synced every 6h · last updated <span id="last-updated">—</span>
+  </p>
 </footer>
 
 <script src="../script.js"></script>
 <script>
   // ── Helpers ──────────────────────────────────────────────────────────────────
-  const m2mi  = m => m * 0.000621371;
-  const m2ft  = m => Math.round(m * 3.28084);
-  const fmtMi = m => m2mi(m).toFixed(1);
+  const m2mi   = m => m * 0.000621371;
+  const m2ft   = m => Math.round(m * 3.28084);
   const fmtNum = n => Math.round(n).toLocaleString();
   const fmtTime = s => {
     const h = Math.floor(s / 3600);
@@ -232,41 +266,66 @@
   const fmtDateShort = iso => new Date(iso).toLocaleDateString('en-US', {
     month: 'short', day: 'numeric'
   });
+  const weeksIntoYear = () => {
+    const now = new Date();
+    const jan1 = new Date(now.getFullYear(), 0, 1);
+    return Math.max(1, (now - jan1) / (7 * 24 * 3600 * 1000));
+  };
 
   // ── Renderers ────────────────────────────────────────────────────────────────
   function renderHeroStats(data) {
     const s = data.stats;
-    const stats = [
+    const items = [
       { num: fmtNum(Math.round(m2mi(s.all_run_totals.distance))), label: 'Total Miles' },
       { num: fmtNum(s.all_run_totals.count),                       label: 'Total Runs'  },
       { num: fmtNum(m2ft(s.all_run_totals.elevation_gain)),        label: 'Vert Feet'   },
       { num: fmtNum(Math.round(m2mi(s.ytd_run_totals.distance))), label: 'YTD Miles'   },
     ];
-    document.getElementById('hero-stats').innerHTML = stats.map(s => `
+    document.getElementById('hero-stats').innerHTML = items.map(i => `
       <div class="hero-stat">
-        <div class="hero-stat-num">${s.num}</div>
-        <div class="hero-stat-label">${s.label}</div>
-      </div>
-    `).join('');
+        <div class="hero-stat-num">${i.num}</div>
+        <div class="hero-stat-label">${i.label}</div>
+      </div>`).join('');
+  }
+
+  function renderHighlights(data) {
+    const s = data.stats;
+    const runs = data.recent_runs || [];
+    const longestDist = runs.length
+      ? Math.max(...runs.map(r => m2mi(r.distance))).toFixed(1) + ' mi'
+      : '—';
+    const weeklyAvg = (m2mi(s.ytd_run_totals.distance) / weeksIntoYear()).toFixed(1);
+    const avgDist   = (m2mi(s.all_run_totals.distance) / s.all_run_totals.count).toFixed(1);
+
+    const items = [
+      { num: pace(s.all_run_totals.moving_time, s.all_run_totals.distance), label: 'Avg Pace' },
+      { num: avgDist + ' mi',   label: 'Avg Run' },
+      { num: weeklyAvg + ' mi', label: 'Miles / Week (YTD)' },
+      { num: longestDist,       label: 'Longest Recent Run' },
+    ];
+    document.getElementById('highlights-strip').innerHTML = items.map(i => `
+      <div class="highlight-item">
+        <div class="highlight-num">${i.num}</div>
+        <div class="highlight-label">${i.label}</div>
+      </div>`).join('');
   }
 
   function renderRecentRuns(data) {
     const list = document.getElementById('run-list');
-    if (!data.recent_runs || data.recent_runs.length === 0) {
+    const runs = (data.recent_runs || []).slice(0, 6);
+    if (runs.length === 0) {
       list.innerHTML = '<p class="run-empty">No recent runs found. Try triggering the workflow manually.</p>';
       return;
     }
-    list.innerHTML = data.recent_runs.map(run => {
+    list.innerHTML = runs.map(run => {
       const dist = m2mi(run.distance);
       const tags = [];
       if (run.workout_type === 1) tags.push('Race');
       else if (run.workout_type === 2 || dist >= 13.1) tags.push('Long Run');
       else if (run.workout_type === 3) tags.push('Workout');
-
       const elevPart = run.total_elevation_gain > 0
         ? ` · ${fmtNum(m2ft(run.total_elevation_gain))} ft gain`
         : '';
-
       return `
         <div class="run-item reveal">
           <div class="run-dist">
@@ -281,32 +340,7 @@
           </div>
         </div>`;
     }).join('');
-
     document.querySelectorAll('.run-item.reveal').forEach(el => revealObserver.observe(el));
-  }
-
-  function renderTotals(data) {
-    const s = data.stats;
-    const makeRows = totals => [
-      ['Runs',      fmtNum(totals.count)],
-      ['Distance',  `${fmtNum(Math.round(m2mi(totals.distance)))} mi`],
-      ['Time',      fmtTime(totals.moving_time)],
-      ['Elevation', `${fmtNum(m2ft(totals.elevation_gain))} ft`],
-    ].map(([label, val]) => `
-      <div class="fact-row">
-        <span class="fact-label">${label}</span>
-        <span class="fact-val">${val}</span>
-      </div>`).join('');
-
-    document.getElementById('run-totals-grid').innerHTML = `
-      <div>
-        <div class="totals-group-title">All Time</div>
-        <div class="about-facts totals-facts">${makeRows(s.all_run_totals)}</div>
-      </div>
-      <div>
-        <div class="totals-group-title">This Year</div>
-        <div class="about-facts totals-facts">${makeRows(s.ytd_run_totals)}</div>
-      </div>`;
   }
 
   function showEmpty(msg) {
@@ -326,16 +360,16 @@
       }
 
       renderHeroStats(data);
+      renderHighlights(data);
       renderRecentRuns(data);
-      renderTotals(data);
 
       if (data.athlete && data.athlete.id) {
-        document.getElementById('strava-btn').href =
-          `https://www.strava.com/athletes/${data.athlete.id}`;
+        const url = `https://www.strava.com/athletes/${data.athlete.id}`;
+        document.getElementById('strava-btn').href = url;
+        document.getElementById('strava-all-link').href = url;
       }
       if (data.updated_at) {
-        document.getElementById('last-updated').textContent =
-          fmtDate(data.updated_at);
+        document.getElementById('last-updated').textContent = fmtDate(data.updated_at);
       }
     } catch {
       showEmpty('Could not load running data.');
@@ -353,7 +387,6 @@
   }, { threshold: 0.08 });
 
   document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
-
   loadRunningData();
 </script>
 </body>
