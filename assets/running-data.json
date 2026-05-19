@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-19T07:06:46.067465+00:00",
+  "updated_at": "2026-05-19T12:58:01.919392+00:00",
   "athlete": {
     "id": 135716013,
     "firstname": "Andres",
@@ -98,7 +98,7 @@
       "location_state": null,
       "location_country": null,
       "achievement_count": 0,
-      "kudos_count": 0,
+      "kudos_count": 1,
       "comment_count": 0,
       "athlete_count": 1,
       "photo_count": 0,
