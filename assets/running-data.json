@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-21T18:34:41.437774+00:00",
+  "updated_at": "2026-05-22T00:26:39.396436+00:00",
   "athlete": {
     "id": 135716013,
     "firstname": "Andres",
@@ -30,11 +30,11 @@
       "achievement_count": 0
     },
     "all_run_totals": {
-      "count": 373,
-      "distance": 2392412.299999998,
-      "moving_time": 812398,
-      "elapsed_time": 819414,
-      "elevation_gain": 5226.299999999998
+      "count": 374,
+      "distance": 2397764.399999998,
+      "moving_time": 814584,
+      "elapsed_time": 821611,
+      "elevation_gain": 5283.299999999998
     },
     "recent_swim_totals": {
       "count": 0,
@@ -59,11 +59,11 @@
       "elevation_gain": 0
     },
     "ytd_run_totals": {
-      "count": 58,
-      "distance": 385073,
-      "moving_time": 132999.0,
-      "elapsed_time": 135526.0,
-      "elevation_gain": 1337.2999999999997
+      "count": 59,
+      "distance": 390426,
+      "moving_time": 135185.0,
+      "elapsed_time": 137723.0,
+      "elevation_gain": 1394.2999999999997
     },
     "ytd_swim_totals": {
       "count": 0,
@@ -74,6 +74,77 @@
     }
   },
   "recent_runs": [
+    {
+      "resource_state": 2,
+      "athlete": {
+        "id": 135716013,
+        "resource_state": 1
+      },
+      "name": "Afternoon Run",
+      "distance": 5352.1,
+      "moving_time": 2186,
+      "elapsed_time": 2197,
+      "total_elevation_gain": 57.0,
+      "type": "Run",
+      "sport_type": "Run",
+      "workout_type": null,
+      "device_name": "Apple Watch Series 10",
+      "id": 18602190579,
+      "start_date": "2026-05-21T22:56:51Z",
+      "start_date_local": "2026-05-21T15:56:51Z",
+      "timezone": "(GMT-08:00) America/Los_Angeles",
+      "utc_offset": -25200.0,
+      "location_city": null,
+      "location_state": null,
+      "location_country": null,
+      "achievement_count": 0,
+      "kudos_count": 0,
+      "comment_count": 0,
+      "athlete_count": 1,
+      "photo_count": 0,
+      "map": {
+        "id": "a18602190579",
+        "summary_polyline": "wsdiEjnejUBTFF`@Jb@HK{@D[J[JKt@i@`@m@v@{@v@eA`@}@FS@W?i@@y@h@_DDyAFg@Ro@^{@JGJBj@ZPPHXFp@Gt@BdAAt@MbCMfAD|AWbAi@hASTg@d@KN[x@GJi@d@s@`A_@XBZQl@Ip@J`A?f@GNY\\Wl@IfAYbAs@zAU^k@t@GNCJBd@@pA@JNTBH@\\CNOb@G~@F`AKtAF|@ArA@~@Ap@@zA?l@M~B?b@Hp@EPQd@E^Hx@Bb@ZhBChACNU\\CR@HJR?x@Dj@@p@Gf@Qh@IJUFm@FuBAo@@a@C{@Bc@Eq@@_@EKG?CHGt@Oz@Kr@Cb@If@?b@B|@C^@NELMLSHUBUGcCB[XsAJcA?UKe@Cg@EWAy@DURu@?M]gBWi@CMAo@Ls@UcAA[Jw@Pc@^m@DQBWEa@U}@ISUWKYAc@Fm@?_@KmA?_@Ga@SiB@YT_ARg@j@u@Tg@NSx@{@N_@Fe@@gCEWWa@@EJAFBPNR\\\\NDE`@ILO?UTaAASMM_AUUIUOKQKe@Be@Ne@r@i@r@_Ar@o@x@gAJUPe@H_@@kAF_Af@qC?oABQNk@^aAJOFEP@h@^NTJb@@RE~@?zBIlBQlB@fAE\\Md@]z@]f@o@r@]z@MRcBfBYJW@",
+        "resource_state": 2
+      },
+      "trainer": false,
+      "commute": false,
+      "manual": false,
+      "private": false,
+      "visibility": "everyone",
+      "flagged": false,
+      "gear_id": "g24214689",
+      "start_latlng": [
+        33.124609,
+        -117.178778
+      ],
+      "end_latlng": [
+        33.123584,
+        -117.179296
+      ],
+      "average_speed": 2.448,
+      "max_speed": 6.34,
+      "average_watts": 151.0,
+      "max_watts": 334,
+      "weighted_average_watts": 152,
+      "device_watts": true,
+      "kilojoules": 330.0,
+      "has_heartrate": true,
+      "average_heartrate": 136.3,
+      "max_heartrate": 179.0,
+      "heartrate_opt_out": false,
+      "display_hide_heartrate_option": true,
+      "elev_high": 203.6,
+      "elev_low": 169.6,
+      "upload_id": 19708867600,
+      "upload_id_str": "19708867600",
+      "external_id": "78CB9535-D856-46E2-BEC0-14C374AEC754.fit",
+      "from_accepted_tag": false,
+      "pr_count": 0,
+      "total_photo_count": 0,
+      "has_kudoed": false,
+      "suffer_score": 11.0
+    },
     {
       "resource_state": 2,
       "athlete": {
@@ -701,66 +772,6 @@
       "total_photo_count": 0,
       "has_kudoed": false,
       "suffer_score": 59.0
-    },
-    {
-      "resource_state": 2,
-      "athlete": {
-        "id": 135716013,
-        "resource_state": 1
-      },
-      "name": "Lunch Run",
-      "distance": 6429.0,
-      "moving_time": 2404,
-      "elapsed_time": 2404,
-      "total_elevation_gain": 0,
-      "type": "Run",
-      "sport_type": "Run",
-      "workout_type": null,
-      "device_name": "Apple Watch Series 10",
-      "id": 18380053197,
-      "start_date": "2026-05-02T19:21:42Z",
-      "start_date_local": "2026-05-02T12:21:42Z",
-      "timezone": "(GMT-07:00) America/Creston",
-      "utc_offset": -25200.0,
-      "location_city": null,
-      "location_state": null,
-      "location_country": null,
-      "achievement_count": 0,
-      "kudos_count": 1,
-      "comment_count": 0,
-      "athlete_count": 1,
-      "photo_count": 0,
-      "map": {
-        "id": "a18380053197",
-        "summary_polyline": "",
-        "resource_state": 2
-      },
-      "trainer": true,
-      "commute": false,
-      "manual": false,
-      "private": false,
-      "visibility": "everyone",
-      "flagged": false,
-      "gear_id": "g24214689",
-      "start_latlng": [],
-      "end_latlng": [],
-      "average_speed": 2.674,
-      "max_speed": 2.7,
-      "has_heartrate": true,
-      "average_heartrate": 149.4,
-      "max_heartrate": 178.0,
-      "heartrate_opt_out": false,
-      "display_hide_heartrate_option": true,
-      "elev_high": 0.0,
-      "elev_low": 0.0,
-      "upload_id": 19484414168,
-      "upload_id_str": "19484414168",
-      "external_id": "598B5D40-AD12-4367-88A2-29F3AE97A947.fit",
-      "from_accepted_tag": false,
-      "pr_count": 0,
-      "total_photo_count": 0,
-      "has_kudoed": false,
-      "suffer_score": 34.0
     }
   ]
 }
