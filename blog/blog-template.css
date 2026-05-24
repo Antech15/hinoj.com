@@ -33,8 +33,7 @@
   margin-bottom: 0.75rem;
 }
 
-.blog-tagline,
-.post-dek {
+.blog-tagline {
   max-width: 620px;
   color: var(--secondary-text);
   font-size: 0.88rem;
@@ -117,12 +116,6 @@
   line-height: 1.4;
 }
 
-.entry-desc {
-  color: var(--secondary-text);
-  font-size: 0.82rem;
-  line-height: 1.75;
-}
-
 .entry-arrow {
   margin-top: auto;
   color: var(--border-strong);
@@ -173,6 +166,18 @@
 .post-body p {
   margin-bottom: 1.5rem;
   color: var(--secondary-text);
+}
+
+.post-body figure {
+  margin: 2rem 0;
+}
+
+.post-body img {
+  width: 100%;
+  max-height: 720px;
+  object-fit: cover;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
 }
 
 .post-body h2 {

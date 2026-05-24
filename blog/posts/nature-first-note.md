@@ -3,7 +3,6 @@ title: A quiet trail note
 label: "Nature 01"
 category: Nature
 date: Draft
-excerpt: A placeholder for writing about time outside, small observations, and the parts of nature that slow everything down.
 ---
 
 This is a dummy Nature entry.

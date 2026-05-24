@@ -54,37 +54,8 @@
 </header>
 
 <main id="main-content" class="blog-wrap">
-  <section class="category-section" aria-labelledby="nature-title">
-    <div class="category-header">
-      <h2 id="nature-title">Nature</h2>
-      <span class="category-count">1 entry</span>
-    </div>
-    <div class="entry-grid">
-      <a href="blog-post.html?post=posts/nature-first-note.md" class="entry-card" aria-describedby="nature-desc">
-        <span class="entry-label">Nature 01</span>
-        <span class="entry-title">A quiet trail note</span>
-        <span class="entry-desc" id="nature-desc">A placeholder for writing about time outside, small observations, and the parts of nature that slow everything down.</span>
-        <span class="entry-date">Draft</span>
-        <span class="entry-arrow" aria-hidden="true">Open entry</span>
-      </a>
-    </div>
-  </section>
-
-  <section class="category-section" aria-labelledby="trips-title">
-    <div class="category-header">
-      <h2 id="trips-title">Trips</h2>
-      <span class="category-count">1 entry</span>
-    </div>
-    <div class="entry-grid">
-      <a href="blog-post.html?post=posts/trips-first-note.md" class="entry-card" aria-describedby="trips-desc">
-        <span class="entry-label">Trips 01</span>
-        <span class="entry-title">First trip placeholder</span>
-        <span class="entry-desc" id="trips-desc">A placeholder for travel stories, conference memories, family trips, internship moves, and the places that changed perspective.</span>
-        <span class="entry-date">Draft</span>
-        <span class="entry-arrow" aria-hidden="true">Open entry</span>
-      </a>
-    </div>
-  </section>
+  <p class="post-status" id="blog-status" role="status">Loading entries...</p>
+  <div id="blog-categories"></div>
 </main>
 
 <footer>
@@ -96,5 +67,100 @@
 </footer>
 
 <script src="../script.js"></script>
+<script>
+const POST_FILES = [
+  'posts/nature-first-note.md',
+  'posts/trips-first-note.md'
+];
+
+const CATEGORY_ORDER = ['Nature', 'Trips'];
+
+function parseFrontmatter(markdown) {
+  const match = markdown.match(/^---\n([\s\S]*?)\n---/);
+  if (!match) return {};
+
+  return match[1].split('\n').reduce((meta, line) => {
+    const separator = line.indexOf(':');
+    if (separator === -1) return meta;
+    const key = line.slice(0, separator).trim();
+    const value = line.slice(separator + 1).trim().replace(/^"|"$/g, '');
+    meta[key] = value;
+    return meta;
+  }, {});
+}
+
+function escapeHtml(value = '') {
+  return value
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+}
+
+function categoryId(category) {
+  return `${category.toLowerCase().replace(/[^a-z0-9]+/g, '-')}-title`;
+}
+
+function renderCategory(category, posts) {
+  const id = categoryId(category);
+  const countLabel = posts.length === 1 ? '1 entry' : `${posts.length} entries`;
+  const cards = posts.map(({ file, meta }) => `
+    <a href="blog-post.html?post=${encodeURIComponent(file)}" class="entry-card">
+      <span class="entry-label">${escapeHtml(meta.label || meta.category || 'Entry')}</span>
+      <span class="entry-title">${escapeHtml(meta.title || 'Untitled entry')}</span>
+      <span class="entry-date">${escapeHtml(meta.date || 'Draft')}</span>
+      <span class="entry-arrow" aria-hidden="true">Open entry</span>
+    </a>
+  `).join('');
+
+  return `
+    <section class="category-section" aria-labelledby="${id}">
+      <div class="category-header">
+        <h2 id="${id}">${escapeHtml(category)}</h2>
+        <span class="category-count">${countLabel}</span>
+      </div>
+      <div class="entry-grid">${cards}</div>
+    </section>
+  `;
+}
+
+async function loadEntries() {
+  const status = document.getElementById('blog-status');
+  const target = document.getElementById('blog-categories');
+
+  try {
+    const entries = await Promise.all(POST_FILES.map(async (file) => {
+      const response = await fetch(file);
+      if (!response.ok) throw new Error(`Could not load ${file}`);
+      const meta = parseFrontmatter(await response.text());
+      return { file, meta };
+    }));
+
+    const grouped = entries.reduce((groups, entry) => {
+      const category = entry.meta.category || 'Uncategorized';
+      groups[category] = groups[category] || [];
+      groups[category].push(entry);
+      return groups;
+    }, {});
+
+    const categories = Object.keys(grouped).sort((a, b) => {
+      const aIndex = CATEGORY_ORDER.indexOf(a);
+      const bIndex = CATEGORY_ORDER.indexOf(b);
+      if (aIndex !== -1 || bIndex !== -1) {
+        return (aIndex === -1 ? 99 : aIndex) - (bIndex === -1 ? 99 : bIndex);
+      }
+      return a.localeCompare(b);
+    });
+
+    target.innerHTML = categories.map((category) => renderCategory(category, grouped[category])).join('');
+    status.hidden = true;
+  } catch {
+    status.textContent = 'Entries could not be loaded.';
+  }
+}
+
+loadEntries();
+</script>
 </body>
 </html>

@@ -48,7 +48,6 @@
   <article id="post-article" hidden>
     <p class="post-label" id="post-label"></p>
     <h1 class="post-title" id="post-title"></h1>
-    <p class="post-dek" id="post-excerpt"></p>
     <p class="post-date" id="post-date"></p>
     <div class="post-body" id="post-body"></div>
   </article>
@@ -100,6 +99,10 @@ function parseMarkdown(markdown) {
     if (block.startsWith('## ')) {
       return `<h2>${inlineMarkdown(block.slice(3))}</h2>`;
     }
+    if (/^!\[.*?\]\(.*?\)$/.test(block.trim())) {
+      const image = block.trim().match(/^!\[(.*?)\]\((.*?)\)$/);
+      return `<figure><img src="${escapeHtml(image[2])}" alt="${escapeHtml(image[1])}" loading="lazy"></figure>`;
+    }
     return `<p>${inlineMarkdown(block.replace(/\n/g, ' '))}</p>`;
   }).join('');
 }
@@ -124,7 +127,6 @@ async function loadPost() {
     document.title = `${meta.title || 'Entry'} - Andres Hinojosa`;
     document.getElementById('post-label').textContent = meta.label || meta.category || 'Entry';
     document.getElementById('post-title').textContent = meta.title || 'Untitled entry';
-    document.getElementById('post-excerpt').textContent = meta.excerpt || '';
     document.getElementById('post-date').textContent = meta.date || '';
     document.getElementById('post-body').innerHTML = parseMarkdown(markdown);
 
