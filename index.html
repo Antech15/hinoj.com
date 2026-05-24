@@ -20,7 +20,7 @@
     <li><a href="#projects">Projects</a></li>
     <li><a href="/running/">Running</a></li>
     <li><a href="#contact">Contact</a></li>
-    <!-- <li><a href="blog/">Blog</a></li> -->
+    <li><a href="blog/">Blog</a></li>
     <li>
       <button id="theme-toggle" class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
         <svg class="theme-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -47,7 +47,7 @@
       <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
       <li><a href="/running/" onclick="toggleMenu()">Running</a></li>
       <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-      <!-- <li><a href="blog/" onclick="toggleMenu()">Blog</a></li> -->
+      <li><a href="blog/" onclick="toggleMenu()">Blog</a></li>
       <li>
         <button id="mobile-theme-toggle" class="theme-toggle mobile" onclick="toggleTheme()" aria-label="Toggle dark mode">
           <svg class="theme-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -68,8 +68,8 @@
   <div class="section_text">
     <p class="hero-eyebrow">MS Computer Science · CSUSM · Graduated 2026</p>
     <h1 class="hero-name">Andres<br>Hinojosa</h1>
-    <p class="hero-role">Researcher & Software Engineer</p>
-    <p class="hero-desc">Blockchain security researcher and first-gen CS grad. I build smart contract systems, publish research, and bridge the gap between academia and industry.</p>
+    <p class="hero-role">Software Engineer</p>
+    <p class="hero-desc">First-gen CS grad with experience in blockchain and network security research. I am building toward software engineering roles where I can learn quickly, contribute, and keep growing.</p>
     <div class="hero-stats">
       <div class="hero-stat">
         <div class="hero-stat-num">4</div>
@@ -85,13 +85,19 @@
       </div>
     </div>
     <div class="btn-container">
-      <button class="btn btn-color-1" onclick="window.open('./assets/Hinojosa, Andres - Resume.pdf')">Download CV</button>
-      <button class="btn btn-color-2" onclick="location.href='#contact'">Contact</button>
+      <a class="btn btn-color-1" href="./assets/Hinojosa, Andres - Resume.pdf" target="_blank" rel="noreferrer">Download CV</a>
+      <a class="btn btn-color-2" href="#contact">Contact</a>
     </div>
     <div id="social-container">
-      <img src="./assets/linkedin.png" alt="LinkedIn" class="social-icon" onclick="location.href='https://www.linkedin.com/in/ahinoj/'">
-      <img src="./assets/github.png" alt="GitHub" class="social-icon" onclick="location.href='https://github.com/Antech15'">
-      <img src="./assets/gscholar.svg" alt="Google Scholar" class="social-icon" onclick="location.href='https://scholar.google.com/citations?hl=en&user=CSpBjUMAAAAJ'">
+      <a class="social-link" href="https://www.linkedin.com/in/ahinoj/" target="_blank" rel="noreferrer" aria-label="LinkedIn profile">
+        <img src="./assets/linkedin.png" alt="" class="social-icon">
+      </a>
+      <a class="social-link" href="https://github.com/Antech15" target="_blank" rel="noreferrer" aria-label="GitHub profile">
+        <img src="./assets/github.png" alt="" class="social-icon">
+      </a>
+      <a class="social-link" href="https://scholar.google.com/citations?hl=en&user=CSpBjUMAAAAJ" target="_blank" rel="noreferrer" aria-label="Google Scholar profile">
+        <img src="./assets/gscholar.svg" alt="" class="social-icon">
+      </a>
     </div>
   </div>
 </section>
@@ -105,13 +111,13 @@
       <img src="./assets/about-pic2.jpg" alt="Andres Hinojosa">
     </div>
     <div class="about-text">
-      <p>I'm a first-generation college student from Escondido, California. I was raised on curiosity and a lot of figuring things out on my own. A single AP Computer Science class in high school changed my entire trajectory.</p>
+      <p>I'm a first-generation college graduate from Escondido, California. I was raised on curiosity and a lot of figuring things out on my own.</p>
       <p>I went to CSUSM for my BS, graduated Magna Cum Laude with a 3.73 GPA, and kept going. I completed my MS in Computer Science in May 2026, working under Dr. Nahid Ebrahimi Majd on a thesis about delegating cyber threat intelligence on the Sui blockchain.</p>
-      <p>My research has been funded by DHS, the U.S. Department of Education, and CSUSM's LAEP program. I've presented in Hawaii, published four papers, and I'm eager to learn and contribute more.</p>
+      <p>My research has been funded by DHS and the U.S. Department of Education through programs including LAEP. I've published four papers and I'm eager to learn and contribute more.</p>
       <div class="about-facts">
         <div class="fact-row">
           <span class="fact-label">Location</span>
-          <span class="fact-val">San Diego, CA</span>
+          <span class="fact-val">San Diego, CA · New York, NY</span>
         </div>
         <div class="fact-row">
           <span class="fact-label">Degree</span>
@@ -292,7 +298,7 @@
       <div>
         <div class="pub-venue">IEEE ICBC 2025 · Poster</div>
         <div class="pub-title">
-          <a href="https://doi.org/10.1109/ICBC64466.2025.11114512" target="_blank">"An Analytical Performance Evaluation on Sui Move Object-Centric Models"</a>
+          <a href="https://doi.org/10.1109/ICBC64466.2025.11114512" target="_blank" rel="noreferrer">"An Analytical Performance Evaluation on Sui Move Object-Centric Models"</a>
         </div>
         <div class="pub-authors">N. E. Majd, <strong>A. Hinojosa</strong>, C. Fisher, F. Landeros, F. Baldimtsi</div>
       </div>
@@ -303,7 +309,7 @@
       <div>
         <div class="pub-venue">WETSEB @ ICSE 2025</div>
         <div class="pub-title">
-          <a href="https://doi.org/10.1109/WETSEB66605.2025.00008" target="_blank">"A Study on Gas Optimization and Performance Evaluation of Sui and Aptos Blockchains"</a>
+          <a href="https://doi.org/10.1109/WETSEB66605.2025.00008" target="_blank" rel="noreferrer">"A Study on Gas Optimization and Performance Evaluation of Sui and Aptos Blockchains"</a>
         </div>
         <div class="pub-authors">N. E. Majd, <strong>A. Hinojosa</strong>, C. Fisher, F. Landeros, F. Baldimtsi</div>
       </div>
@@ -314,7 +320,7 @@
       <div>
         <div class="pub-venue">BDMLN @ ICCCN 2024 · July 31, 2024</div>
         <div class="pub-title">
-          <a href="https://ieeexplore.ieee.org/document/10637611" target="_blank">"Edge Computing Network Intrusion Detection in IoT Using Deep Learning"</a>
+          <a href="https://ieeexplore.ieee.org/document/10637611" target="_blank" rel="noreferrer">"Edge Computing Network Intrusion Detection in IoT Using Deep Learning"</a>
         </div>
         <div class="pub-authors"><strong>A. Hinojosa</strong>, N. E. Majd</div>
       </div>
@@ -335,28 +341,18 @@
       <div class="project-title">Hot Brain</div>
       <div class="project-desc">Brainwave-driven matchmaking app. Users are matched based on real-time EEG data captured through the BrainBit headset, processed with a Flask backend.</div>
       <div class="project-links">
-        <button class="proj-btn" onclick="location.href='https://github.com/efelicidario/hot_Brain'">GitHub</button>
-        <button class="proj-btn" onclick="location.href='https://www.youtube.com/watch?v=yWRcSVN79s0'">Live Demo</button>
+        <a class="proj-btn" href="https://github.com/efelicidario/hot_Brain" target="_blank" rel="noreferrer">GitHub</a>
+        <a class="proj-btn" href="https://www.youtube.com/watch?v=yWRcSVN79s0" target="_blank" rel="noreferrer">Live Demo</a>
       </div>
     </div>
 
     <div class="project-card reveal">
-      <div style="height:160px;display:flex;align-items:center;justify-content:center;border:1px solid var(--border-color);border-radius:6px;margin-bottom:1.25rem;color:var(--accent-muted);font-size:0.78rem;letter-spacing:0.06em;">CTI DELEGATION FRAMEWORK</div>
+      <div class="project-placeholder">CTI Delegation Framework</div>
       <div class="project-label">Thesis · Sui Move · Python · IPFS</div>
       <div class="project-title">CTI Delegation on Sui Blockchain</div>
       <div class="project-desc">13-step cyber threat intelligence delegation protocol implemented as a Move smart contract with RSA-2048 encryption, SHA-256 hashing, and concurrent delegate threading.</div>
       <div class="project-links">
-        <button class="proj-btn" onclick="location.href='https://github.com/Antech15'">GitHub</button>
-      </div>
-    </div>
-
-    <div class="project-card reveal">
-      <div style="height:160px;display:flex;align-items:center;justify-content:center;border:1px solid var(--border-color);border-radius:6px;margin-bottom:1.25rem;color:var(--accent-muted);font-size:0.78rem;letter-spacing:0.06em;">GENERATIVE AI CHATBOT</div>
-      <div class="project-label">AWS Bedrock · Lambda · React</div>
-      <div class="project-title">NYL Generative AI Chatbot</div>
-      <div class="project-desc">Internship side project — a generative agent chatbot built with AWS Bedrock for LLM inference, Lambda and API Gateway for serverless routing, S3 for storage, and React frontend.</div>
-      <div class="project-links">
-        <button class="proj-btn" onclick="location.href='#projects'">Private</button>
+        <a class="proj-btn" href="https://github.com/Antech15" target="_blank" rel="noreferrer">GitHub</a>
       </div>
     </div>
 
@@ -377,17 +373,17 @@
         <span class="contact-link-val">andres@hinoj.com</span>
         <span class="contact-link-arrow">↗</span>
       </a>
-      <a href="https://www.linkedin.com/in/ahinoj/" target="_blank" class="contact-link">
+      <a href="https://www.linkedin.com/in/ahinoj/" target="_blank" rel="noreferrer" class="contact-link">
         <span class="contact-link-label">LinkedIn</span>
         <span class="contact-link-val">linkedin.com/in/ahinoj</span>
         <span class="contact-link-arrow">↗</span>
       </a>
-      <a href="https://github.com/Antech15" target="_blank" class="contact-link">
+      <a href="https://github.com/Antech15" target="_blank" rel="noreferrer" class="contact-link">
         <span class="contact-link-label">GitHub</span>
         <span class="contact-link-val">github.com/Antech15</span>
         <span class="contact-link-arrow">↗</span>
       </a>
-      <a href="https://scholar.google.com/citations?hl=en&user=CSpBjUMAAAAJ" target="_blank" class="contact-link">
+      <a href="https://scholar.google.com/citations?hl=en&user=CSpBjUMAAAAJ" target="_blank" rel="noreferrer" class="contact-link">
         <span class="contact-link-label">Google Scholar</span>
         <span class="contact-link-val">Andres Hinojosa</span>
         <span class="contact-link-arrow">↗</span>
@@ -404,22 +400,11 @@
     <li><a href="#research">Research</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#contact">Contact</a></li>
+    <li><a href="blog/">Blog</a></li>
   </ul>
   <p>© 2026 Andres Hinojosa</p>
 </footer>
 
 <script src="script.js"></script>
-<script>
-  const reveals = document.querySelectorAll('.reveal');
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((e, i) => {
-      if (e.isIntersecting) {
-        setTimeout(() => e.target.classList.add('visible'), i * 60);
-        observer.unobserve(e.target);
-      }
-    });
-  }, { threshold: 0.08 });
-  reveals.forEach(el => observer.observe(el));
-</script>
 </body>
 </html>

@@ -16,7 +16,7 @@
 
   #profile { flex-direction: column; gap: 2.5rem; text-align: center; padding: 5rem 8% 3rem; min-height: auto; }
   .profile-pic-wrap img { width: 200px; height: 200px; }
-  .section_text { max-width: 100%; }
+  .section_text { max-width: 680px; text-align: center; }
   .hero-desc { margin: 0 auto 1.5rem; }
   .btn-container { justify-content: center; }
   #social-container { justify-content: center; }
@@ -37,12 +37,30 @@
 }
 
 @media screen and (max-width: 600px) {
-  section { padding: 3.5rem 5%; }
+  section { padding: 3.5rem 5%; overflow-wrap: anywhere; }
   .title { font-size: 1.75rem; }
   .skills-grid { grid-template-columns: 1fr; }
   .projects-grid { grid-template-columns: 1fr; }
   .pub-item { grid-template-columns: 1fr; }
   .pub-num { display: none; }
   .exp-meta { flex-direction: column; gap: 0.15rem; }
-  .hero-stats { flex-wrap: wrap; gap: 1.25rem; }
+  .hero-stats {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+  }
+  .hero-stat { min-width: 110px; text-align: center; }
+  .fact-row,
+  .contact-link {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .fact-val,
+  .contact-link-val {
+    text-align: left;
+  }
+  .project-card { padding: 1.25rem; }
+  .project-placeholder,
+  .project-img { height: 140px; min-height: 140px; }
+  footer { padding: 2rem 5%; }
 }
