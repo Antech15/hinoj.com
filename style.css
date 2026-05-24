@@ -53,6 +53,16 @@ body {
   line-height: 1.6;
 }
 
+html:not([data-theme="dark"]) body {
+  color: #5f714b;
+  background-color: #e9e6d1;
+}
+
+html[data-theme="dark"] body {
+  color: #c8d4b0;
+  background-color: #1c1e18;
+}
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 86px;

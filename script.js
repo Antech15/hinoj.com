@@ -9,14 +9,28 @@ function toggleMenu() {
 }
 
 function toggleTheme() {
-  const isDark = document.body.getAttribute('data-theme') === 'dark';
-  document.body.toggleAttribute('data-theme', !isDark);
-  localStorage.setItem('theme', isDark ? 'light' : 'dark');
+  const root = document.documentElement;
+  const isDark = root.getAttribute('data-theme') === 'dark';
+  const nextTheme = isDark ? 'light' : 'dark';
+
+  if (nextTheme === 'dark') {
+    root.setAttribute('data-theme', 'dark');
+  } else {
+    root.removeAttribute('data-theme');
+  }
+
+  localStorage.setItem('theme', nextTheme);
 }
 
 function initTheme() {
+  const root = document.documentElement;
   const savedTheme = localStorage.getItem('theme');
-  document.body.toggleAttribute('data-theme', savedTheme === 'dark');
+
+  if (savedTheme === 'dark') {
+    root.setAttribute('data-theme', 'dark');
+  } else {
+    root.removeAttribute('data-theme');
+  }
 }
 
 function initRevealAnimations() {
