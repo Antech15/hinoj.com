@@ -6,7 +6,7 @@
   <title>Entry — Andres Hinojosa</title>
   <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="../mediaqueries.css">
-  <link rel="stylesheet" href="blog-template.css">
+  <link rel="stylesheet" href="blog-template.css?v=map-concept">
 </head>
 <body>
 <a class="skip-link" href="#post-content">Skip to entry</a>
@@ -118,7 +118,7 @@ async function loadPost() {
   }
 
   try {
-    const response = await fetch(file);
+    const response = await fetch(file, { cache: 'no-store' });
     if (!response.ok) throw new Error('Entry not found');
 
     const markdown = await response.text();

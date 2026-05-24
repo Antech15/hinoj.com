@@ -3,6 +3,9 @@ title: Yosemite
 label: "Trips 01"
 category: Trips
 date: April 3, 2026 - April 5, 2026
+location: Yosemite National Park, CA
+mapLat: 37.8651
+mapLng: -119.5383
 ---
 
 Recently, I visited Yosemite as one of the last trips with friends in California before I move to NYC and it was an amazing experience. I personally received very weak reception so I couldn't use my phone at all. Since I was forced to live in the present, I was focused ont the natures beauty the entire time. 

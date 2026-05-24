@@ -4,9 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Experiences — Andres Hinojosa</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
   <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="../mediaqueries.css">
-  <link rel="stylesheet" href="blog-template.css">
+  <link rel="stylesheet" href="blog-template.css?v=map-concept">
 </head>
 <body>
 <a class="skip-link" href="#main-content">Skip to entries</a>
@@ -54,6 +55,20 @@
 </header>
 
 <main id="main-content" class="blog-wrap">
+  <section class="story-map-section" aria-labelledby="story-map-title">
+    <div class="story-map-header">
+      <div>
+        <p class="section-label">Places</p>
+        <h2 id="story-map-title">Story Map</h2>
+      </div>
+      <p class="story-map-note">Tap a marker to open the post.</p>
+    </div>
+    <div class="story-map-shell">
+      <div class="story-map" id="story-map" aria-label="Interactive map of blog post locations"></div>
+      <div class="story-map-list" id="story-map-list" aria-label="Mapped entries"></div>
+    </div>
+  </section>
+
   <p class="post-status" id="blog-status" role="status">Loading entries...</p>
   <div id="blog-categories"></div>
 </main>
@@ -67,6 +82,7 @@
 </footer>
 
 <script src="../script.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script>
 const POST_FILES = [
   'posts/nature-first-note.md',
@@ -125,17 +141,87 @@ function renderCategory(category, posts) {
   `;
 }
 
+function getMappedEntries(entries) {
+  return entries.filter(({ meta }) => (
+    meta.location &&
+    !Number.isNaN(Number(meta.mapLat)) &&
+    !Number.isNaN(Number(meta.mapLng))
+  ));
+}
+
+function renderStoryMap(entries) {
+  const mapElement = document.getElementById('story-map');
+  const list = document.getElementById('story-map-list');
+  if (!mapElement || !list) return;
+
+  const mappedEntries = getMappedEntries(entries);
+  if (!mappedEntries.length) {
+    mapElement.innerHTML = '<p class="map-empty">Locations will appear here as entries get mapped.</p>';
+    list.innerHTML = '';
+    return;
+  }
+
+  if (!window.L) {
+    mapElement.innerHTML = '<p class="map-empty">Map could not load, but mapped entries are still listed here.</p>';
+  } else {
+    const map = L.map(mapElement, {
+      scrollWheelZoom: false,
+      maxBounds: [[18, -130], [55, -60]],
+      maxBoundsViscosity: 0.75,
+    }).setView([39.5, -98.35], 4);
+
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 14,
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    }).addTo(map);
+
+    const markerIcon = L.divIcon({
+      className: 'story-map-pin',
+      html: '<span></span>',
+      iconSize: [22, 22],
+      iconAnchor: [11, 11],
+    });
+
+    mappedEntries.forEach(({ file, meta }) => {
+      const title = escapeHtml(meta.title || 'Untitled entry');
+      const location = escapeHtml(meta.location);
+      const url = `blog-post.html?post=${encodeURIComponent(file)}`;
+      const marker = L.marker([Number(meta.mapLat), Number(meta.mapLng)], {
+        alt: `${title}, ${location}`,
+        icon: markerIcon,
+        title,
+      }).addTo(map);
+
+      marker.bindTooltip(`${title} · ${location}`);
+      marker.on('click', () => {
+        window.location.href = url;
+      });
+    });
+
+    setTimeout(() => map.invalidateSize(), 50);
+  }
+
+  list.innerHTML = mappedEntries.map(({ file, meta }) => `
+    <a class="map-list-link" href="blog-post.html?post=${encodeURIComponent(file)}">
+      <span>${escapeHtml(meta.title || 'Untitled entry')}</span>
+      <small>${escapeHtml(meta.location)}</small>
+    </a>
+  `).join('');
+}
+
 async function loadEntries() {
   const status = document.getElementById('blog-status');
   const target = document.getElementById('blog-categories');
 
   try {
     const entries = await Promise.all(POST_FILES.map(async (file) => {
-      const response = await fetch(file);
+      const response = await fetch(file, { cache: 'no-store' });
       if (!response.ok) throw new Error(`Could not load ${file}`);
       const meta = parseFrontmatter(await response.text());
       return { file, meta };
     }));
+
+    renderStoryMap(entries);
 
     const grouped = entries.reduce((groups, entry) => {
       const category = entry.meta.category || 'Uncategorized';
