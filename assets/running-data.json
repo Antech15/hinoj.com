@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-24T12:39:29.112018+00:00",
+  "updated_at": "2026-06-24T18:32:35.100474+00:00",
   "athlete": {
     "id": 135716013,
     "firstname": "Andres",
@@ -78,6 +78,7 @@
       "resource_state": 2,
       "athlete": {
         "id": 135716013,
+        "id_str": "135716013",
         "resource_state": 1
       },
       "name": "Fast 8-4-2s",
@@ -90,6 +91,7 @@
       "workout_type": null,
       "device_name": "Runna",
       "id": 19042306181,
+      "id_str": "19042306181",
       "start_date": "2026-06-23T22:32:36Z",
       "start_date_local": "2026-06-23T18:32:36Z",
       "timezone": "(GMT-05:00) America/New_York",
@@ -150,6 +152,7 @@
       "resource_state": 2,
       "athlete": {
         "id": 135716013,
+        "id_str": "135716013",
         "resource_state": 1
       },
       "name": "3mi Easy Run",
@@ -162,6 +165,7 @@
       "workout_type": null,
       "device_name": "Runna",
       "id": 19028061380,
+      "id_str": "19028061380",
       "start_date": "2026-06-22T21:58:47Z",
       "start_date_local": "2026-06-22T17:58:47Z",
       "timezone": "(GMT-05:00) America/New_York",
@@ -222,6 +226,7 @@
       "resource_state": 2,
       "athlete": {
         "id": 135716013,
+        "id_str": "135716013",
         "resource_state": 1
       },
       "name": "6mi Progressive Long Run",
@@ -234,6 +239,7 @@
       "workout_type": null,
       "device_name": "Runna",
       "id": 18999584149,
+      "id_str": "18999584149",
       "start_date": "2026-06-20T15:42:51Z",
       "start_date_local": "2026-06-20T11:42:51Z",
       "timezone": "(GMT-05:00) America/New_York",
@@ -294,6 +300,7 @@
       "resource_state": 2,
       "athlete": {
         "id": 135716013,
+        "id_str": "135716013",
         "resource_state": 1
       },
       "name": "2.5mi Easy Run",
@@ -306,6 +313,7 @@
       "workout_type": null,
       "device_name": "Runna",
       "id": 18977909906,
+      "id_str": "18977909906",
       "start_date": "2026-06-18T22:59:02Z",
       "start_date_local": "2026-06-18T18:59:02Z",
       "timezone": "(GMT-05:00) America/New_York",
@@ -366,6 +374,7 @@
       "resource_state": 2,
       "athlete": {
         "id": 135716013,
+        "id_str": "135716013",
         "resource_state": 1
       },
       "name": "Over and Unders 1km",
@@ -378,6 +387,7 @@
       "workout_type": null,
       "device_name": "Runna",
       "id": 18964237539,
+      "id_str": "18964237539",
       "start_date": "2026-06-17T21:56:10Z",
       "start_date_local": "2026-06-17T17:56:10Z",
       "timezone": "(GMT-05:00) America/New_York",
@@ -438,6 +448,7 @@
       "resource_state": 2,
       "athlete": {
         "id": 135716013,
+        "id_str": "135716013",
         "resource_state": 1
       },
       "name": "3.75mi Easy Run",
@@ -450,6 +461,7 @@
       "workout_type": null,
       "device_name": "Runna",
       "id": 18935860903,
+      "id_str": "18935860903",
       "start_date": "2026-06-15T22:34:04Z",
       "start_date_local": "2026-06-15T18:34:04Z",
       "timezone": "(GMT-05:00) America/New_York",
@@ -510,6 +522,7 @@
       "resource_state": 2,
       "athlete": {
         "id": 135716013,
+        "id_str": "135716013",
         "resource_state": 1
       },
       "name": "5mi Long Run",
@@ -522,6 +535,7 @@
       "workout_type": null,
       "device_name": "Runna",
       "id": 18905883273,
+      "id_str": "18905883273",
       "start_date": "2026-06-13T14:59:55Z",
       "start_date_local": "2026-06-13T10:59:55Z",
       "timezone": "(GMT-05:00) America/New_York",
@@ -582,6 +596,7 @@
       "resource_state": 2,
       "athlete": {
         "id": 135716013,
+        "id_str": "135716013",
         "resource_state": 1
       },
       "name": "3.25mi Easy Run",
@@ -594,6 +609,7 @@
       "workout_type": null,
       "device_name": "Runna",
       "id": 18896573904,
+      "id_str": "18896573904",
       "start_date": "2026-06-12T23:33:43Z",
       "start_date_local": "2026-06-12T19:33:43Z",
       "timezone": "(GMT-05:00) America/New_York",
@@ -654,6 +670,7 @@
       "resource_state": 2,
       "athlete": {
         "id": 135716013,
+        "id_str": "135716013",
         "resource_state": 1
       },
       "name": "Evening Run",
@@ -666,6 +683,7 @@
       "workout_type": null,
       "device_name": "Apple Watch Series 10",
       "id": 18871243553,
+      "id_str": "18871243553",
       "start_date": "2026-06-10T22:08:10Z",
       "start_date_local": "2026-06-10T18:08:10Z",
       "timezone": "(GMT-05:00) America/New_York",
@@ -725,6 +743,7 @@
       "resource_state": 2,
       "athlete": {
         "id": 135716013,
+        "id_str": "135716013",
         "resource_state": 1
       },
       "name": "Morning Run",
@@ -737,6 +756,7 @@
       "workout_type": null,
       "device_name": "Apple Watch Series 10",
       "id": 18837868592,
+      "id_str": "18837868592",
       "start_date": "2026-06-08T14:25:05Z",
       "start_date_local": "2026-06-08T10:25:05Z",
       "timezone": "(GMT-05:00) America/New_York",
