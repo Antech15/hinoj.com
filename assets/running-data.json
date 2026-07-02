@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-02T00:29:20.867746+00:00",
+  "updated_at": "2026-07-02T08:40:32.727094+00:00",
   "athlete": {
     "id": 135716013,
     "firstname": "Andres",
@@ -22,10 +22,10 @@
       "elevation_gain": 0.0
     },
     "recent_run_totals": {
-      "count": 15,
-      "distance": 105285.70000000001,
-      "moving_time": 36533,
-      "elapsed_time": 36956,
+      "count": 16,
+      "distance": 109590.80000000002,
+      "moving_time": 38004,
+      "elapsed_time": 38465,
       "elevation_gain": 108.19999999999999,
       "achievement_count": 0
     },
@@ -100,7 +100,7 @@
       "location_state": null,
       "location_country": null,
       "achievement_count": 2,
-      "kudos_count": 1,
+      "kudos_count": 3,
       "comment_count": 0,
       "athlete_count": 1,
       "photo_count": 0,
