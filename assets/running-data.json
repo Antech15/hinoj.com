@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-13T19:10:26.914308+00:00",
+  "updated_at": "2026-07-14T01:23:07.845190+00:00",
   "athlete": {
     "id": 135716013,
     "firstname": "Andres",
@@ -30,11 +30,11 @@
       "achievement_count": 0
     },
     "all_run_totals": {
-      "count": 403,
-      "distance": 2615827.3999999994,
-      "moving_time": 891207,
-      "elapsed_time": 899690,
-      "elevation_gain": 5729.899999999998
+      "count": 404,
+      "distance": 2623080.9999999995,
+      "moving_time": 893851,
+      "elapsed_time": 902390,
+      "elevation_gain": 5736.999999999998
     },
     "recent_swim_totals": {
       "count": 0,
@@ -59,11 +59,11 @@
       "elevation_gain": 0
     },
     "ytd_run_totals": {
-      "count": 88,
-      "distance": 608488,
-      "moving_time": 211808.0,
-      "elapsed_time": 215802.0,
-      "elevation_gain": 1840.8999999999996
+      "count": 89,
+      "distance": 615742,
+      "moving_time": 214452.0,
+      "elapsed_time": 218502.0,
+      "elevation_gain": 1847.9999999999995
     },
     "ytd_swim_totals": {
       "count": 0,
@@ -74,6 +74,80 @@
     }
   },
   "recent_runs": [
+    {
+      "resource_state": 2,
+      "athlete": {
+        "id": 135716013,
+        "id_str": "135716013",
+        "resource_state": 1
+      },
+      "name": "4.5mi Easy Run",
+      "distance": 7253.6,
+      "moving_time": 2644,
+      "elapsed_time": 2700,
+      "total_elevation_gain": 7.1,
+      "type": "Run",
+      "sport_type": "Run",
+      "workout_type": null,
+      "device_name": "Runna",
+      "id": 19302252056,
+      "id_str": "19302252056",
+      "start_date": "2026-07-13T23:58:55Z",
+      "start_date_local": "2026-07-13T19:58:55Z",
+      "timezone": "(GMT-05:00) America/New_York",
+      "utc_offset": -14400.0,
+      "location_city": null,
+      "location_state": null,
+      "location_country": null,
+      "achievement_count": 3,
+      "kudos_count": 0,
+      "comment_count": 0,
+      "athlete_count": 1,
+      "photo_count": 0,
+      "map": {
+        "id": "a19302252056",
+        "summary_polyline": "wzvwFtpubMd@^x@RH?JGNQBOJHNZEVFRRLJAnCz@h@H\\HRNp@LPNp@DNNPDTDTLn@HTLTBLHN@XL?DKL?FGRc@dBMTCPILCR_@dACJ@DBBNCT[JGJa@LQRk@Jc@D[PWZcAFER@DJDDp@DC`@BXJJd@HDD?DX@tA^N?ZJBJCl@Bb@Gj@?v@H^HLHDNCBIAMDW@m@L_BCM@_AR_ACKD_BJEJ@ZZPEJFLCVNDEP??DHETJb@@l@Gp@JXALF^@JHHZZF\\?PHDHF\\LVD?RAFQ?BHDT@\\A^I@UDKA?H]PQBa@Vc@Dg@BAHDNCVBh@RX?^Ff@AD@@LARBT@n@FDTCVBAJDP?RI\\Dj@CNBRGRCXAz@M\\?xAEJCx@EHBNCRDJHFJAVDJG?UDUA[DSAm@Bg@Js@CWB[DI@w@BOFsABCEUFY@DL@XDJCRk@@c@FOFBTCdAHHEb@ZN@PHl@Lx@FTC|@PJCLFl@H\\J@FhAh@^Xb@FXR^BRJ^FTLf@H`@ERDRCVF`AEZHXCTDTC`@BDDZ?JDv@?RCd@Ht@?VFjADJDPEpBDJDbAChBRJHNIN@DHM|AAhBGHIBSCIKHwC?q@ACU?CDI?WECCYB}@Q_ADOAMKgA?IG_@FoA?[Kw@BuAOSBcAKe@@i@Gq@Dc@K[BSGe@DQEMBIGO?_Ac@[Gu@[I?k@YYGM]MCIIm@EOOOBi@MY@_@CUOc@DWKo@?UMK@WKO@QIQ?_@ICBAJ@RAT@VELCBUIg@C@`ASpAAj@CNKvABD?RGPC\\?XCDCv@@NK\\[FUGKUBUFY?a@BQ@_@FQBc@CM?QDQB_@AIFQB_@Ac@FaA?SDo@g@LQCASBWA}@GOc@MW@q@EIEYF_@AMPGXEFAJOBYIK@EHO?KHCb@y@ViBa@GBIEEMQDKSEFO?CD@JC@U@OEoAOSKEIGCQ@OHGEUDs@SoAQCH?j@K|@KbB?VEx@?j@SzAMDMGCGE[IQ@cDCWKIe@E[Mi@KSKs@UMMGs@Ms@EI_@Y[KC@EL@T_@~B_A`D[`@MDOCII?GJQn@yBFKRy@Rc@Po@AIOAMDg@Oc@Uo@Kw@YiAUm@Wq@KiBm@s@YO@WGc@SCID[EKKKMAIHAFSJOKYC[MWSS[AGFAJc@ZkB^kAN{@b@cBN]Pm@JSFYLU@Gh@}@CBNO",
+        "resource_state": 2
+      },
+      "trainer": false,
+      "commute": false,
+      "manual": false,
+      "private": false,
+      "visibility": "everyone",
+      "flagged": false,
+      "gear_id": "g24214689",
+      "start_latlng": [
+        40.754529,
+        -74.007303
+      ],
+      "end_latlng": [
+        40.753327,
+        -74.00416
+      ],
+      "average_speed": 2.743,
+      "max_speed": 5.46,
+      "average_cadence": 84.9,
+      "average_watts": 166.5,
+      "max_watts": 279,
+      "weighted_average_watts": 166,
+      "device_watts": true,
+      "kilojoules": 440.1,
+      "has_heartrate": true,
+      "average_heartrate": 145.1,
+      "max_heartrate": 174.0,
+      "heartrate_opt_out": false,
+      "display_hide_heartrate_option": true,
+      "elev_high": 5.7,
+      "elev_low": 2.1,
+      "upload_id": 20420742839,
+      "upload_id_str": "20420742839",
+      "external_id": "FB48C29E-C392-4EBA-85B2-400EA23FA15A.fit",
+      "from_accepted_tag": false,
+      "pr_count": 1,
+      "total_photo_count": 1,
+      "has_kudoed": false,
+      "suffer_score": 30.0
+    },
     {
       "resource_state": 2,
       "athlete": {
@@ -739,80 +813,6 @@
       "total_photo_count": 1,
       "has_kudoed": false,
       "suffer_score": 130.0
-    },
-    {
-      "resource_state": 2,
-      "athlete": {
-        "id": 135716013,
-        "id_str": "135716013",
-        "resource_state": 1
-      },
-      "name": "Tempo 2 Miles",
-      "distance": 8266.6,
-      "moving_time": 2698,
-      "elapsed_time": 2721,
-      "total_elevation_gain": 0.0,
-      "type": "Run",
-      "sport_type": "Run",
-      "workout_type": null,
-      "device_name": "Runna",
-      "id": 19067450044,
-      "id_str": "19067450044",
-      "start_date": "2026-06-25T22:13:55Z",
-      "start_date_local": "2026-06-25T18:13:55Z",
-      "timezone": "(GMT-05:00) America/New_York",
-      "utc_offset": -14400.0,
-      "location_city": null,
-      "location_state": null,
-      "location_country": null,
-      "achievement_count": 8,
-      "kudos_count": 4,
-      "comment_count": 0,
-      "athlete_count": 1,
-      "photo_count": 0,
-      "map": {
-        "id": "a19067450044",
-        "summary_polyline": "uzvwFppubMf@^v@VPCRO@MD?HFJZ@d@DFN?n@VlBd@FF^Bp@VP@nA^\\T^Bb@Pj@HdBb@@FQR@DALIb@Sj@ALBFNOb@Uf@uAL?J@JLP@VHBDCVJf@^J\\BdA^r@HLFJJCpAEh@@~@@JJRPNH@FEDm@CQDOAQFy@AE@eAHa@FaAA_@Fs@HWnAJ^FJFt@QtA\\NJh@D@EH?FQVA\\Bv@h@FJJDX?BL@EDD\\[LCNMP_@CYDQ\\IJBRC\\F?KB?DMr@L^?jBTBH?`@DHATB^JE^PDCJHANBNGNC~@Ab@F^?HGb@OdB@`@Gf@EhACL?DTLJ@PGFM?k@DQ@y@JgABwBJ]DkADYA]DGC?@JTF\\EB_@HSNo@R@tA@h@HXVj@FZL`@AND^?x@Th@DPHRBJPJDh@Lt@d@RCh@V`@JPJRBLHdBPjA?@BEZEn@Jf@LHVEFKA[@ECr@KF[MKUB{@CMDI`BIj@Dr@?j@H\\C|ALf@Cn@FjACpBPx@?RLXB`AC`CDHANOLANLLPLCPF`@B`ACPFZ@TJv@?NDfADt@E^BLHx@Ed@LX@HF@DEdAAr@BXAXEND|@EZ@ZEh@@r@E^?ZCNCrACVd@GXKLF^GVFREXHXAHF^CLFzAHRDJHVAFBEu@BYA_@BEJcDAi@Dg@?{@NcBB_ACEMDwAESDgCUS@OEk@JSEm@Bo@IQGgAAyAOa@GeIYEAS[SCOLSFiABCDJPGXEv@?pAEJW?OSF_CAi@BOQIMB[CKEO@sAOe@BsAIOEyB?]@g@G}BGeBOQBUEi@BSE_AAe@Is@AQ@oBw@q@SM?GISIIBEC[USYSDKQwAKYKs@CgB[{@Kq@WW@MEC@CJ@NCBG`Aa@EMBUEAEHV@d@ARMh@?XKfA?NETElAIv@CxAENKF]?QEKSHm@HYJ_BDKCWJg@CMBMC]Fm@J[?u@@G@WAGSBW?OKEm@DgAEEkD_@IFUt@GHKIM?JEAAD?Yl@KXMPc@JOCKD[G{@[q@Kg@Dy@MGB[Gc@Ao@SYFMEGIG?MJRLE?c@SGIAIMNa@Gw@Da@QK?WP]dAQREV]RwA[OI[AO[I}@Wk@i@[KMa@Au@LYCQHo@EMGoBk@sAg@g@EkDiAG@g@OKIEg@OSM?SVMBSOq@W[WKO",
-        "resource_state": 2
-      },
-      "trainer": false,
-      "commute": false,
-      "manual": false,
-      "private": false,
-      "visibility": "everyone",
-      "flagged": false,
-      "gear_id": "g24214689",
-      "start_latlng": [
-        40.754514,
-        -74.007288
-      ],
-      "end_latlng": [
-        40.75459,
-        -74.007227
-      ],
-      "average_speed": 3.064,
-      "max_speed": 5.94,
-      "average_cadence": 85.0,
-      "average_watts": 182.9,
-      "max_watts": 367,
-      "weighted_average_watts": 187,
-      "device_watts": true,
-      "kilojoules": 493.4,
-      "has_heartrate": true,
-      "average_heartrate": 166.0,
-      "max_heartrate": 193.0,
-      "heartrate_opt_out": false,
-      "display_hide_heartrate_option": true,
-      "elev_high": 3.7,
-      "elev_low": 2.1,
-      "upload_id": 20182144447,
-      "upload_id_str": "20182144447",
-      "external_id": "55617D97-FA53-4BC0-A412-ABC95ED8B2EA.fit",
-      "from_accepted_tag": false,
-      "pr_count": 5,
-      "total_photo_count": 1,
-      "has_kudoed": false,
-      "suffer_score": 91.0
     }
   ]
 }
