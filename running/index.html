@@ -7,59 +7,176 @@
   <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="../mediaqueries.css">
   <style>
-    #run-hero { padding-top: 6rem; border-bottom: 1px solid var(--border-color); }
+    /* ── Shared layout shell ── */
+    .run-wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 clamp(2rem, 6%, 4rem);
+    }
 
-    .run-list { display: flex; flex-direction: column; }
-
-    .run-item {
-      display: grid;
-      grid-template-columns: 90px 1fr;
-      gap: 2.5rem;
-      padding: 2.5rem 0;
+    /* ── Hero ── */
+    #run-hero {
+      padding: 7rem clamp(2rem, 6%, 4rem) 5rem;
       border-bottom: 1px solid var(--border-color);
+      max-width: 860px;
+      margin: 0 auto;
     }
-    .run-item:first-child { padding-top: 0; }
-    .run-item:last-child { border-bottom: none; }
 
-    .run-dist { padding-top: 2px; }
-    .run-dist-num {
-      display: block;
-      font-size: 2.25rem;
-      font-weight: 300;
-      color: var(--border-color);
-      line-height: 1;
-      font-variant-numeric: tabular-nums;
-    }
-    .run-dist-unit {
-      display: block;
-      font-size: 0.6rem;
-      letter-spacing: 0.1em;
+    .run-big-title {
+      font-size: clamp(3.5rem, 9vw, 7.5rem);
+      font-weight: 500;
+      letter-spacing: -0.03em;
+      color: var(--primary-text);
+      line-height: 0.9;
       text-transform: uppercase;
-      color: var(--accent-muted);
-      margin-top: 3px;
+      margin-bottom: 0.6rem;
     }
-    .run-date {
-      display: block;
-      font-size: 0.65rem;
-      letter-spacing: 0.05em;
+
+    .run-est {
+      font-size: 0.68rem;
+      letter-spacing: 0.14em;
       color: var(--accent-muted);
-      margin-top: 0.6rem;
+      text-transform: uppercase;
+      margin-bottom: 3.5rem;
     }
-    .run-name {
-      font-size: 1rem;
+
+    .hero-big-stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0;
+      border-top: 1px solid var(--border-color);
+      padding-top: 2.5rem;
+    }
+
+    .hero-big-stat {
+      flex: 1;
+      min-width: 130px;
+      padding-right: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-big-num {
+      font-size: clamp(1.9rem, 3.5vw, 3.2rem);
       font-weight: 500;
       color: var(--primary-text);
-      margin-bottom: 0.35rem;
-      line-height: 1.3;
-    }
-    .run-meta {
-      font-size: 0.8rem;
-      color: var(--secondary-text);
-      margin-bottom: 0.75rem;
-      letter-spacing: 0.01em;
+      line-height: 1;
+      font-variant-numeric: tabular-nums;
+      letter-spacing: -0.02em;
     }
 
-    .highlights-strip {
+    .hero-big-label {
+      font-size: 0.6rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent-muted);
+      margin-top: 0.4rem;
+    }
+
+    /* ── Generic run-section ── */
+    .run-section {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 4rem clamp(2rem, 6%, 4rem);
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .rs-eyebrow {
+      font-size: 0.6rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent-muted);
+      margin-bottom: 0.4rem;
+    }
+
+    .rs-title {
+      font-size: clamp(1.4rem, 2.5vw, 2rem);
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      color: var(--primary-text);
+      margin-bottom: 0.5rem;
+      line-height: 1.1;
+    }
+
+    .rs-note {
+      font-size: 0.73rem;
+      color: var(--accent-muted);
+      margin-bottom: 2.5rem;
+      font-style: italic;
+    }
+
+    /* ── Foreword ── */
+    .foreword-body {
+      font-size: 0.88rem;
+      color: var(--secondary-text);
+      line-height: 1.95;
+      max-width: 620px;
+    }
+    .foreword-body p + p { margin-top: 1.25rem; }
+
+    /* ── Notable Runs table ── */
+    .notable-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .notable-table th {
+      font-size: 0.58rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent-muted);
+      text-align: left;
+      padding: 0 1rem 0.75rem 0;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .notable-table th:last-child { text-align: right; padding-right: 0; }
+
+    .notable-table td {
+      padding: 0.85rem 1rem 0.85rem 0;
+      border-bottom: 1px solid var(--border-color);
+      vertical-align: middle;
+    }
+
+    .notable-table tr:last-child td { border-bottom: none; }
+
+    .td-rank {
+      font-size: 1.1rem;
+      font-weight: 300;
+      color: var(--border-color);
+      font-variant-numeric: tabular-nums;
+      width: 2.8rem;
+    }
+
+    .td-dist {
+      font-size: 0.98rem;
+      font-weight: 500;
+      color: var(--primary-text);
+      font-variant-numeric: tabular-nums;
+      white-space: nowrap;
+    }
+
+    .td-dist-unit {
+      font-size: 0.62rem;
+      color: var(--accent-muted);
+      letter-spacing: 0.05em;
+      margin-left: 2px;
+    }
+
+    .td-name {
+      font-size: 0.82rem;
+      color: var(--secondary-text);
+    }
+
+    .td-date {
+      font-size: 0.7rem;
+      color: var(--accent-muted);
+      letter-spacing: 0.03em;
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    /* ── Stats grid ── */
+    .stats-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 1.5px;
@@ -67,14 +184,18 @@
       border: 1.5px solid var(--border-color);
       border-radius: 8px;
       overflow: hidden;
+      margin-top: 2rem;
     }
-    .highlight-item {
+
+    .stat-cell {
       padding: 2rem 1.5rem;
       background: var(--primary-bg);
       transition: background 0.2s;
     }
-    .highlight-item:hover { background: var(--section-bg); }
-    .highlight-num {
+
+    .stat-cell:hover { background: var(--section-bg); }
+
+    .stat-num {
       font-size: 1.9rem;
       font-weight: 300;
       color: var(--primary-text);
@@ -82,31 +203,118 @@
       font-variant-numeric: tabular-nums;
       margin-bottom: 0.4rem;
     }
-    .highlight-label {
-      font-size: 0.65rem;
-      letter-spacing: 0.08em;
+
+    .stat-label {
+      font-size: 0.6rem;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
       color: var(--accent-muted);
     }
 
-    .run-empty {
-      font-size: 0.85rem;
-      color: var(--accent-muted);
-      padding: 3rem 0;
-    }
-    .strava-credit { font-size: 0.68rem; color: var(--accent-muted); letter-spacing: 0.04em; }
-    .strava-credit a { color: var(--accent-muted); text-decoration: underline; text-underline-offset: 3px; }
+    /* ── Run list ── */
+    .run-list { display: flex; flex-direction: column; }
 
-    @media screen and (max-width: 1200px) {
-      .run-item { grid-template-columns: 1fr; gap: 0.4rem; }
-      .run-dist { display: flex; align-items: baseline; gap: 0.4rem; flex-wrap: wrap; }
-      .run-dist-num { font-size: 1.5rem; }
-      .run-dist-unit { margin-top: 0; }
-      .run-date { margin-top: 0; margin-left: auto; }
-      .highlights-strip { grid-template-columns: repeat(2, 1fr); }
+    .run-item {
+      display: grid;
+      grid-template-columns: 80px 1fr;
+      gap: 2rem;
+      padding: 2rem 0;
+      border-bottom: 1px solid var(--border-color);
     }
-    @media screen and (max-width: 600px) {
-      .highlights-strip { grid-template-columns: 1fr; }
+
+    .run-item:first-child { padding-top: 0; }
+    .run-item:last-child  { border-bottom: none; }
+
+    .ri-dist-wrap { padding-top: 2px; }
+
+    .ri-dist-num {
+      display: block;
+      font-size: 2rem;
+      font-weight: 300;
+      color: var(--border-color);
+      line-height: 1;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .ri-dist-unit {
+      display: block;
+      font-size: 0.57rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent-muted);
+      margin-top: 3px;
+    }
+
+    .ri-date {
+      display: block;
+      font-size: 0.58rem;
+      letter-spacing: 0.04em;
+      color: var(--accent-muted);
+      margin-top: 0.5rem;
+    }
+
+    .ri-name {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--primary-text);
+      margin-bottom: 0.25rem;
+      line-height: 1.3;
+    }
+
+    .ri-meta {
+      font-size: 0.78rem;
+      color: var(--secondary-text);
+      margin-bottom: 0.6rem;
+      letter-spacing: 0.01em;
+    }
+
+    .run-empty {
+      font-size: 0.82rem;
+      color: var(--accent-muted);
+      padding: 2.5rem 0;
+    }
+
+    /* ── Footer row ── */
+    .run-footer-row {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 1.75rem clamp(2rem, 6%, 4rem);
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .strava-credit {
+      font-size: 0.65rem;
+      color: var(--accent-muted);
+      letter-spacing: 0.04em;
+    }
+
+    .strava-credit a {
+      color: var(--accent-muted);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    /* ── Responsive ── */
+    @media screen and (max-width: 720px) {
+      .hero-big-stat  { min-width: 45%; }
+      .stats-grid     { grid-template-columns: repeat(2, 1fr); }
+      .run-item       { grid-template-columns: 1fr; gap: 0.35rem; }
+      .ri-dist-wrap   { display: flex; align-items: baseline; gap: 0.4rem; flex-wrap: wrap; }
+      .ri-dist-num    { font-size: 1.4rem; }
+      .ri-dist-unit   { margin-top: 0; }
+      .ri-date        { margin-top: 0; margin-left: auto; }
+      .td-name        { display: none; }
+    }
+
+    @media screen and (max-width: 480px) {
+      .hero-big-stat  { min-width: 100%; }
+      .stats-grid     { grid-template-columns: 1fr; }
+      .run-footer-row { flex-direction: column; align-items: flex-start; }
     }
   </style>
 </head>
@@ -159,75 +367,90 @@
   </div>
 </nav>
 
-<!-- HERO -->
+<!-- ═══ HERO ═══ -->
 <section id="run-hero">
-  <p class="section-label">Athletics</p>
-  <h1 class="title" style="margin-bottom:0.75rem;">Running</h1>
-  <p class="hero-desc" style="max-width:480px;margin-bottom:2rem;">
-    In my free time, I enjoy running as a way to stay fit while clearing my mind.
-  </p>
-  <div class="hero-stats" id="hero-stats" style="margin-bottom:2rem;">
-    <div class="hero-stat">
-      <div class="hero-stat-num" style="color:var(--accent-muted);">—</div>
-      <div class="hero-stat-label">Total Miles</div>
-    </div>
-    <div class="hero-stat">
-      <div class="hero-stat-num" style="color:var(--accent-muted);">—</div>
-      <div class="hero-stat-label">Total Runs</div>
-    </div>
-    <div class="hero-stat">
-      <div class="hero-stat-num" style="color:var(--accent-muted);">—</div>
-      <div class="hero-stat-label">Vert Feet</div>
-    </div>
-    <div class="hero-stat">
-      <div class="hero-stat-num" style="color:var(--accent-muted);">—</div>
-      <div class="hero-stat-label">YTD Miles</div>
-    </div>
-  </div>
-  <div class="btn-container">
-    <a id="strava-btn" href="https://www.strava.com" target="_blank" class="btn btn-color-1">View on Strava</a>
+  <h1 class="run-big-title">Running</h1>
+  <p class="run-est" id="run-est">Tracking every mile</p>
+  <div class="hero-big-stats" id="hero-big-stats">
+    <div class="hero-big-stat"><div class="hero-big-num" style="color:var(--accent-muted);">—</div><div class="hero-big-label">Total Miles</div></div>
+    <div class="hero-big-stat"><div class="hero-big-num" style="color:var(--accent-muted);">—</div><div class="hero-big-label">Total Runs</div></div>
+    <div class="hero-big-stat"><div class="hero-big-num" style="color:var(--accent-muted);">—</div><div class="hero-big-label">Hours</div></div>
+    <div class="hero-big-stat"><div class="hero-big-num" style="color:var(--accent-muted);">—</div><div class="hero-big-label">Vert Feet</div></div>
   </div>
 </section>
 
-<!-- HIGHLIGHTS -->
-<section id="highlights" style="border-top:1px solid var(--border-color);">
-  <p class="section-label">Averages</p>
-  <h1 class="title">By the Numbers</h1>
-  <div class="highlights-strip reveal" id="highlights-strip">
-    <div class="highlight-item">
-      <div class="highlight-num" style="color:var(--accent-muted);">—</div>
-      <div class="highlight-label">Avg Pace</div>
-    </div>
-    <div class="highlight-item">
-      <div class="highlight-num" style="color:var(--accent-muted);">—</div>
-      <div class="highlight-label">Avg Run</div>
-    </div>
-    <div class="highlight-item">
-      <div class="highlight-num" style="color:var(--accent-muted);">—</div>
-      <div class="highlight-label">Miles / Week (YTD)</div>
-    </div>
-    <div class="highlight-item">
-      <div class="highlight-num" style="color:var(--accent-muted);">—</div>
-      <div class="highlight-label">Longest Recent Run</div>
-    </div>
+<!-- ═══ FOREWORD ═══ -->
+<section class="run-section">
+  <p class="rs-eyebrow">Foreword</p>
+  <h2 class="rs-title">Why I Run</h2>
+  <div class="foreword-body">
+    <p>
+      Running started as something I did to stay in shape. It's become something else entirely — a habit, a ritual, a way to think through hard problems and clear my head before the day starts.
+    </p>
+    <p>
+      There's something about putting miles on your legs that makes everything else feel more manageable. Some runs are great. A lot of them aren't. I show up anyway.
+    </p>
+    <p>
+      This page is my running log, synced automatically from Strava. Every run, every mile, tracked here.
+    </p>
   </div>
 </section>
 
-<!-- RECENT RUNS -->
-<section id="recent-runs" style="border-top:1px solid var(--border-color);">
-  <p class="section-label">Activity</p>
-  <h1 class="title">Recent Runs</h1>
+<!-- ═══ NOTABLE RUNS ═══ -->
+<section class="run-section">
+  <p class="rs-eyebrow">Notable Runs</p>
+  <h2 class="rs-title">Longest Runs</h2>
+  <p class="rs-note" id="notable-note">runs ranked by distance</p>
+  <table class="notable-table" id="notable-table">
+    <thead>
+      <tr>
+        <th></th>
+        <th>Distance</th>
+        <th class="td-name-header">Name</th>
+        <th style="text-align:right;">Date</th>
+      </tr>
+    </thead>
+    <tbody id="notable-tbody">
+      <tr><td colspan="4" style="padding:2rem 0;font-size:0.82rem;color:var(--accent-muted);">Loading...</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- ═══ BY THE NUMBERS ═══ -->
+<section class="run-section">
+  <p class="rs-eyebrow">Statistics</p>
+  <h2 class="rs-title">By the Numbers</h2>
+  <p class="rs-note">averages across all runs</p>
+  <div class="stats-grid reveal" id="stats-grid">
+    <div class="stat-cell"><div class="stat-num" style="color:var(--accent-muted);">—</div><div class="stat-label">Avg Pace</div></div>
+    <div class="stat-cell"><div class="stat-num" style="color:var(--accent-muted);">—</div><div class="stat-label">Avg Distance</div></div>
+    <div class="stat-cell"><div class="stat-num" style="color:var(--accent-muted);">—</div><div class="stat-label">Miles / Week (YTD)</div></div>
+    <div class="stat-cell"><div class="stat-num" style="color:var(--accent-muted);">—</div><div class="stat-label">YTD Miles</div></div>
+  </div>
+</section>
+
+<!-- ═══ RECENT RUNS ═══ -->
+<section class="run-section" style="border-bottom:none;">
+  <p class="rs-eyebrow">Activity</p>
+  <h2 class="rs-title">Recent Runs</h2>
   <div class="run-list" id="run-list">
     <p class="run-empty">Loading...</p>
   </div>
-  <div style="margin-top:2.5rem;padding-top:1.5rem;border-top:1px solid var(--border-color);">
-    <a id="strava-all-link" href="https://www.strava.com" target="_blank"
-       style="font-size:0.78rem;letter-spacing:0.04em;color:var(--accent-muted);text-decoration:none;transition:color 0.2s;"
-       onmouseover="this.style.color='var(--primary-text)'" onmouseout="this.style.color='var(--accent-muted)'">
-      View all runs on Strava ↗
-    </a>
-  </div>
 </section>
+
+<!-- ═══ FOOTER ROW ═══ -->
+<div class="run-footer-row">
+  <a id="strava-all-link" href="https://www.strava.com" target="_blank"
+     style="font-size:0.75rem;letter-spacing:0.04em;color:var(--accent-muted);transition:color 0.2s;"
+     onmouseover="this.style.color='var(--primary-text)'" onmouseout="this.style.color='var(--accent-muted)'">
+    View all runs on Strava ↗
+  </a>
+  <p class="strava-credit">
+    Data via <a href="https://developers.strava.com" target="_blank">Strava API</a>
+    · synced every 6h
+    · last updated <span id="last-updated">—</span>
+  </p>
+</div>
 
 <footer>
   <ul class="footer-nav">
@@ -238,17 +461,15 @@
     <li><a href="/running/">Running</a></li>
     <li><a href="/#contact">Contact</a></li>
   </ul>
-  <p class="strava-credit">
-    Data via <a href="https://developers.strava.com" target="_blank">Strava API</a> · synced every 6h · last updated <span id="last-updated">—</span>
-  </p>
+  <p class="strava-credit">© Andres Hinojosa</p>
 </footer>
 
 <script src="../script.js"></script>
 <script>
-  // ── Helpers ──────────────────────────────────────────────────────────────────
-  const m2mi   = m => m * 0.000621371;
-  const m2ft   = m => Math.round(m * 3.28084);
-  const fmtNum = n => Math.round(n).toLocaleString();
+  // ── Unit helpers ─────────────────────────────────────────────────────────────
+  const m2mi  = m => m * 0.000621371;
+  const m2ft  = m => Math.round(m * 3.28084);
+  const fmtN  = n => Math.round(n).toLocaleString();
   const fmtTime = s => {
     const h = Math.floor(s / 3600);
     const m = Math.floor((s % 3600) / 60);
@@ -267,75 +488,109 @@
     month: 'short', day: 'numeric'
   });
   const weeksIntoYear = () => {
-    const now = new Date();
+    const now  = new Date();
     const jan1 = new Date(now.getFullYear(), 0, 1);
     return Math.max(1, (now - jan1) / (7 * 24 * 3600 * 1000));
   };
 
-  // ── Renderers ────────────────────────────────────────────────────────────────
-  function renderHeroStats(data) {
-    const s = data.stats;
+  // ── Hero big stats ───────────────────────────────────────────────────────────
+  function renderHero(data) {
+    const s = data.stats.all_run_totals;
     const items = [
-      { num: fmtNum(Math.round(m2mi(s.all_run_totals.distance))), label: 'Total Miles' },
-      { num: fmtNum(s.all_run_totals.count),                       label: 'Total Runs'  },
-      { num: fmtNum(m2ft(s.all_run_totals.elevation_gain)),        label: 'Vert Feet'   },
-      { num: fmtNum(Math.round(m2mi(s.ytd_run_totals.distance))), label: 'YTD Miles'   },
+      { num: fmtN(Math.round(m2mi(s.distance))),           label: 'Total Miles' },
+      { num: fmtN(s.count),                                label: 'Total Runs'  },
+      { num: fmtN(Math.round(s.moving_time / 3600)),       label: 'Hours'       },
+      { num: fmtN(m2ft(s.elevation_gain)),                  label: 'Vert Feet'   },
     ];
-    document.getElementById('hero-stats').innerHTML = items.map(i => `
-      <div class="hero-stat">
-        <div class="hero-stat-num">${i.num}</div>
-        <div class="hero-stat-label">${i.label}</div>
+    document.getElementById('hero-big-stats').innerHTML = items.map(i => `
+      <div class="hero-big-stat">
+        <div class="hero-big-num">${i.num}</div>
+        <div class="hero-big-label">${i.label}</div>
       </div>`).join('');
   }
 
-  function renderHighlights(data) {
-    const s = data.stats;
+  // ── Notable runs (longest from recent_runs) ──────────────────────────────────
+  function renderNotable(data) {
+    const runs = (data.recent_runs || [])
+      .slice()
+      .sort((a, b) => b.distance - a.distance)
+      .slice(0, 10);
+
+    if (!runs.length) {
+      document.getElementById('notable-tbody').innerHTML =
+        '<tr><td colspan="4" style="padding:2rem 0;font-size:0.82rem;color:var(--accent-muted);">No data yet.</td></tr>';
+      return;
+    }
+
+    document.getElementById('notable-tbody').innerHTML = runs.map((r, i) => {
+      const dist = m2mi(r.distance);
+      return `
+        <tr>
+          <td class="td-rank">#${i + 1}</td>
+          <td class="td-dist">
+            ${dist.toFixed(1)}<span class="td-dist-unit">mi</span>
+          </td>
+          <td class="td-name">${r.name}</td>
+          <td class="td-date">${fmtDateShort(r.start_date_local)}</td>
+        </tr>`;
+    }).join('');
+
+    document.getElementById('notable-note').textContent =
+      `top ${runs.length} runs by distance · from recent activity`;
+  }
+
+  // ── Stats grid ───────────────────────────────────────────────────────────────
+  function renderStats(data) {
+    const s    = data.stats;
+    const all  = s.all_run_totals;
+    const ytd  = s.ytd_run_totals;
     const runs = data.recent_runs || [];
-    const longestDist = runs.length
-      ? Math.max(...runs.map(r => m2mi(r.distance))).toFixed(1) + ' mi'
-      : '—';
-    const weeklyAvg = (m2mi(s.ytd_run_totals.distance) / weeksIntoYear()).toFixed(1);
-    const avgDist   = (m2mi(s.all_run_totals.distance) / s.all_run_totals.count).toFixed(1);
+
+    const avgDist   = (m2mi(all.distance) / all.count).toFixed(1) + ' mi';
+    const weeklyYTD = (m2mi(ytd.distance) / weeksIntoYear()).toFixed(1) + ' mi';
+    const avgPace   = pace(all.moving_time, all.distance);
+    const ytdMi     = fmtN(Math.round(m2mi(ytd.distance)));
 
     const items = [
-      { num: pace(s.all_run_totals.moving_time, s.all_run_totals.distance), label: 'Avg Pace' },
-      { num: avgDist + ' mi',   label: 'Avg Run' },
-      { num: weeklyAvg + ' mi', label: 'Miles / Week (YTD)' },
-      { num: longestDist,       label: 'Longest Recent Run' },
+      { num: avgPace,    label: 'Avg Pace'         },
+      { num: avgDist,    label: 'Avg Distance'      },
+      { num: weeklyYTD,  label: 'Miles / Week (YTD)'},
+      { num: ytdMi,      label: 'YTD Miles'         },
     ];
-    document.getElementById('highlights-strip').innerHTML = items.map(i => `
-      <div class="highlight-item">
-        <div class="highlight-num">${i.num}</div>
-        <div class="highlight-label">${i.label}</div>
+
+    document.getElementById('stats-grid').innerHTML = items.map(i => `
+      <div class="stat-cell">
+        <div class="stat-num">${i.num}</div>
+        <div class="stat-label">${i.label}</div>
       </div>`).join('');
   }
 
+  // ── Recent runs list ─────────────────────────────────────────────────────────
   function renderRecentRuns(data) {
     const list = document.getElementById('run-list');
-    const runs = (data.recent_runs || []).slice(0, 6);
-    if (runs.length === 0) {
-      list.innerHTML = '<p class="run-empty">No recent runs found. Try triggering the workflow manually.</p>';
+    const runs = (data.recent_runs || []).slice(0, 8);
+    if (!runs.length) {
+      list.innerHTML = '<p class="run-empty">No recent runs found.</p>';
       return;
     }
     list.innerHTML = runs.map(run => {
       const dist = m2mi(run.distance);
       const tags = [];
-      if (run.workout_type === 1) tags.push('Race');
-      else if (run.workout_type === 2 || dist >= 13.1) tags.push('Long Run');
-      else if (run.workout_type === 3) tags.push('Workout');
-      const elevPart = run.total_elevation_gain > 0
-        ? ` · ${fmtNum(m2ft(run.total_elevation_gain))} ft gain`
-        : '';
+      if (run.workout_type === 1)             tags.push('Race');
+      else if (dist >= 13.1)                  tags.push('Long Run');
+      else if (run.workout_type === 3)        tags.push('Workout');
+      const elev = run.total_elevation_gain > 0
+        ? ` · ${fmtN(m2ft(run.total_elevation_gain))} ft gain` : '';
       return `
         <div class="run-item reveal">
-          <div class="run-dist">
-            <span class="run-dist-num">${dist.toFixed(1)}</span>
-            <span class="run-dist-unit">mi</span>
-            <span class="run-date">${fmtDateShort(run.start_date_local)}</span>
+          <div class="ri-dist-wrap">
+            <span class="ri-dist-num">${dist.toFixed(1)}</span>
+            <span class="ri-dist-unit">mi</span>
+            <span class="ri-date">${fmtDateShort(run.start_date_local)}</span>
           </div>
           <div>
-            <div class="run-name">${run.name}</div>
-            <div class="run-meta">${pace(run.moving_time, run.distance)} · ${fmtTime(run.moving_time)}${elevPart}</div>
+            <div class="ri-name">${run.name}</div>
+            <div class="ri-meta">${pace(run.moving_time, run.distance)} · ${fmtTime(run.moving_time)}${elev}</div>
             ${tags.length ? `<div class="exp-tags">${tags.map(t => `<span class="tag">${t}</span>`).join('')}</div>` : ''}
           </div>
         </div>`;
@@ -343,40 +598,38 @@
     document.querySelectorAll('.run-item.reveal').forEach(el => revealObserver.observe(el));
   }
 
-  function showEmpty(msg) {
-    document.getElementById('run-list').innerHTML = `<p class="run-empty">${msg}</p>`;
-  }
-
   // ── Main ─────────────────────────────────────────────────────────────────────
   async function loadRunningData() {
     try {
-      const res = await fetch('../assets/running-data.json');
+      const res  = await fetch('../assets/running-data.json');
       if (!res.ok) throw new Error('fetch failed');
       const data = await res.json();
 
       if (!data.stats) {
-        showEmpty('Data not yet available. Push to GitHub and trigger the workflow in the Actions tab.');
+        document.getElementById('run-list').innerHTML =
+          '<p class="run-empty">Data not yet available. Trigger the workflow in the Actions tab.</p>';
         return;
       }
 
-      renderHeroStats(data);
-      renderHighlights(data);
+      renderHero(data);
+      renderNotable(data);
+      renderStats(data);
       renderRecentRuns(data);
 
-      if (data.athlete && data.athlete.id) {
+      if (data.athlete?.id) {
         const url = `https://www.strava.com/athletes/${data.athlete.id}`;
-        document.getElementById('strava-btn').href = url;
         document.getElementById('strava-all-link').href = url;
       }
       if (data.updated_at) {
         document.getElementById('last-updated').textContent = fmtDate(data.updated_at);
       }
     } catch {
-      showEmpty('Could not load running data.');
+      document.getElementById('run-list').innerHTML =
+        '<p class="run-empty">Could not load running data.</p>';
     }
   }
 
-  // ── Reveal animations ────────────────────────────────────────────────────────
+  // ── Scroll reveal ─────────────────────────────────────────────────────────────
   const revealObserver = new IntersectionObserver((entries) => {
     entries.forEach((e, i) => {
       if (e.isIntersecting) {

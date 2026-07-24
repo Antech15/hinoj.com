@@ -795,6 +795,25 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+}
+
+/* SECRET */
+.secret-dot {
+  position: absolute;
+  bottom: 4px;
+  right: 8px;
+  font-size: 0.8rem;
+  line-height: 1;
+  color: var(--accent-muted);
+  opacity: 0.35;
+  padding: 4px;
+}
+
+.secret-dot:hover {
+  text-decoration: none;
+  opacity: 1;
+  color: var(--primary-text);
 }
 
 footer p {
