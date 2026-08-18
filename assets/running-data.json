@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-17T18:22:01.103026+00:00",
+  "updated_at": "2026-08-18T00:36:40.332117+00:00",
   "athlete": {
     "id": 135716013,
     "firstname": "Andres",
@@ -30,10 +30,10 @@
       "achievement_count": 0
     },
     "all_run_totals": {
-      "count": 423,
-      "distance": 2766008.599999999,
-      "moving_time": 945927,
-      "elapsed_time": 955377,
+      "count": 424,
+      "distance": 2771323.599999999,
+      "moving_time": 947957,
+      "elapsed_time": 957407,
       "elevation_gain": 5804.0
     },
     "recent_swim_totals": {
@@ -59,10 +59,10 @@
       "elevation_gain": 0
     },
     "ytd_run_totals": {
-      "count": 108,
-      "distance": 758670,
-      "moving_time": 266528.0,
-      "elapsed_time": 271489.0,
+      "count": 109,
+      "distance": 763985,
+      "moving_time": 268558.0,
+      "elapsed_time": 273519.0,
       "elevation_gain": 1914.9999999999995
     },
     "ytd_swim_totals": {
@@ -74,6 +74,67 @@
     }
   },
   "recent_runs": [
+    {
+      "resource_state": 2,
+      "athlete": {
+        "id": 135716013,
+        "id_str": "135716013",
+        "resource_state": 1
+      },
+      "name": "Monday Afternoon Run",
+      "distance": 5315.0,
+      "moving_time": 2030,
+      "elapsed_time": 2030,
+      "total_elevation_gain": 0,
+      "type": "Run",
+      "sport_type": "Run",
+      "workout_type": null,
+      "device_name": "Runna",
+      "id": 19785758187,
+      "id_str": "19785758187",
+      "start_date": "2026-08-17T21:55:48Z",
+      "start_date_local": "2026-08-17T14:55:48Z",
+      "timezone": "(GMT-08:00) America/Los_Angeles",
+      "utc_offset": -25200.0,
+      "location_city": null,
+      "location_state": null,
+      "location_country": null,
+      "achievement_count": 0,
+      "kudos_count": 0,
+      "comment_count": 0,
+      "athlete_count": 1,
+      "photo_count": 0,
+      "map": {
+        "id": "a19785758187",
+        "summary_polyline": "",
+        "resource_state": 2
+      },
+      "trainer": true,
+      "commute": false,
+      "manual": false,
+      "private": false,
+      "visibility": "everyone",
+      "flagged": false,
+      "gear_id": "g24214689",
+      "start_latlng": [],
+      "end_latlng": [],
+      "average_speed": 2.618,
+      "max_speed": 3.0,
+      "average_cadence": 82.6,
+      "has_heartrate": true,
+      "average_heartrate": 148.9,
+      "max_heartrate": 178.0,
+      "heartrate_opt_out": false,
+      "display_hide_heartrate_option": true,
+      "upload_id": 20918517665,
+      "upload_id_str": "20918517665",
+      "external_id": "5A6C9342-7B4A-4D00-BF6E-B702CEDD7A96.fit",
+      "from_accepted_tag": false,
+      "pr_count": 0,
+      "total_photo_count": 1,
+      "has_kudoed": false,
+      "suffer_score": 32.0
+    },
     {
       "resource_state": 2,
       "athlete": {
@@ -100,7 +161,7 @@
       "location_state": null,
       "location_country": null,
       "achievement_count": 0,
-      "kudos_count": 1,
+      "kudos_count": 2,
       "comment_count": 0,
       "athlete_count": 1,
       "photo_count": 0,
@@ -423,7 +484,7 @@
       "location_city": null,
       "location_state": null,
       "location_country": null,
-      "achievement_count": 7,
+      "achievement_count": 8,
       "kudos_count": 6,
       "comment_count": 0,
       "athlete_count": 1,
@@ -467,7 +528,7 @@
       "upload_id_str": "20716622302",
       "external_id": "C513CFD1-B15F-4FB6-9B40-CDA8C1DD4335.fit",
       "from_accepted_tag": false,
-      "pr_count": 5,
+      "pr_count": 6,
       "total_photo_count": 1,
       "has_kudoed": false,
       "suffer_score": 82.0
@@ -571,7 +632,7 @@
       "location_city": null,
       "location_state": null,
       "location_country": null,
-      "achievement_count": 10,
+      "achievement_count": 11,
       "kudos_count": 5,
       "comment_count": 0,
       "athlete_count": 1,
@@ -693,80 +754,6 @@
       "total_photo_count": 1,
       "has_kudoed": false,
       "suffer_score": 59.0
-    },
-    {
-      "resource_state": 2,
-      "athlete": {
-        "id": 135716013,
-        "id_str": "135716013",
-        "resource_state": 1
-      },
-      "name": "Over and Unders 1km",
-      "distance": 5347.0,
-      "moving_time": 1664,
-      "elapsed_time": 1670,
-      "total_elevation_gain": 4.4,
-      "type": "Run",
-      "sport_type": "Run",
-      "workout_type": null,
-      "device_name": "Runna",
-      "id": 19521457091,
-      "id_str": "19521457091",
-      "start_date": "2026-07-29T22:23:20Z",
-      "start_date_local": "2026-07-29T18:23:20Z",
-      "timezone": "(GMT-05:00) America/New_York",
-      "utc_offset": -14400.0,
-      "location_city": null,
-      "location_state": null,
-      "location_country": null,
-      "achievement_count": 5,
-      "kudos_count": 4,
-      "comment_count": 0,
-      "athlete_count": 1,
-      "photo_count": 0,
-      "map": {
-        "id": "a19521457091",
-        "summary_polyline": "_{vwF~oubMBHZVnA`@LELONAP^ATBLJHTDv@VZDHDl@PZNZJH?`@RTD`@Pb@FTJVDP?FFXHH@F?^Hf@TTBf@RAFMPu@hCKVMl@Q\\Mh@DHH@RIPOp@sBVaAJSBMHONg@FGNGHJLBRZLADFA`@BVFB`ALJDNLPBVLn@NLLFP?NIZD~@Cb@?`@HXTJHADGFu@DoBD]Ae@HQAa@Hu@?_AEUDQPBbAKFJXLJ?XGVARBRA?@N?^HNAfAh@h@DTFXKVBPKN?DEHAH@JHDJB@JED@@AD?^M^m@PCb@CH]FELDNANBV@jAZf@FDNIP@p@AODb@JDPER?JEDDIr@Gz@EN?XFZAPBXAP?XAXS~@BZAX@FCVEP@\\AFGDBDXJP?PCBO@YA]BKFkACWDs@?IBU?a@F{@AE@k@Hi@AGHWCWFGRN^AL@AYBE?QHe@DAXLBAH?LANFn@DZVF@LEZLL?f@Jf@@PHXAj@L|@JYB{@MYM]A]ISA]GUIg@@a@MKIQ@UEKDe@GUIC@CF@hACLEBUQQCQI?l@Eb@CF@NM|@@LCVCt@Ib@@RAD?`@CJEpACLA^CFIJEBQ?_@IES@e@DMFi@AGBS@[DQ@_@Fo@?cADa@?k@P{A?IOKWEW?CAAKH]CE?M@SEIKBg@Ia@CWKK?[GQ?EBILOr@KLQJOEC?q@v@a@FYIWA[QQ?e@KWKWAKGG?EJOJQB{@WM?]KOI]A]GQBKNE@q@KEI]AEBKGGH@JGp@Aj@E^GlC?j@OnAGPE@I?KQEOIQ@a@CcBBs@CYm@KoA[a@QK?WOIKEMDUCSI[W_@IIWQKAKBAh@KXAb@IVAXm@|B[x@STKFS?ECCG?KHMh@kBn@iBXeA?GAESEG@MEAECDE?AAe@GECI?sA]_@SAEICM@MCiBq@O?SImBi@_@OcAQEEAGHQCMEOKIE?_@b@G@SOOAa@Sg@m@@IRU@Q",
-        "resource_state": 2
-      },
-      "trainer": false,
-      "commute": false,
-      "manual": false,
-      "private": false,
-      "visibility": "everyone",
-      "flagged": false,
-      "gear_id": "g24214689",
-      "start_latlng": [
-        40.75456,
-        -74.007196
-      ],
-      "end_latlng": [
-        40.754498,
-        -74.006952
-      ],
-      "average_speed": 3.213,
-      "max_speed": 6.3,
-      "average_cadence": 88.2,
-      "average_watts": 189.8,
-      "max_watts": 258,
-      "weighted_average_watts": 193,
-      "device_watts": true,
-      "kilojoules": 315.9,
-      "has_heartrate": true,
-      "average_heartrate": 170.4,
-      "max_heartrate": 191.0,
-      "heartrate_opt_out": false,
-      "display_hide_heartrate_option": true,
-      "elev_high": 4.4,
-      "elev_low": 2.1,
-      "upload_id": 20644847992,
-      "upload_id_str": "20644847992",
-      "external_id": "DD7A161D-BCB1-4290-BCD0-2778C42827EE.fit",
-      "from_accepted_tag": false,
-      "pr_count": 3,
-      "total_photo_count": 1,
-      "has_kudoed": false,
-      "suffer_score": 67.0
     }
   ]
 }
