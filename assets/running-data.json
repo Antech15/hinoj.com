@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-20T00:36:22.751688+00:00",
+  "updated_at": "2026-08-20T06:25:36.200088+00:00",
   "athlete": {
     "id": 135716013,
     "firstname": "Andres",
@@ -30,10 +30,10 @@
       "achievement_count": 0
     },
     "all_run_totals": {
-      "count": 424,
-      "distance": 2771323.599999999,
-      "moving_time": 947957,
-      "elapsed_time": 957407,
+      "count": 425,
+      "distance": 2776626.599999999,
+      "moving_time": 949744,
+      "elapsed_time": 959194,
       "elevation_gain": 5804.0
     },
     "recent_swim_totals": {
@@ -59,10 +59,10 @@
       "elevation_gain": 0
     },
     "ytd_run_totals": {
-      "count": 109,
-      "distance": 763985,
-      "moving_time": 268558.0,
-      "elapsed_time": 273519.0,
+      "count": 110,
+      "distance": 769288,
+      "moving_time": 270345.0,
+      "elapsed_time": 275306.0,
       "elevation_gain": 1914.9999999999995
     },
     "ytd_swim_totals": {
@@ -74,6 +74,67 @@
     }
   },
   "recent_runs": [
+    {
+      "resource_state": 2,
+      "athlete": {
+        "id": 135716013,
+        "id_str": "135716013",
+        "resource_state": 1
+      },
+      "name": "Wednesday Evening Run",
+      "distance": 5303.0,
+      "moving_time": 1787,
+      "elapsed_time": 1787,
+      "total_elevation_gain": 0,
+      "type": "Run",
+      "sport_type": "Run",
+      "workout_type": null,
+      "device_name": "Runna",
+      "id": 19817143807,
+      "id_str": "19817143807",
+      "start_date": "2026-08-20T00:44:12Z",
+      "start_date_local": "2026-08-19T17:44:12Z",
+      "timezone": "(GMT-08:00) America/Los_Angeles",
+      "utc_offset": -25200.0,
+      "location_city": null,
+      "location_state": null,
+      "location_country": null,
+      "achievement_count": 0,
+      "kudos_count": 0,
+      "comment_count": 0,
+      "athlete_count": 1,
+      "photo_count": 0,
+      "map": {
+        "id": "a19817143807",
+        "summary_polyline": "",
+        "resource_state": 2
+      },
+      "trainer": true,
+      "commute": false,
+      "manual": false,
+      "private": false,
+      "visibility": "everyone",
+      "flagged": false,
+      "gear_id": "g24214689",
+      "start_latlng": [],
+      "end_latlng": [],
+      "average_speed": 2.968,
+      "max_speed": 4.0,
+      "average_cadence": 83.7,
+      "has_heartrate": true,
+      "average_heartrate": 161.5,
+      "max_heartrate": 186.0,
+      "heartrate_opt_out": false,
+      "display_hide_heartrate_option": true,
+      "upload_id": 20950677144,
+      "upload_id_str": "20950677144",
+      "external_id": "6E89A8B3-8614-4FC1-9549-2DE8D28F4BA7.fit",
+      "from_accepted_tag": false,
+      "pr_count": 0,
+      "total_photo_count": 1,
+      "has_kudoed": false,
+      "suffer_score": 51.0
+    },
     {
       "resource_state": 2,
       "athlete": {
@@ -680,80 +741,6 @@
       "total_photo_count": 1,
       "has_kudoed": false,
       "suffer_score": 174.0
-    },
-    {
-      "resource_state": 2,
-      "athlete": {
-        "id": 135716013,
-        "id_str": "135716013",
-        "resource_state": 1
-      },
-      "name": "3.25mi Easy Run",
-      "distance": 5401.7,
-      "moving_time": 1827,
-      "elapsed_time": 1851,
-      "total_elevation_gain": 4.4,
-      "type": "Run",
-      "sport_type": "Run",
-      "workout_type": null,
-      "device_name": "Runna",
-      "id": 19535106048,
-      "id_str": "19535106048",
-      "start_date": "2026-07-30T21:50:54Z",
-      "start_date_local": "2026-07-30T17:50:54Z",
-      "timezone": "(GMT-05:00) America/New_York",
-      "utc_offset": -14400.0,
-      "location_city": null,
-      "location_state": null,
-      "location_country": null,
-      "achievement_count": 1,
-      "kudos_count": 4,
-      "comment_count": 0,
-      "athlete_count": 1,
-      "photo_count": 0,
-      "map": {
-        "id": "a19535106048",
-        "summary_polyline": "ozvwFbqubMNNLH\\HVBNAVUHEH?JJCn@FFTJ\\Lh@JZR\\Dx@XBAXFZX`@D@DD?VHZBHH^Hl@FTNn@LBDf@Nf@FHD?FQXMd@g@tAc@bBMZALBJL@HGJAFGFMXy@Ns@L[?IFUBGJCBEDWVs@FEDBLCDBJ@HDHZJABB?^BPDL|@TPB`AZXD\\LDJEZ?dACb@Bd@DJFH@RHFR?DOH}CBKCe@Jk@DyAHoADCJD\\CJB\\?BBb@BNARHJ?DDF?TGLJDAXHL?t@Ll@ER@PJ\\KFH?DFHb@LXT?G@DDAh@i@x@c@D?HMNKVEF@DKAUDKNFPRJANBPCp@Nh@DJCHB@BEb@DLALGTBJLHF@JGNBXGB@AT@l@Bb@Mh@@NIX@FK\\?v@D^I\\E`AGR?TCD?n@DHPJRCNE@GAQ?OBEAM?[DY?YDK?MCE@e@F_@Dg@GUCCHe@B[BEF_AAI@[ACDBJEl@GHKBe@@MDE?OF?RHP@NET?RFV@LRN?NHLBX?HFNBVH`A@LBJ?RDFFRBZ?FDd@JNTPDFHH?NJNDZLL?LJPJJC?@C?CEYE]QI@KCECG?_@Qa@]]OQ@w@SGBCCEBg@OOA_@Ke@EIGE@c@COKWBECQEi@E[KC@KCW@GJ?D@P?HBHEN?RMDc@MKCEB@b@Mj@?VGz@?ZKzAEjAIt@@NEt@ENC@KDQAUEEEEOP{B?]LuB?g@DS?m@N}@AQBg@SEACYBME?MBEAUDM?OAKEG]GY@QCuAUG@Q?EDKz@CBG??E?DO?@ADC]ZaDB^XHJC?QEGEa@?]MKAYKGGc@UKDBLEDK@CCICc@CM@KGOC?AMIO?[OQ?KRQFG?g@Em@WSOUAHCFB?ROhBIn@Cl@Gn@?dACr@Qx@CDK?QQIa@Ay@?sBAMGQOCm@UUESKOC{@UQYAQ@MCKCAY?MESMGCE@IBCXI\\GPOX_@vAg@tAQPE@G@UGCEDGDA@QLm@La@HMHYBUDC^kARy@CC_AOw@WWAII[Ge@[e@KK?IIm@KKGK?KDEACEc@Oy@QWOa@IKGw@OKGGODQCYCGMIEAEBQ^EBG?y@]e@]MO?QRK@I",
-        "resource_state": 2
-      },
-      "trainer": false,
-      "commute": false,
-      "manual": false,
-      "private": false,
-      "visibility": "everyone",
-      "flagged": false,
-      "gear_id": "g24214689",
-      "start_latlng": [
-        40.754487,
-        -74.007379
-      ],
-      "end_latlng": [
-        40.75446,
-        -74.007036
-      ],
-      "average_speed": 2.957,
-      "max_speed": 5.46,
-      "average_cadence": 86.9,
-      "average_watts": 177.0,
-      "max_watts": 219,
-      "weighted_average_watts": 177,
-      "device_watts": true,
-      "kilojoules": 323.3,
-      "has_heartrate": true,
-      "average_heartrate": 164.4,
-      "max_heartrate": 187.0,
-      "heartrate_opt_out": false,
-      "display_hide_heartrate_option": true,
-      "elev_high": 4.4,
-      "elev_low": 2.1,
-      "upload_id": 20658909580,
-      "upload_id_str": "20658909580",
-      "external_id": "AC3C1223-109E-4A7F-B091-797DA600469C.fit",
-      "from_accepted_tag": false,
-      "pr_count": 1,
-      "total_photo_count": 1,
-      "has_kudoed": false,
-      "suffer_score": 59.0
     }
   ]
 }
