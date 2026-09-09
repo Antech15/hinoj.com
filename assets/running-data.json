@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T20:26:56.596009+00:00",
+  "updated_at": "2026-09-09T02:03:11.268708+00:00",
   "athlete": {
     "id": 135716013,
     "firstname": "Andres",
@@ -30,10 +30,10 @@
       "achievement_count": 0
     },
     "all_run_totals": {
-      "count": 433,
-      "distance": 2839425.999999999,
-      "moving_time": 973359,
-      "elapsed_time": 983132,
+      "count": 434,
+      "distance": 2844275.999999999,
+      "moving_time": 975337,
+      "elapsed_time": 985129,
       "elevation_gain": 5818.6
     },
     "recent_swim_totals": {
@@ -59,10 +59,10 @@
       "elevation_gain": 0
     },
     "ytd_run_totals": {
-      "count": 118,
-      "distance": 832087,
-      "moving_time": 293960.0,
-      "elapsed_time": 299244.0,
+      "count": 119,
+      "distance": 836937,
+      "moving_time": 295938.0,
+      "elapsed_time": 301241.0,
       "elevation_gain": 1929.5999999999995
     },
     "ytd_swim_totals": {
@@ -74,6 +74,66 @@
     }
   },
   "recent_runs": [
+    {
+      "resource_state": 2,
+      "athlete": {
+        "id": 135716013,
+        "id_str": "135716013",
+        "resource_state": 1
+      },
+      "name": "Evening Run",
+      "distance": 4850.0,
+      "moving_time": 1978,
+      "elapsed_time": 1997,
+      "total_elevation_gain": 0,
+      "type": "Run",
+      "sport_type": "Run",
+      "workout_type": null,
+      "device_name": "Apple Watch Series 10",
+      "id": 20096527106,
+      "id_str": "20096527106",
+      "start_date": "2026-09-09T00:02:11Z",
+      "start_date_local": "2026-09-08T20:02:11Z",
+      "timezone": "(GMT-04:00) America/Anguilla",
+      "utc_offset": -14400.0,
+      "location_city": null,
+      "location_state": null,
+      "location_country": null,
+      "achievement_count": 0,
+      "kudos_count": 0,
+      "comment_count": 0,
+      "athlete_count": 1,
+      "photo_count": 0,
+      "map": {
+        "id": "a20096527106",
+        "summary_polyline": "",
+        "resource_state": 2
+      },
+      "trainer": true,
+      "commute": false,
+      "manual": false,
+      "private": false,
+      "visibility": "everyone",
+      "flagged": false,
+      "gear_id": "g24214689",
+      "start_latlng": [],
+      "end_latlng": [],
+      "average_speed": 2.452,
+      "max_speed": 3.02,
+      "has_heartrate": true,
+      "average_heartrate": 140.2,
+      "max_heartrate": 160.0,
+      "heartrate_opt_out": false,
+      "display_hide_heartrate_option": true,
+      "upload_id": 21242011711,
+      "upload_id_str": "21242011711",
+      "external_id": "37747BB9-D11F-47C4-A8C4-266F2BAE4FDF.fit",
+      "from_accepted_tag": false,
+      "pr_count": 0,
+      "total_photo_count": 0,
+      "has_kudoed": false,
+      "suffer_score": 16.0
+    },
     {
       "resource_state": 2,
       "athlete": {
@@ -634,67 +694,6 @@
       "total_photo_count": 1,
       "has_kudoed": false,
       "suffer_score": 51.0
-    },
-    {
-      "resource_state": 2,
-      "athlete": {
-        "id": 135716013,
-        "id_str": "135716013",
-        "resource_state": 1
-      },
-      "name": "Monday Afternoon Run",
-      "distance": 5315.0,
-      "moving_time": 2030,
-      "elapsed_time": 2030,
-      "total_elevation_gain": 0,
-      "type": "Run",
-      "sport_type": "Run",
-      "workout_type": null,
-      "device_name": "Runna",
-      "id": 19785758187,
-      "id_str": "19785758187",
-      "start_date": "2026-08-17T21:55:48Z",
-      "start_date_local": "2026-08-17T14:55:48Z",
-      "timezone": "(GMT-08:00) America/Los_Angeles",
-      "utc_offset": -25200.0,
-      "location_city": null,
-      "location_state": null,
-      "location_country": null,
-      "achievement_count": 0,
-      "kudos_count": 1,
-      "comment_count": 0,
-      "athlete_count": 1,
-      "photo_count": 0,
-      "map": {
-        "id": "a19785758187",
-        "summary_polyline": "",
-        "resource_state": 2
-      },
-      "trainer": true,
-      "commute": false,
-      "manual": false,
-      "private": false,
-      "visibility": "everyone",
-      "flagged": false,
-      "gear_id": "g24214689",
-      "start_latlng": [],
-      "end_latlng": [],
-      "average_speed": 2.618,
-      "max_speed": 3.0,
-      "average_cadence": 82.6,
-      "has_heartrate": true,
-      "average_heartrate": 148.9,
-      "max_heartrate": 178.0,
-      "heartrate_opt_out": false,
-      "display_hide_heartrate_option": true,
-      "upload_id": 20918517665,
-      "upload_id_str": "20918517665",
-      "external_id": "5A6C9342-7B4A-4D00-BF6E-B702CEDD7A96.fit",
-      "from_accepted_tag": false,
-      "pr_count": 0,
-      "total_photo_count": 1,
-      "has_kudoed": false,
-      "suffer_score": 32.0
     }
   ]
 }
