@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-10T20:11:55.893800+00:00",
+  "updated_at": "2026-09-11T01:58:30.356397+00:00",
   "athlete": {
     "id": 135716013,
     "firstname": "Andres",
@@ -30,10 +30,10 @@
       "achievement_count": 0
     },
     "all_run_totals": {
-      "count": 434,
-      "distance": 2844275.999999999,
-      "moving_time": 975337,
-      "elapsed_time": 985129,
+      "count": 435,
+      "distance": 2849473.9999999986,
+      "moving_time": 977193,
+      "elapsed_time": 986985,
       "elevation_gain": 5818.6
     },
     "recent_swim_totals": {
@@ -59,10 +59,10 @@
       "elevation_gain": 0
     },
     "ytd_run_totals": {
-      "count": 119,
-      "distance": 836937,
-      "moving_time": 295938.0,
-      "elapsed_time": 301241.0,
+      "count": 120,
+      "distance": 842135,
+      "moving_time": 297794.0,
+      "elapsed_time": 303097.0,
       "elevation_gain": 1929.5999999999995
     },
     "ytd_swim_totals": {
@@ -74,6 +74,67 @@
     }
   },
   "recent_runs": [
+    {
+      "resource_state": 2,
+      "athlete": {
+        "id": 135716013,
+        "id_str": "135716013",
+        "resource_state": 1
+      },
+      "name": "Thursday Evening Run",
+      "distance": 5198.0,
+      "moving_time": 1856,
+      "elapsed_time": 1856,
+      "total_elevation_gain": 0,
+      "type": "Run",
+      "sport_type": "Run",
+      "workout_type": null,
+      "device_name": "Runna",
+      "id": 20123486197,
+      "id_str": "20123486197",
+      "start_date": "2026-09-10T22:51:29Z",
+      "start_date_local": "2026-09-10T15:51:29Z",
+      "timezone": "(GMT-08:00) America/Los_Angeles",
+      "utc_offset": -25200.0,
+      "location_city": null,
+      "location_state": null,
+      "location_country": null,
+      "achievement_count": 0,
+      "kudos_count": 0,
+      "comment_count": 0,
+      "athlete_count": 1,
+      "photo_count": 0,
+      "map": {
+        "id": "a20123486197",
+        "summary_polyline": "",
+        "resource_state": 2
+      },
+      "trainer": true,
+      "commute": false,
+      "manual": false,
+      "private": false,
+      "visibility": "everyone",
+      "flagged": false,
+      "gear_id": "g24214689",
+      "start_latlng": [],
+      "end_latlng": [],
+      "average_speed": 2.801,
+      "max_speed": 3.667,
+      "average_cadence": 83.4,
+      "has_heartrate": true,
+      "average_heartrate": 160.6,
+      "max_heartrate": 190.0,
+      "heartrate_opt_out": false,
+      "display_hide_heartrate_option": true,
+      "upload_id": 21270739236,
+      "upload_id_str": "21270739236",
+      "external_id": "52BB040D-8228-4387-91B6-DF1D743FBFB6.fit",
+      "from_accepted_tag": false,
+      "pr_count": 0,
+      "total_photo_count": 1,
+      "has_kudoed": false,
+      "suffer_score": 52.0
+    },
     {
       "resource_state": 2,
       "athlete": {
@@ -633,67 +694,6 @@
       "total_photo_count": 1,
       "has_kudoed": false,
       "suffer_score": 61.0
-    },
-    {
-      "resource_state": 2,
-      "athlete": {
-        "id": 135716013,
-        "id_str": "135716013",
-        "resource_state": 1
-      },
-      "name": "Wednesday Evening Run",
-      "distance": 5303.0,
-      "moving_time": 1787,
-      "elapsed_time": 1787,
-      "total_elevation_gain": 0,
-      "type": "Run",
-      "sport_type": "Run",
-      "workout_type": null,
-      "device_name": "Runna",
-      "id": 19817143807,
-      "id_str": "19817143807",
-      "start_date": "2026-08-20T00:44:12Z",
-      "start_date_local": "2026-08-19T17:44:12Z",
-      "timezone": "(GMT-08:00) America/Los_Angeles",
-      "utc_offset": -25200.0,
-      "location_city": null,
-      "location_state": null,
-      "location_country": null,
-      "achievement_count": 0,
-      "kudos_count": 3,
-      "comment_count": 0,
-      "athlete_count": 1,
-      "photo_count": 0,
-      "map": {
-        "id": "a19817143807",
-        "summary_polyline": "",
-        "resource_state": 2
-      },
-      "trainer": true,
-      "commute": false,
-      "manual": false,
-      "private": false,
-      "visibility": "everyone",
-      "flagged": false,
-      "gear_id": "g24214689",
-      "start_latlng": [],
-      "end_latlng": [],
-      "average_speed": 2.968,
-      "max_speed": 4.0,
-      "average_cadence": 83.7,
-      "has_heartrate": true,
-      "average_heartrate": 161.5,
-      "max_heartrate": 186.0,
-      "heartrate_opt_out": false,
-      "display_hide_heartrate_option": true,
-      "upload_id": 20950677144,
-      "upload_id_str": "20950677144",
-      "external_id": "6E89A8B3-8614-4FC1-9549-2DE8D28F4BA7.fit",
-      "from_accepted_tag": false,
-      "pr_count": 0,
-      "total_photo_count": 1,
-      "has_kudoed": false,
-      "suffer_score": 51.0
     }
   ]
 }
