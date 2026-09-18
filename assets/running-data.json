@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-17T20:43:06.169639+00:00",
+  "updated_at": "2026-09-18T02:05:05.686932+00:00",
   "athlete": {
     "id": 135716013,
     "firstname": "Andres",
@@ -30,10 +30,10 @@
       "achievement_count": 0
     },
     "all_run_totals": {
-      "count": 436,
-      "distance": 2855127.9999999986,
-      "moving_time": 979454,
-      "elapsed_time": 989246,
+      "count": 437,
+      "distance": 2861601.5999999987,
+      "moving_time": 981397,
+      "elapsed_time": 991189,
       "elevation_gain": 5818.6
     },
     "recent_swim_totals": {
@@ -59,10 +59,10 @@
       "elevation_gain": 0
     },
     "ytd_run_totals": {
-      "count": 121,
-      "distance": 847789,
-      "moving_time": 300055.0,
-      "elapsed_time": 305358.0,
+      "count": 122,
+      "distance": 854263,
+      "moving_time": 301998.0,
+      "elapsed_time": 307301.0,
       "elevation_gain": 1929.5999999999995
     },
     "ytd_swim_totals": {
@@ -74,6 +74,71 @@
     }
   },
   "recent_runs": [
+    {
+      "resource_state": 2,
+      "athlete": {
+        "id": 135716013,
+        "id_str": "135716013",
+        "resource_state": 1
+      },
+      "name": "Drop Set",
+      "distance": 6473.6,
+      "moving_time": 1943,
+      "elapsed_time": 1943,
+      "total_elevation_gain": 0,
+      "type": "Run",
+      "sport_type": "Run",
+      "workout_type": null,
+      "device_name": "Runna",
+      "id": 20220278982,
+      "id_str": "20220278982",
+      "start_date": "2026-09-17T22:22:35Z",
+      "start_date_local": "2026-09-17T15:22:35Z",
+      "timezone": "(GMT-08:00) America/Los_Angeles",
+      "utc_offset": -25200.0,
+      "location_city": null,
+      "location_state": null,
+      "location_country": null,
+      "achievement_count": 0,
+      "kudos_count": 0,
+      "comment_count": 0,
+      "athlete_count": 1,
+      "photo_count": 0,
+      "map": {
+        "id": "a20220278982",
+        "summary_polyline": "",
+        "resource_state": 2
+      },
+      "trainer": true,
+      "commute": false,
+      "manual": false,
+      "private": false,
+      "visibility": "everyone",
+      "flagged": false,
+      "gear_id": "g24214689",
+      "start_latlng": [],
+      "end_latlng": [],
+      "average_speed": 3.332,
+      "max_speed": 10.3,
+      "average_watts": 169.8,
+      "max_watts": 254,
+      "weighted_average_watts": 188,
+      "device_watts": true,
+      "kilojoules": 329.9,
+      "has_heartrate": true,
+      "average_heartrate": 161.1,
+      "max_heartrate": 183.0,
+      "heartrate_opt_out": false,
+      "display_hide_heartrate_option": true,
+      "upload_id": 21372520364,
+      "upload_id_str": "21372520364",
+      "external_id": "5758a5b0-7a04-477d-abd5-f052ab224cfc.fit",
+      "from_accepted_tag": false,
+      "pr_count": 0,
+      "total_photo_count": 1,
+      "has_kudoed": false,
+      "suffer_score": 58.0
+    },
     {
       "resource_state": 2,
       "athlete": {
@@ -619,80 +684,6 @@
       "total_photo_count": 1,
       "has_kudoed": false,
       "suffer_score": 12.0
-    },
-    {
-      "resource_state": 2,
-      "athlete": {
-        "id": 135716013,
-        "id_str": "135716013",
-        "resource_state": 1
-      },
-      "name": "Afternoon Run",
-      "distance": 21849.4,
-      "moving_time": 8420,
-      "elapsed_time": 8743,
-      "total_elevation_gain": 14.6,
-      "type": "Run",
-      "sport_type": "Run",
-      "workout_type": null,
-      "device_name": "Runna",
-      "id": 19855498203,
-      "id_str": "19855498203",
-      "start_date": "2026-08-22T17:06:53Z",
-      "start_date_local": "2026-08-22T13:06:53Z",
-      "timezone": "(GMT-05:00) America/New_York",
-      "utc_offset": -14400.0,
-      "location_city": null,
-      "location_state": null,
-      "location_country": null,
-      "achievement_count": 0,
-      "kudos_count": 6,
-      "comment_count": 0,
-      "athlete_count": 1,
-      "photo_count": 0,
-      "map": {
-        "id": "a19855498203",
-        "summary_polyline": "o~qwFx{~bMvE{@nAc@|HsIRoAb@cAxAk@fDcEhBeAjAwAjF{Ij@iAv@sB^{AhBmDB_@nA}CLaClAy@nC{Gc@c@EwB\\{BIaAXkBSmBJ{Bd@eDTUBkFP_@LaBEgC\\iDjFR^o@NgBrCBl@wHiMsAd@JTmGYyEV_D{@MKLFFv@?L^Q~Fm@xH{@Pw@ORP_A\\AyAOcBQK?a@KGyBO]r@HOSI}BDC`Be@~AFrD[rDoBM_@a@}AFkAi@m@DK^@[fAKPRbBPZMl@j@fBH`AuPtBVLEXc@vBP`@v@I~Bb@p@lAo@tAXIITuDMgAZyGTmA}@MGLdACJf@cAnQtAERXpGl@BLi@AH?IMBaBf@gAr@{CRuFd@?VZo@~HB`AhB\\Dp@Vf@`C^ELf@f@h@M|Ep@z@i@tEf@VNB^pALbAp@qCa@PZSfD\\Tn@jFKtFg@~DxARf@oBr@?jAvB?nAZTOlCd@b@IjAc@^Vj@YdEWIIk@{DYYp@GbAy@AI`@eC[{Ax@{@rA[tBlGl@JDGb@`@Hm@nHWXqBq@NSbB`@d@yHTOWd@AtAU~DKb@QF{Bu@gB@IcENeCs@OM`FWrCMXy@Q_@f@HjAG\\BxCVx@Bx@I~BTn@c@hGLf@MEFbAzIvDFo@b@JtLbGnE^p@a@lA{VrBy^v@mIPc@@gCj@uIMkBBuCLi@Z{GM?Ea@^eALoAIw@iCMs@`AaAlR]jAcAbR?bCaAtLaApS_@nFi@|D@g@h@mDtCih@bAHXm@A{@f@OLo@ZALk@BmBs@IyARQSCi@J}ATeAPkEXs@RcCv@eObAaArBRbFr@Zx@`@l@ATIk@g@]a@g@kAFm@o@kA@KxCD~@_AdLEvAXJGEe@nN@jA`@nBzAtBC`A_@lAZRh@MTq@dAmA@mBf@{BQoA?sB~@{BEuBn@eDRc@l@ACTk@\\F\\j@HvA`F|DxJlG`M~AbCuAhBcAl@qB^mAFpDlBvAvAlEfH?d@f@?nAnApAb@bE`@~DAj@h@n@tAdAM^PbI|G`KfHvJ|FlKjFTjAaFpNWF}Cw@iBtEeGzLMRm@CMP}HrP@r@cBdDcA`Am@NeBnDs@fAk@Z_@z@y@t@c@?Yl@_Ad@cBlBZ~@bD~DeEeFCUhA_B|A_AXo@n@C`@[pA{ArAqB",
-        "resource_state": 2
-      },
-      "trainer": false,
-      "commute": false,
-      "manual": false,
-      "private": false,
-      "visibility": "everyone",
-      "flagged": false,
-      "gear_id": "g24214689",
-      "start_latlng": [
-        40.72952,
-        -74.05517
-      ],
-      "end_latlng": [
-        40.698182,
-        -74.065935
-      ],
-      "average_speed": 2.595,
-      "max_speed": 5.56,
-      "average_cadence": 84.5,
-      "average_watts": 157.8,
-      "max_watts": 229,
-      "weighted_average_watts": 156,
-      "device_watts": true,
-      "kilojoules": 1328.9,
-      "has_heartrate": true,
-      "average_heartrate": 171.7,
-      "max_heartrate": 190.0,
-      "heartrate_opt_out": false,
-      "display_hide_heartrate_option": true,
-      "elev_high": 22.1,
-      "elev_low": 1.3,
-      "upload_id": 20990114125,
-      "upload_id_str": "20990114125",
-      "external_id": "C6536353-CF7E-4772-AD7B-E975E0874446.fit",
-      "from_accepted_tag": false,
-      "pr_count": 0,
-      "total_photo_count": 1,
-      "has_kudoed": false,
-      "suffer_score": 354.0
     }
   ]
 }
