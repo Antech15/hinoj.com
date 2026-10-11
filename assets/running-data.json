@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-11T16:58:28.864035+00:00",
+  "updated_at": "2026-10-11T21:11:44.162472+00:00",
   "athlete": {
     "id": 135716013,
     "firstname": "Andres",
@@ -30,10 +30,10 @@
       "achievement_count": 0
     },
     "all_run_totals": {
-      "count": 448,
-      "distance": 2921848.899999999,
-      "moving_time": 1003132,
-      "elapsed_time": 1013443,
+      "count": 449,
+      "distance": 2929895.599999999,
+      "moving_time": 1005772,
+      "elapsed_time": 1016083,
       "elevation_gain": 5862.400000000001
     },
     "recent_swim_totals": {
@@ -59,10 +59,10 @@
       "elevation_gain": 0
     },
     "ytd_run_totals": {
-      "count": 133,
-      "distance": 914510,
-      "moving_time": 323733.0,
-      "elapsed_time": 329555.0,
+      "count": 134,
+      "distance": 922557,
+      "moving_time": 326373.0,
+      "elapsed_time": 332195.0,
       "elevation_gain": 1973.3999999999994
     },
     "ytd_swim_totals": {
@@ -74,6 +74,62 @@
     }
   },
   "recent_runs": [
+    {
+      "resource_state": 2,
+      "athlete": {
+        "id": 135716013,
+        "id_str": "135716013",
+        "resource_state": 1
+      },
+      "name": "5mi Long Run with Runna \u2705",
+      "distance": 8046.7,
+      "moving_time": 2640,
+      "elapsed_time": 2640,
+      "total_elevation_gain": 0,
+      "type": "Run",
+      "sport_type": "Run",
+      "workout_type": null,
+      "device_name": "Runna",
+      "id": 20546055089,
+      "id_str": "20546055089",
+      "start_date": "2026-10-11T18:24:45Z",
+      "start_date_local": "2026-10-11T13:40:30Z",
+      "timezone": "(GMT-08:00) America/Los_Angeles",
+      "utc_offset": -17055.0,
+      "location_city": null,
+      "location_state": null,
+      "location_country": null,
+      "achievement_count": 0,
+      "kudos_count": 1,
+      "comment_count": 0,
+      "athlete_count": 1,
+      "photo_count": 0,
+      "map": {
+        "id": "a20546055089",
+        "summary_polyline": "",
+        "resource_state": 2
+      },
+      "trainer": false,
+      "commute": false,
+      "manual": true,
+      "private": false,
+      "visibility": "everyone",
+      "flagged": false,
+      "gear_id": "g24214689",
+      "start_latlng": [],
+      "end_latlng": [],
+      "average_speed": 3.048,
+      "max_speed": 0,
+      "has_heartrate": false,
+      "heartrate_opt_out": false,
+      "display_hide_heartrate_option": false,
+      "upload_id": null,
+      "external_id": null,
+      "from_accepted_tag": false,
+      "pr_count": 0,
+      "total_photo_count": 0,
+      "has_kudoed": false
+    },
     {
       "resource_state": 2,
       "athlete": {
@@ -657,66 +713,6 @@
       "total_photo_count": 0,
       "has_kudoed": false,
       "suffer_score": 61.0
-    },
-    {
-      "resource_state": 2,
-      "athlete": {
-        "id": 135716013,
-        "id_str": "135716013",
-        "resource_state": 1
-      },
-      "name": "Evening Run",
-      "distance": 3226.0,
-      "moving_time": 1273,
-      "elapsed_time": 1273,
-      "total_elevation_gain": 0,
-      "type": "Run",
-      "sport_type": "Run",
-      "workout_type": null,
-      "device_name": "Apple Watch Series 10",
-      "id": 20276002580,
-      "id_str": "20276002580",
-      "start_date": "2026-09-22T00:12:45Z",
-      "start_date_local": "2026-09-21T20:12:45Z",
-      "timezone": "(GMT-04:00) America/Anguilla",
-      "utc_offset": -14400.0,
-      "location_city": null,
-      "location_state": null,
-      "location_country": null,
-      "achievement_count": 0,
-      "kudos_count": 3,
-      "comment_count": 0,
-      "athlete_count": 1,
-      "photo_count": 0,
-      "map": {
-        "id": "a20276002580",
-        "summary_polyline": "",
-        "resource_state": 2
-      },
-      "trainer": true,
-      "commute": false,
-      "manual": false,
-      "private": false,
-      "visibility": "everyone",
-      "flagged": false,
-      "gear_id": "g24214689",
-      "start_latlng": [],
-      "end_latlng": [],
-      "average_speed": 2.534,
-      "max_speed": 3.12,
-      "has_heartrate": true,
-      "average_heartrate": 140.1,
-      "max_heartrate": 151.0,
-      "heartrate_opt_out": false,
-      "display_hide_heartrate_option": true,
-      "upload_id": 21429388241,
-      "upload_id_str": "21429388241",
-      "external_id": "4AC06AA2-3C76-4715-A8DA-398AA4AB04B0.fit",
-      "from_accepted_tag": false,
-      "pr_count": 0,
-      "total_photo_count": 0,
-      "has_kudoed": false,
-      "suffer_score": 10.0
     }
   ]
 }
