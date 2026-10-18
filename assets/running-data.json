@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-17T19:48:59.832759+00:00",
+  "updated_at": "2026-10-18T02:01:46.799900+00:00",
   "athlete": {
     "id": 135716013,
     "firstname": "Andres",
@@ -143,7 +143,7 @@
       "external_id": "ADAA8C44-110B-415A-8DAD-85FD77AC6B70.fit",
       "from_accepted_tag": false,
       "pr_count": 6,
-      "total_photo_count": 0,
+      "total_photo_count": 1,
       "has_kudoed": false,
       "suffer_score": 226.0
     },
