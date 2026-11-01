@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-01T12:15:56.629625+00:00",
+  "updated_at": "2026-11-01T21:27:55.861827+00:00",
   "athlete": {
     "id": 135716013,
     "firstname": "Andres",
@@ -27,14 +27,14 @@
       "moving_time": 26292,
       "elapsed_time": 26778,
       "elevation_gain": 103.8,
-      "achievement_count": 6
+      "achievement_count": 20
     },
     "all_run_totals": {
-      "count": 455,
-      "distance": 2972630.6999999993,
-      "moving_time": 1020698,
-      "elapsed_time": 1031279,
-      "elevation_gain": 5938.400000000001
+      "count": 456,
+      "distance": 2984083.6999999993,
+      "moving_time": 1024266,
+      "elapsed_time": 1035181,
+      "elevation_gain": 5946.400000000001
     },
     "recent_swim_totals": {
       "count": 0,
@@ -59,11 +59,11 @@
       "elevation_gain": 0
     },
     "ytd_run_totals": {
-      "count": 140,
-      "distance": 965292,
-      "moving_time": 341299.0,
-      "elapsed_time": 347391.0,
-      "elevation_gain": 2049.3999999999996
+      "count": 141,
+      "distance": 976745,
+      "moving_time": 344867.0,
+      "elapsed_time": 351293.0,
+      "elevation_gain": 2057.3999999999996
     },
     "ytd_swim_totals": {
       "count": 0,
@@ -74,6 +74,81 @@
     }
   },
   "recent_runs": [
+    {
+      "resource_state": 2,
+      "athlete": {
+        "id": 135716013,
+        "id_str": "135716013",
+        "resource_state": 1
+      },
+      "name": "Sunday Afternoon Run",
+      "distance": 11453.0,
+      "moving_time": 3568,
+      "elapsed_time": 3902,
+      "total_elevation_gain": 8.0,
+      "type": "Run",
+      "sport_type": "Run",
+      "workout_type": null,
+      "device_name": "Runna",
+      "tags": [],
+      "id": 20822491809,
+      "id_str": "20822491809",
+      "start_date": "2026-11-01T19:36:43Z",
+      "start_date_local": "2026-11-01T14:36:43Z",
+      "timezone": "(GMT-05:00) America/New_York",
+      "utc_offset": -18000.0,
+      "location_city": null,
+      "location_state": null,
+      "location_country": null,
+      "achievement_count": 14,
+      "kudos_count": 2,
+      "comment_count": 0,
+      "athlete_count": 1,
+      "photo_count": 0,
+      "map": {
+        "id": "a20822491809",
+        "summary_polyline": "izrwFbq_cMdAaA\\e@Z]LGJANFJC\\WxC{Ct@q@RUt@e@|BiBhAcAj@m@RQl@WhBg@dDq@j@GXIXOr@u@Zc@xBwBTQfCwCPWnAoAfBqBPYl@g@hBqBvBkCj@m@\\i@bBqDXa@d@oAR_@Le@tA_D`AkC@QJKP]|@qBp@eAx@oBTYXo@f@gBXi@b@mAd@g@R]Na@NwADQ^Wr@gB`@eB\\mCPy@LgAToA\\u@p@{CNe@V_Bx@wDd@eCb@uC?a@G_B@MPw@LmABe@Ag@KWGC}AI}BQkAMu@Sq@JUMCQB{@VeCZeF@qAGYEAKvESjEIfAEPEFYFo@@MAKOM@WPK@OMEIEW@_BKw@EGu@Qm@Ck@He@VMMOA[?i@DKFET_@xFE~CKdAG^INY?y@IOCa@_@}AI[Ei@Ou@DKHGHULg@Mk@?gAMa@NILCNBd@CRK^OHm@AoAWY@k@LK?g@WCKLqBBc@A_@FiAHQX?FCFU@yC?UWcACc@EoBHgA?c@CSGKUQMEIBMJUl@IJaAd@K@uBi@UBGDCPE`AEPGDMDY?{@KMBORI@_AY]CWBEDGPMFa@Io@ByA?g@HQJIEAODgADeC?a@Ca@EQ]OIIg@CEDCTCdABlAA|@G^ILE?gA_@UCeBCgAMeAAm@IiAKKCIMEUOkAUsCISe@YEMGc@CgBIOYSSa@GESG_@AoANINCJGp@Q~@IPUXCLEb@KCMmAGmABqAEGu@M}@D[Cu@U[CgCg@gAYiDo@cFgAiBc@GC@E`@?tD`ApBb@n@FJD^?XLfBb@jANnE|@bBPLHHNCx@?h@HdBF\\J@V[FW@QBoA`@kARSz@WZCXBNp@^f@XtADbAJP\\HHFHRVlELt@HPJFn@Bl@Ez@FxCLh@Dv@Pb@DjBFJHBd@JNF?\\YVG\\ArBHZ?FEFUJGz@Fh@RP@zBETIFIDSBqAJMJ?x@F~@Lf@CXENIf@o@NEJ?XRLNDTEx@Kx@?f@H`BNz@Bf@Gt@Wl@ETUb@CV?rECn@@HJFXAT@VGlAN`@?VFHERiBFSFIPGJAhBNhAPTGLOJCj@?x@Pl@Dx@?f@Xf@Hj@BJEJa@FiATyGLqBF_@JKhBDJA^W\\Cl@@^FRJP^Hf@ErA@XLb@JLHBx@g@ZCrAXR@d@GJ@n@VnD`@`@D`A?\\CPE",
+        "resource_state": 2
+      },
+      "trainer": false,
+      "commute": false,
+      "manual": false,
+      "private": false,
+      "visibility": "everyone",
+      "flagged": false,
+      "gear_id": "g24214689",
+      "start_latlng": [
+        40.733979,
+        -74.058573
+      ],
+      "end_latlng": [
+        40.717015,
+        -74.032816
+      ],
+      "average_speed": 3.21,
+      "max_speed": 5.34,
+      "average_cadence": 89.3,
+      "average_watts": 184.7,
+      "max_watts": 258,
+      "weighted_average_watts": 178,
+      "device_watts": true,
+      "kilojoules": 658.9,
+      "has_heartrate": true,
+      "average_heartrate": 165.2,
+      "max_heartrate": 187.0,
+      "heartrate_opt_out": false,
+      "display_hide_heartrate_option": true,
+      "elev_high": 30.4,
+      "elev_low": 1.0,
+      "upload_id": 21987311253,
+      "upload_id_str": "21987311253",
+      "external_id": "B9A9146A-E9F8-4113-A74A-D37D0C8BB211.fit",
+      "from_accepted_tag": false,
+      "pr_count": 9,
+      "total_photo_count": 1,
+      "has_kudoed": false,
+      "suffer_score": 126.0
+    },
     {
       "resource_state": 2,
       "athlete": {
@@ -657,67 +732,6 @@
       "total_photo_count": 1,
       "has_kudoed": false,
       "suffer_score": 71.0
-    },
-    {
-      "resource_state": 2,
-      "athlete": {
-        "id": 135716013,
-        "id_str": "135716013",
-        "resource_state": 1
-      },
-      "name": "Afternoon Run",
-      "distance": 6447.0,
-      "moving_time": 2568,
-      "elapsed_time": 2568,
-      "total_elevation_gain": 0,
-      "type": "Run",
-      "sport_type": "Run",
-      "workout_type": null,
-      "device_name": "Apple Watch Series 10",
-      "tags": [],
-      "id": 20468489343,
-      "id_str": "20468489343",
-      "start_date": "2026-10-05T21:42:23Z",
-      "start_date_local": "2026-10-05T17:42:23Z",
-      "timezone": "(GMT-04:00) America/Anguilla",
-      "utc_offset": -14400.0,
-      "location_city": null,
-      "location_state": null,
-      "location_country": null,
-      "achievement_count": 0,
-      "kudos_count": 3,
-      "comment_count": 0,
-      "athlete_count": 1,
-      "photo_count": 0,
-      "map": {
-        "id": "a20468489343",
-        "summary_polyline": "",
-        "resource_state": 2
-      },
-      "trainer": true,
-      "commute": false,
-      "manual": false,
-      "private": false,
-      "visibility": "everyone",
-      "flagged": false,
-      "gear_id": "g24214689",
-      "start_latlng": [],
-      "end_latlng": [],
-      "average_speed": 2.511,
-      "max_speed": 3.04,
-      "has_heartrate": true,
-      "average_heartrate": 145.9,
-      "max_heartrate": 167.0,
-      "heartrate_opt_out": false,
-      "display_hide_heartrate_option": true,
-      "upload_id": 21625902449,
-      "upload_id_str": "21625902449",
-      "external_id": "B3708147-99CD-46D7-9FE3-58C1FDE47E59.fit",
-      "from_accepted_tag": false,
-      "pr_count": 0,
-      "total_photo_count": 1,
-      "has_kudoed": false,
-      "suffer_score": 32.0
     }
   ]
 }
