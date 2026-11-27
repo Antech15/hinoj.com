@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-26T15:58:47.447166+00:00",
+  "updated_at": "2026-11-27T01:14:59.833850+00:00",
   "athlete": {
     "id": 135716013,
     "firstname": "Andres",
@@ -22,19 +22,19 @@
       "elevation_gain": 0.0
     },
     "recent_run_totals": {
-      "count": 12,
-      "distance": 80784.5,
-      "moving_time": 27578,
-      "elapsed_time": 28466,
-      "elevation_gain": 81.0,
-      "achievement_count": 44
+      "count": 13,
+      "distance": 88910.8,
+      "moving_time": 31119,
+      "elapsed_time": 32024,
+      "elevation_gain": 186.0,
+      "achievement_count": 45
     },
     "all_run_totals": {
-      "count": 466,
-      "distance": 3050188.1999999993,
-      "moving_time": 1047146,
-      "elapsed_time": 1058615,
-      "elevation_gain": 6019.400000000001
+      "count": 467,
+      "distance": 3058314.4999999995,
+      "moving_time": 1050687,
+      "elapsed_time": 1062173,
+      "elevation_gain": 6124.400000000001
     },
     "recent_swim_totals": {
       "count": 0,
@@ -59,11 +59,11 @@
       "elevation_gain": 0
     },
     "ytd_run_totals": {
-      "count": 151,
-      "distance": 1042849,
-      "moving_time": 367747.0,
-      "elapsed_time": 374727.0,
-      "elevation_gain": 2130.399999999999
+      "count": 152,
+      "distance": 1050976,
+      "moving_time": 371288.0,
+      "elapsed_time": 378285.0,
+      "elevation_gain": 2235.3999999999996
     },
     "ytd_swim_totals": {
       "count": 0,
@@ -74,6 +74,80 @@
     }
   },
   "recent_runs": [
+    {
+      "resource_state": 2,
+      "athlete": {
+        "id": 135716013,
+        "id_str": "135716013",
+        "resource_state": 1
+      },
+      "name": "Afternoon Run",
+      "distance": 8126.3,
+      "moving_time": 3541,
+      "elapsed_time": 3558,
+      "total_elevation_gain": 105.0,
+      "type": "Run",
+      "sport_type": "Run",
+      "workout_type": null,
+      "device_name": "Apple Watch Series 10",
+      "tags": [],
+      "id": 21135857149,
+      "id_str": "21135857149",
+      "start_date": "2026-11-26T00:03:20Z",
+      "start_date_local": "2026-11-25T16:03:20Z",
+      "timezone": "(GMT-08:00) America/Los_Angeles",
+      "utc_offset": -28800.0,
+      "location_city": null,
+      "location_state": null,
+      "location_country": null,
+      "achievement_count": 1,
+      "kudos_count": 0,
+      "comment_count": 0,
+      "athlete_count": 2,
+      "photo_count": 0,
+      "map": {
+        "id": "a21135857149",
+        "summary_polyline": "iqdiEznejU?c@H[JSHKp@_@\\m@rAwAX_@`@_ALi@BU?WEc@Di@Pw@Dk@V}@AgAHu@Ro@Xk@PMTDNH^`@Lb@@f@I|@BdAIvCQzAB~@Cf@a@xAWd@cAdA_@~@s@t@c@r@QP]RBZUt@E`@H`BAZGJUVIRMf@Iz@Mh@_AnBY`@i@|@IXBn@Ab@@\\DNNXBVEb@Ot@Cd@BxAEb@AZDrAC`A@bDBp@OxDHl@@LCLUd@E\\Hv@Bl@\\rB?l@CNERSZCJ@JHTAz@Fp@?d@Er@I`@MNQDq@F_A@sACeB@m@E]B]C_@GCE?GRCXMb@GXCj@@^C~@On@Ff@EZ@RANIJKVg@@O?eAGaAh@}D?KMc@Iw@?_ADa@Tw@W}Ag@mA?_@J_AQu@Co@Jm@Rc@b@s@D[Ei@S}@KUY]Ki@AMFy@EaBSuBIg@?e@Lq@Rg@Ta@`@e@`@u@v@u@Tc@Fq@@e@EcBGWSUAGBAF?VLJLHTJFJ?FBn@OHIBa@TgAEGYMyA]a@Qq@KQIGMAiADODCPEz@]l@_@LKhBeCJS^mAJu@Bo@PaABYQq@]u@@EHEDG?SCEYGCEBWCiA?i@DEP@RG^Qd@e@T]JYHe@HoBFQNUJCt@?^HVL|@hAL^D`@BzCI|@A\\Ud@GX?l@HbAFFZEtB?h@AHCAgCIUECSDwACk@SKOCMDi@D]A_BE}@E[CG{@gAc@WSEUCo@?K@Od@EnBKh@MZWb@UT_@Tu@RCDBx@?d@Bf@DFRABF@NQ^BFTTNp@D\\ANa@lCC`@Kh@_@x@s@v@y@fA_An@gAZQLHFBD?n@DRHDhAROg@AQD_@J_@XWj@[h@}@vAyAf@eANm@FcBL{AXuABuAB]n@gBFKJEL@PFd@ZHPHh@A^Iv@DtAGlAAr@SjBDpAG`@k@|As@~@a@^c@fAg@d@q@`ASLa@DYC}Ac@MOGy@Hi@JSb@_@XQ?EG@oAj@k@FUHOC",
+        "resource_state": 2
+      },
+      "trainer": false,
+      "commute": false,
+      "manual": false,
+      "private": false,
+      "visibility": "everyone",
+      "flagged": false,
+      "gear_id": "g24214689",
+      "start_latlng": [
+        33.124217,
+        -117.178855
+      ],
+      "end_latlng": [
+        33.124682,
+        -117.178451
+      ],
+      "average_speed": 2.295,
+      "max_speed": 3.276,
+      "average_watts": 139.3,
+      "max_watts": 256,
+      "weighted_average_watts": 141,
+      "device_watts": true,
+      "kilojoules": 493.4,
+      "has_heartrate": true,
+      "average_heartrate": 140.4,
+      "max_heartrate": 159.0,
+      "heartrate_opt_out": false,
+      "display_hide_heartrate_option": true,
+      "elev_high": 212.2,
+      "elev_low": 169.8,
+      "upload_id": 22305822839,
+      "upload_id_str": "22305822839",
+      "external_id": "48257F63-20D8-4F35-964E-0ABFDF0558F0.fit",
+      "from_accepted_tag": false,
+      "pr_count": 0,
+      "total_photo_count": 0,
+      "has_kudoed": false,
+      "suffer_score": 31.0
+    },
     {
       "resource_state": 2,
       "athlete": {
@@ -687,73 +761,6 @@
       "total_photo_count": 1,
       "has_kudoed": false,
       "suffer_score": 74.0
-    },
-    {
-      "resource_state": 2,
-      "athlete": {
-        "id": 135716013,
-        "id_str": "135716013",
-        "resource_state": 1
-      },
-      "name": "4.5mi Easy Run",
-      "distance": 7257.0,
-      "moving_time": 2897,
-      "elapsed_time": 2915,
-      "total_elevation_gain": 0,
-      "type": "Run",
-      "sport_type": "Run",
-      "workout_type": null,
-      "device_name": "Runna",
-      "tags": [],
-      "id": 20836844955,
-      "id_str": "20836844955",
-      "start_date": "2026-11-02T23:19:23Z",
-      "start_date_local": "2026-11-02T15:19:23Z",
-      "timezone": "(GMT-08:00) America/Los_Angeles",
-      "utc_offset": -28800.0,
-      "location_city": null,
-      "location_state": null,
-      "location_country": null,
-      "achievement_count": 0,
-      "kudos_count": 4,
-      "comment_count": 0,
-      "athlete_count": 1,
-      "photo_count": 0,
-      "map": {
-        "id": "a20836844955",
-        "summary_polyline": "",
-        "resource_state": 2
-      },
-      "trainer": true,
-      "commute": false,
-      "manual": false,
-      "private": false,
-      "visibility": "everyone",
-      "flagged": false,
-      "gear_id": "g24214689",
-      "start_latlng": [],
-      "end_latlng": [],
-      "average_speed": 2.505,
-      "max_speed": 3.4,
-      "average_cadence": 81.0,
-      "average_watts": 162.3,
-      "max_watts": 173,
-      "weighted_average_watts": 162,
-      "device_watts": true,
-      "kilojoules": 470.2,
-      "has_heartrate": true,
-      "average_heartrate": 134.7,
-      "max_heartrate": 149.0,
-      "heartrate_opt_out": false,
-      "display_hide_heartrate_option": true,
-      "upload_id": 22001989814,
-      "upload_id_str": "22001989814",
-      "external_id": "1c0d7908-096a-45b1-b9a3-6233f66b7594.fit",
-      "from_accepted_tag": false,
-      "pr_count": 0,
-      "total_photo_count": 1,
-      "has_kudoed": false,
-      "suffer_score": 17.0
     }
   ]
 }
